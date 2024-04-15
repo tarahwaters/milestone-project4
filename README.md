@@ -204,6 +204,10 @@ Below are the initial wireframes created for the project during the planning sta
 
 ### Logo
 
+The following logo was used from Nyree's original website:
+
+![nyreewaters logo](/documentation/readme/nyreewaters-logo.jpg "nyreewaters name as logo")
+
 
 ### Color Scheme
 
@@ -217,7 +221,7 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 
 [Typ.io](https://typ.io/s/4c28) provided us with the following font pairing inspiration which is used on [mikekus.com](https://mikekus.com):
 
-![Typ.io font-pairing example image](/documentation/readme/font-pairing-example.jpg)
+![Typ.io font-pairing example image](/documentation/readme/font-pairing-example.jpg "font-pairing example from Typ.io")
 
 - **Courier New** (body)
 - **Helvetica** (headings)
