@@ -207,6 +207,9 @@ Below are the initial wireframes created for the project during the planning sta
 
 ### Color Scheme
 
+[coolors.co](https://coolors.co/) was used to create a color palette for the design after consulting with Nyree.
+
+![nyreewaters art colorscheme](/documentation/readme/nyreewaters-colorscheme.png "nyreewaters art colorscheme")
 
 ### Typography
 
