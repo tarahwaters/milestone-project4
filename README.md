@@ -191,7 +191,7 @@ Below are the initial wireframes created for the project during the planning sta
 - [Checkout](/documentation/readme/wireframes-checkout.png) ✅
 - [Checkout Success](/documentation/readme/wireframes-checkout-success.png) ✅
 - [Individual Product](/documentation/readme/wireframes-product.png) ✅
-- [Ny Profile](#)
+- [My Profile](#)
 - [Login](#)
 - [Register](#)
 - [Contact](#)
