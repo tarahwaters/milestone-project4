@@ -213,6 +213,17 @@ Below are the initial wireframes created for the project during the planning sta
 
 ### Typography
 
+With reference to Nyree's [main website](https://nyreewaters.com) and her font styling preferences, we searched for font pairings that matched.
+
+[Typ.io](https://typ.io/s/4c28) provided us with the following font pairing inspiration which is used on [mikekus.com](https://mikekus.com):
+
+![Typ.io font-pairing example image](/documentation/readme/font-pairing-example.jpg)
+
+- **Courier New** (body)
+- **Helvetica** (headings)
+- **Monaco**
+- **Helvetica Neue**
+
 ---
 
 ## Information Architecture
