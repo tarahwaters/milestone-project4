@@ -184,13 +184,13 @@ For Admin Users only:
 
 Below are the initial wireframes created for the project during the planning stage.
 
-- [Homepage](#) ✅
-- [About](#) ✅
-- [Shop Category](#) ✅
-- [Shopping Bag](#) ✅
-- [Checkout](#) ✅
-- [Checkout Success](#) ✅
-- [Individual Product](#) ✅
+- [Homepage](/documentation/readme/wireframes-homepage.png) ✅
+- [About](/documentation/readme/wireframes-about.png) ✅
+- [Shop Category](/documentation/readme/wireframes-category.png) ✅
+- [Shopping Bag](/documentation/readme/wireframes-shopping-bag.png) ✅
+- [Checkout](/documentation/readme/wireframes-checkout.png) ✅
+- [Checkout Success](/documentation/readme/wireframes-checkout-success.png) ✅
+- [Individual Product](/documentation/readme/wireframes-product.png) ✅
 - [Ny Profile](#)
 - [Login](#)
 - [Register](#)
