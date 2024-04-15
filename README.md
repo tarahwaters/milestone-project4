@@ -1,110 +1,243 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# 🌟 nyreewaters art 🌟
+# - a full stack web e-commerce web application
 
 ------
 
-## Release History
+This e-commerce website was built for professional artist and designer, Nyree Waters, as my final Milestone Project for the Code Institute Fullstack Webdevelopment diploma (2024).
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+My sister, Nyree, produces original and printed mix-media artworks that she often sells online, so for this project I decided to build her a new e-commerce platform for her art shop.
 
-**September 20 2023:** Update Python version to 3.9.17.
+Through this website, Nyree hopes to share her passion for creating and design, and to offer products that have been lovingly created in her distinct abstract style.
+She is also a talented musician, writer and works in art facilitation, so the website has future scope to help streamline all of her freelance services.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Showcase
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Am I Responsive?](/documentation/readme/# "Am I Responsive? Website Mockup")
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The **Am I Responsive?** link can be found here - [Am I Responsive?](#)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+A **deployed link** to the live website can be found here - [nyreewaters art](#)
 
 ------
 
-## FAQ about the uptime script
+**Test card details**
 
-**Why have you added this script?**
+Card number: 4242 4242 4242 4242
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Expiry date: 04 / 24
 
-**How will this affect me?**
+CVC: 424
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ZIP: 42424
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+------
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Table of Contents
 
-**So….?**
+1. [UX](#ux)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    - [Strategy](#strategy)
+        - [Target Audience](#target-audience)
+        - [User Requirements and Expectations](#user-requirements-and-expectations)
+        - [User Stories](#user-stories)
+            - [User](#user)
+            - [Admin user or Site owner](#admin-user-or-site-owner)
+    - [Scope](#scope)
+        - [Trade Offs](#trade-offs)
+    - [Structure](#structure)
+        - [Features](#features)
+            - [Existing Features](#existing-features)
+            - [Future Features](#future-features)
+    - [Skeleton](#skeleton)
+        - [Wireframes](#wireframes)
+    - [Surface](#surface)
+        - [Color Scheme](#color-scheme)
+        - [Typography](#typography)
 
-**Can I opt out?**
+2. [Information Architecture](#information-architecture)
+    - [Data Models](#data-models)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+3. [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+    - [Dependencies](#dependencies)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+4. [Testing](#testing)
+    
+5. [Deployment](#deployment)
+    - [Local Deployment](#local-deployment)
+    - [Heroku Deployment](#heroku-deployment)
 
-**Anything more?**
+6. [Credits](#credits)
+    - [Code](#code)
+    - [Media](#media)
+    - [Content](#content)
+    - [Acknowledgements](#acknowledgments)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+----------------------------
+
+## UX:
+## Strategy
+### Target Audience
+
+### User Requirements and Expectations
+
+- Simple and intuitive user interface
+- Clear presentation of necessary information to invite the user to join
+- Secure platform that uses a login system with username and password to access and manage personal posts
+- Quick and easy to search through existing posts
+- Quick and easy to create an account and start sharing posts with others
+- Quick and easy to add, edit or delete posts from the an account
+- Design that is visually attractive
+- Accessibility
+- Features and navigation system works as expected
+
+
+### User Stories
+
+#### User
+As a user I would like:
+
+#### Admin user or Site owner
+In addition to the general user expectations, as an admin user / site owner I would like:
 
 ---
 
-Happy coding!
+## Scope
+### Trade Offs
+
+Considering the user requirements and expectations, the table below shows the features that should be implemented to make an appealing and functional interactive game for users. Due to time constraints and my current skill level, some of these features are not implemented at this stage.
+
+[X] indicates opportunities that were considered at the planning stage but were deemed not viable/feasible for this project sprint.
+Y / N indicates a Yes / No as to whether each opportunity was acheived and implemented at this stage.
+
+| Opportunity                                                         | Importance | Viability / Feasibility | Outcome |
+| ------------------------------------------------------------------- | :--------: | :---------------------: | :------:|
+| Register a secure account by creating a signin username + password  |     5      |            5            |    Y    |
+| Signin page for registered users                                    |     5      |            5            |    Y    |
+| Signout option with confirmation of action                          |     5      |            5            |    Y    |
+| Add a cafe post by submission of a form with confirmation of action |     5      |            5            |    Y    |
+| Confirmation of successful / unsuccessful actions via a flash msg   |     4      |            4            |    Y    |
+| Display of all posts to main home page                              |     5      |            5            |    Y    |
+| Display of all posts to admin profile (restricted access)           |     5      |            4            |    Y    |
+| Display of published user posts on profile page                     |     4      |            4            |    Y    |
+| Filter more relevant posts via search bar on home page              |     3      |            5            |    Y    |
+| Edit / delete functionality of  published user posts (non-admin)    |     5      |            5            |    Y    |
+| Edit / delete functionality of all posts (admin user only)          |     5      |            5            |    Y    |
+| Confirmation of delete action via a pop up modal                    |     5      |            4            |    Y    |
+| Restricted access for admin user to manage countries and images     |     5      |            5            |    Y    |
+| Add / edit functionality for countries and images                   |     5      |            5            |    Y    |
+| Custom Error404 page                                                |     3      |            3            |    N    |
+| Option to view an individual cafe on a separate page                |     3      |            3            |    N    |
+| Option to delete user account and associated posts [X]              |     4      |            3            |    X    |
+| Option to upload a country image along with the country name [X]    |     2      |            2            |    X    |
+
+---
+
+## Structure
+
+### Existing Features
+
+Quick Links:
+
+  - [Logo Link to Homepage](#logo-link-to-homepage)
+  - [Desktop Navbar Dropdown](#desktop-navbar-dropdown)
+  - [Mobile Navbar Menu](#mobile-navbar-menu)
+  - [Signin Form with input validation](#signin-form-with-input-validation)
+  - [Registration form with input validation](#registration-form-with-input-validation)
+  - [Registration Success](#registration-success---welcome-message-and-redirection-to-profile-page)
+  - [Signout Confirmation](#signout-confirmation)
+  - [Add Cafe button](#add-cafe-button)
+  - [Add Cafe form](#add-cafe-form)
+  - [Add Cafe form validation](#add-cafe-form-validation)
+  - [Cafe Cards](#cafe-cards-on-homepage-and-profile)
+  - [Edit / Delete cafe buttons](#edit--delete-cafe-buttons)
+  - [Edit Cafe (prefilled form)](#edit-cafe-prefilled-form)
+  - [Delete Cafe confirmation](#delete-cafe-confirmation)
+  - [Manage Locations (admin only functionality)](#manage-locations-page-admin-only-functionality)
+  - [Add Country feature](#add-country-feature)
+  - [Edit Country feature](#edit-country-feature)
+  - [Delete Country feature](#delete-country-feature)
+  - [Search Bar feature](#search-bar-feature)
+
+
+### Future Features
+
+The following features would be considered in future work to the project that would improve the useability and interest of this app:
+
+---
+
+## Skeleton
+
+Wireframes for the website were created using the UI wireframe tool, [Balsamiq](https://balsamiq.com/), to plan the layout.
+
+The layout and design were kept consistent across the pages / devices as much as possible.
+The overall design evolved as the project was developed, so some of the wireframe designs were not carried out / were adapted.
+
+The app consists of the following pages:
+
+For Admin Users only:
+
+### Wireframes
+
+Below are the initial wireframes created for the project during the planning stage.
+
+- [Homepage](#) ✅
+- [About](#) ✅
+- [Shop Category](#) ✅
+- [Shopping Bag](#) ✅
+- [Checkout](#) ✅
+- [Checkout Success](#) ✅
+- [Individual Product](#) ✅
+- [Ny Profile](#)
+- [Login](#)
+- [Register](#)
+- [Contact](#)
+- [Leave a Review](#)
+- [Search results](#)
+
+---
+
+## Surface
+
+### Logo
+
+
+### Color Scheme
+
+
+### Typography
+
+---
+
+## Information Architecture
+### Data Models
+
+---
+
+## Technologies Used
+### Languages
+### Frameworks, Libraries and Programs
+### Dependencies
+
+---
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+---
+
+## Deployment
+### Local Deployment
+### Heroku Deployment
+
+---
+
+## Credits
+### Code
+### Media
+### Content
+### Acknowledgements
