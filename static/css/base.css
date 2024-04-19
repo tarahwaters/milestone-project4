@@ -4,13 +4,18 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    color: #555;
+    color: black;
     font-family: 'Courier New', 'Courier Prime', 'sans-serif';
+    background-color: #EADFCE;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Inter', 'san-serif';
 }
+
+/* #topnav {
+    background-color: #EEACC4;
+} */
 
 /* from Bulma */
 .icon {
