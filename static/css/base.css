@@ -80,4 +80,8 @@ h1, h2, h3, h4, h5 {
       .header-container {
           padding-top: 164px;
       }
+
+      #mobile-nav-logo {
+        display: none;
+      }
   }
