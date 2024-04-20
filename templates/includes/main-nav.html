@@ -11,10 +11,39 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-products-link">
                 <a href="" class="dropdown-item">view all</a>
-                <a href="" class="dropdown-item">collages</a>
-                <a href="" class="dropdown-item">prints</a>
-                <a href="" class="dropdown-item">poems</a>
-                <a href="" class="dropdown-item">(bespoke work)</a>
+                <div class="dropdown-submenu dropright">
+                    <a href="#" class="dropdown-item dropdown-toggle">
+                        collages
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">view all</a>
+                        <a href="" class="dropdown-item">custom</a>
+                        <a href="" class="dropdown-item">originals</a>
+                        <a href="" class="dropdown-item">prints</a>
+                    </div>
+                </div>
+                <div class="dropdown-submenu dropright">
+                    <a href="#" class="dropdown-item dropdown-toggle">
+                        paintings
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">view all</a>
+                        <a href="" class="dropdown-item">custom</a>
+                        <a href="" class="dropdown-item">originals</a>
+                        <a href="" class="dropdown-item">prints</a>
+                    </div>
+                </div>
+                <div class="dropdown-submenu dropright">
+                    <a href="#" class="dropdown-item dropdown-toggle">
+                        poems
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">view all</a>
+                        <a href="" class="dropdown-item">custom</a>
+                        <a href="" class="dropdown-item">originals</a>
+                        <a href="" class="dropdown-item">prints</a>
+                    </div>
+                </div>
             </div>
         </li>
         <li class="nav-item">
@@ -37,3 +66,29 @@
         </li>
     </ul>
 </div>
+
+
+<script>
+    // Add click event listeners to the dropdown-submenu elements
+    document.querySelectorAll('.dropdown-submenu > .dropdown-toggle').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            this.classList.toggle('show');
+            this.nextElementSibling.classList.toggle('show');
+        });
+    });
+
+    // Close the dropdown menus when clicking outside
+    document.addEventListener('click', function(event) {
+        var dropdowns = document.getElementsByClassName('dropdown-menu');
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                openDropdown.previousElementSibling.classList.remove('show');
+            }
+        }
+    });
+</script>
