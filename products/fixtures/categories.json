@@ -1,0 +1,26 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"collages",
+          "friendly_name":"Collages"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"paintings",
+          "friendly_name":"Paintings"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.category",
+       "fields":{
+          "name":"poems",
+          "friendly_name":"Poems"
+       }
+    }
+ ]
