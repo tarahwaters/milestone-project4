@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-tarahwaters-milestonepr-yu8ehnrtdc5.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['8000-tarahwaters-milestonepr-yu8ehnrtdc5.ws-eu111.gitpod.io']
 
 
 # Application definition
