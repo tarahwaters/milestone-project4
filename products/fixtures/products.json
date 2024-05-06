@@ -3,14 +3,50 @@
       "pk": 1,
       "model": "products.product",
       "fields": {
-        "sku": "",
-        "name": "",
-        "description": "",
-        "size": "",
-        "media": "",
-        "stock": "",
-        "price": 25.00,
+        "sku": "mon/col/pri/a4/2",
+        "name": "Mono",
+        "description": "High quality, archival print on 200gsm white paper.",
         "category": 1,
+        "type": "Print",
+        "size": "A4",
+        "stock": 10,
+        "price": 10.00,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0709201205510679M.jpg"
+      }
+    },
+
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "let/col/pri/a5/4",
+        "name": "Let Me Stand With You",
+        "description": "High quality, archival print on 200gsm white paper.",
+        "category": 1,
+        "type": "Print",
+        "size": "A5",
+        "stock": 10,
+        "price": 10.00,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0709201205510679M.jpg"
+      }
+    },
+
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "ora/col/pri/a3/9",
+        "name": "Orange Peel",
+        "description": "High quality, archival print on 200gsm white paper.",
+        "category": 1,
+        "type": "Print",
+        "size": "A3",
+        "stock": 10,
+        "price": 10.00,
         "rating": 4.6,
         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
         "image": "DP0709201205510679M.jpg"
