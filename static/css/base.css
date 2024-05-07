@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 164px);
+    height: calc(100vh - 12rem);
     color: black;
     font-family: 'Courier New', 'Courier Prime', 'sans-serif';
 }
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5 {
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 12rem;
       }
 
       #mobile-nav-logo {
@@ -110,11 +110,11 @@ h1, h2, h3, h4, h5 {
   @media (max-width: 992px) {
     /* Pad the top when navbar is collapsed on mobile */
     .header-container {
-        padding-top: 116px;
+        padding-top: 8rem;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 8rem);
     }
 
     .home-intro {
