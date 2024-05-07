@@ -202,7 +202,7 @@
       "sku": "ora/pri/15",
       "name": "Orange Peel",
       "description": "high quality, archival print on 200gsm white paper",
-      "category": 2
+      "category": 2,
       "size": "A5",
       "price": 10,
       "rating": 4.6,
