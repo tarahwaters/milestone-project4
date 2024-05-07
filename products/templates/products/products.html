@@ -42,17 +42,17 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                            {{% if product.rating %}}
+                                            {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1">{{ product.rating }} / 5</i></small>
-                                            {{% else %}}
+                                            {% else %}
                                                 <small class="text-muted">no rating</small>
-                                            {{% endif %}}
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    {% endfor &}
+                    {% endfor %}
                 </div>
             </div>
         </div>
