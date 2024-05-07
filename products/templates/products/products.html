@@ -13,7 +13,8 @@
 
 {% block content %}
     <div class="overlay"></div> 
-    <div class="container-fluid">
+    <!-- products list -->
+    <section class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Products</h2>
@@ -24,9 +25,11 @@
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
                     {% for product in products %}
+                    <!-- product card -->
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
+                                <!-- product image -->
                                     <a href="">
                                         <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }}">
                                     </a>
@@ -35,6 +38,7 @@
                                         <img class="card-img-top img-fluid" src="{{MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                     </a>
                                 {% endif %}
+                                <!-- product details -->
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
@@ -76,5 +80,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 {% endblock %}
