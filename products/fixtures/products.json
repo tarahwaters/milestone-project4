@@ -1,49 +1,254 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "mon/col/pri/a4/2",
-        "name": "Mono",
-        "description": "High quality, archival print on 200gsm white paper.",
-        "category": 1,
-        "type": "Print",
-        "size": "A4",
-        "price": 10.00,
-        "rating": 4.6,
-        "image": "DP0709201205510679M.jpg"
-      }
-    },
-
-    {
-      "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "sku": "let/col/pri/a5/4",
-        "name": "Let Me Stand With You",
-        "description": "High quality, archival print on 200gsm white paper.",
-        "category": 1,
-        "type": "Print",
-        "size": "A5",
-        "price": 10.00,
-        "rating": 4.6,
-        "image": "DP0709201205510679M.jpg"
-      }
-    },
-
-    {
-      "pk": 3,
-      "model": "products.product",
-      "fields": {
-        "sku": "ora/col/pri/a3/9",
-        "name": "Orange Peel",
-        "description": "High quality, archival print on 200gsm white paper.",
-        "category": 1,
-        "type": "Print",
-        "size": "A3",
-        "price": 10.00,
-        "rating": 4.6,
-        "image": "DP0709201205510679M.jpg"
-      }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "alw/ori/1",
+      "name": "Always You",
+      "description": "mixed media collage and monoprint on paper",
+      "category": 1,
+      "size": "14.5 x 10.5cm",
+      "price": 185,
+      "rating": 4.6,
+      "image": "always-orig-1080x1350px.webp"
     }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "doe/ori/2",
+      "name": "Does It Feel Good To Be Back",
+      "description": "mixed media collage (paper, silver, foil, letraset and monoprint) on greyboard, mounted on plywood",
+      "category": 1,
+      "size": "20.9 x 17.5cm",
+      "price": 375,
+      "rating": 4.6,
+      "image": "doesitfeelgood-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "sha/ori/3",
+      "name": "Shadows Moving Around The Room",
+      "description": "mixed media collage (paper, typewriter ink, acrylic and spray paint) on card mount on plywood",
+      "category": 1,
+      "size": "19.5 x 17.1cm",
+      "price": 375,
+      "rating": 4.6,
+      "image": "shadows-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "myf/ori/4",
+      "name": "My Favourite Blue",
+      "description": "mixed media collage and acrylic on greyboard",
+      "category": 1,
+      "size": "18 x 14cm",
+      "price": 250,
+      "rating": 4.6,
+      "image": "myfavourite-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "wor/ori/5",
+      "name": "Work In Progress",
+      "description": "paper collage and biodegradable glitter on greyboard",
+      "category": 1,
+      "size": "29.7 x 21cm",
+      "price": 300,
+      "rating": 4.6,
+      "image": "work-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "sou/ori/6",
+      "name": "Sour / Mess",
+      "description": "paper collage and acrylic on sugar paper",
+      "category": 1,
+      "size": "29.7 x 21cm",
+      "price": 225,
+      "rating": 4.6,
+      "image": "sour-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "squ/ori/7",
+      "name": "Square 1",
+      "description": "paper collage on greyboard, mounted on painted MDF",
+      "category": 1,
+      "size": "9 x 9 cm",
+      "price": 150,
+      "rating": 4.6,
+      "image": "square1-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "squ/ori/8",
+      "name": "Square 5",
+      "description": "paper collage on greyboard, mounted on painted MDF",
+      "category": 1,
+      "size": "9 x 9 cm",
+      "price": 150,
+      "rating": 4.6,
+      "image": "square5-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "squ/ori/9",
+      "name": "Square 6",
+      "description": "paper collage on greyboard, mounted on painted MDF",
+      "category": 1,
+      "size": "9 x 9 cm",
+      "price": 150,
+      "rating": 4.6,
+      "image": "square6-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "squ/ori/10",
+      "name": "Square 7",
+      "description": "paper collage on greyboard, mounted on painted MDF",
+      "category": 1,
+      "size": "9 x 9 cm",
+      "price": 150,
+      "rating": 4.6,
+      "image": "square7-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "squ/ori/11",
+      "name": "Square 11",
+      "description": "paper collage on greyboard, mounted on painted MDF",
+      "category": 1,
+      "size": "9 x 9 cm",
+      "price": 150,
+      "rating": 4.6,
+      "image": "square11-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "squ/ori/12",
+      "name": "Square 15",
+      "description": "paper collage on greyboard, mounted on painted MDF",
+      "category": 1,
+      "size": "9 x 9 cm",
+      "price": 150,
+      "rating": 4.6,
+      "image": "square15-orig-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "mon/pri/13",
+      "name": "Mono",
+      "description": "high quality, archival print on 200gsm white paper",
+      "category": 2,
+      "size": "A5",
+      "price": 10,
+      "rating": 4.6,
+      "image": "mono-print-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "let/pri/14",
+      "name": "Let Me Stand With You",
+      "description": "high quality, archival print on 200gsm white paper",
+      "category": 2,
+      "size": "A5",
+      "price": 10,
+      "rating": 4.6,
+      "image": "letmestand-print-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "ora/pri/15",
+      "name": "Orange Peel",
+      "description": "high quality, archival print on 200gsm white paper",
+      "category": 2
+      "size": "A5",
+      "price": 10,
+      "rating": 4.6,
+      "image": "orange-print-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "fru/pri/16",
+      "name": "Fruit Salad",
+      "description": "high quality, archival print on 200gsm white paper",
+      "category": 2,
+      "size": "A5",
+      "price": 10,
+      "rating": 4.6,
+      "image": "fruit-print-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "she/pri/17",
+      "name": "She Is The Sun",
+      "description": "high quality, archival print on 200gsm white paper",
+      "category": 2,
+      "size": "A5",
+      "price": 10,
+      "rating": 4.6,
+      "image": "sheisthesun-print-1080x1350px.webp"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "poo/pri/18",
+      "name": "Pool Party",
+      "description": "high quality, archival print on 200gsm white paper",
+      "category": 2,
+      "size": "A5",
+      "price": 10,
+      "rating": 4.6,
+      "image": "pool-print-1080x1350px.webp"
+    }
+  }
 ]
