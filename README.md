@@ -59,7 +59,7 @@ ZIP: 42424
 2. [Information Architecture](#information-architecture)
     - [Data Models](#data-models)
 
-3. [Technologies Used](#technologies-used)
+3. [Tools and Technologies Used](#tools-and-technologies-used)
     - [Languages](#languages)
     - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
     - [Dependencies](#dependencies)
@@ -235,7 +235,36 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 
 ---
 
-## Technologies Used
+## Tools and Technologies Used:
+
+- **HTML5**
+- **CSS**
+- **Bootstrap v4.4**
+- **JavaScript**
+- **Python3**
+- **Django3.2**
+
+- [GitHub and Github Pages](https://github.com/) - used to securely store the code and to host and deploy the live project
+- [GitPod](https://www.gitpod.io/) - used as a cloud-based IDE for development
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - used for testing and troublshooting code, along with Lighthouse auditing
+- [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - used for front-end components and framework design
+- [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
+- [Coolors](https://coolors.co/) - used to generate a color palette for the website design
+<!-- - [Canva](https://www.canva.com/) - used to design and edit the card images, gifs and pdf resources used in the game -->
+- [FontJoy](https://fontjoy.com/) - used to generate visually appealing font pairings for  the website
+- [JSON formatter and validator](https://jsonformatter.org/) - used for formatting and validating JSON files
+- [CSV2JSON](https://csvjson.com/csv2json) - for converting CSV data from spreadsheet into JSON format
+<!-- - [JSHint](https://jshint.com/) - used to validate JS code
+- [Esprima](https://esprima.org/demo/validate.html) - used to validate JS syntax
+- [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML -->
+- [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS
+- [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files
+<!-- - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/) - used to create a mockup of the website -->
+- [RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
+<!-- - [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python code -->
+
+
 ### Languages
 ### Frameworks, Libraries and Programs
 ### Dependencies
