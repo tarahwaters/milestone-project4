@@ -82,18 +82,38 @@ ZIP: 42424
 ## Strategy
 ### Target Audience
 
+The target audience for the **nyreewaters art** shop are:
+
+- People who are interested in buying original / printed / bespoke pieces of collaged artwork for themselves, or for others
+- People who want to browse Nyree's collection of artwork
+- People who want to learn more about Nyree as an artist and designer
+
 ### User Requirements and Expectations
 
 - Simple and intuitive user interface
-- Clear presentation of necessary information to invite the user to join
-- Secure platform that uses a login system with username and password to access and manage personal posts
-- Quick and easy to search through existing posts
-- Quick and easy to create an account and start sharing posts with others
-- Quick and easy to add, edit or delete posts from the an account
-- Design that is visually attractive
-- Accessibility
+- Clear presentation of necessary information to invite the user to explore the page
 - Features and navigation system works as expected
+- Easy to navigate through products and look at reviews from other buyers before making a purchase
+- Make a secure purchase
+- Leave a review for a purchase
+- Find out more information based on frequently asked questions (ie. for delivery costs / refunds)
 
+**How the shop fulfils these expectations:**
+- Design that is visually attractive and matches the artist's style
+- Accessibility needs are met
+- Standard design conventions of a shop with regard to menus, checkout, categories, etc
+- Searching for products can be filtered or sorted based on what the user is looking for
+- Confirmation / error messages to help guide the user through the checkout process
+- User can create a secure profile to access their order details and leave a review
+
+### Business Goals
+
+The Business Goals of the **nyreewaters art** shop are:
+
+- Create a page that showcases Nyree's art products and aligns with her unique style
+- Encourage users to shop and learn more about Nyree as an artist, and her bespoke services
+- Encourage users to contact Nyree for more details / enquiries about her work
+- Showcase review highlights on the main homepage to encourage users to buy more items
 
 ### User Stories
 
