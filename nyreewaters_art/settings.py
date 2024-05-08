@@ -49,6 +49,10 @@ INSTALLED_APPS = [
     'products',
 ]
 
+TESTS = [
+    'products.tests.tests_views',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
