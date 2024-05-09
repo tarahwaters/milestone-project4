@@ -1,0 +1,1 @@
+web: gunicorn nyreewaters_art.wsgi:application
