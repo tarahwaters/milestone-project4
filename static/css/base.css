@@ -83,6 +83,16 @@ h1, h2, h3, h4, h5 {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+
+}
+
+a.category-badge {
+    font-size: 1.5rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
