@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Inter', 'san-serif';
 }
 
+.navbar-nav .nav-link {
+	color: pink !important;
+}
+
 /* #topnav {
     background-color: #EEACC4;
 } */
