@@ -1,0 +1,60 @@
+/* CREDIT - 
+    https://github.com/emmawalshdev/kaytea_art/blob/main/home/static/home/css/home.css
+*/
+
+/* category section */
+.home-shop {
+    background-color: #0095ff1a;
+}
+
+/* category cards */
+.home-category-wrapper {
+    height: 400px;
+    padding: 25px;
+}
+
+.card-img-top {
+    height: 24vw;
+}
+
+#category-img-1 {
+    background-image: url(#);
+}
+
+#category-img-2 {
+    background-image: url(#);
+}
+
+#category-img-3 {
+    background-image: url(#);
+}
+
+#category-img-4 {
+    background-image: url(#);
+}
+
+.home-category-img {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: 0.2s all ease-in-out 0.2s;
+    transition: 0.2s all ease-in-out 0.2s;
+    background-position: top;
+}
+
+.home-category-img:hover{ 
+    box-shadow: 4px 8px 8px rgb(189, 180, 180) !important;
+   -webkit-transition:  box-shadow .3s ease-in;
+ }
+
+.box-shadow {
+    -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 2px 4px rgb(0 0 0 / 23%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 2px 4px rgb(0 0 0 / 23%);
+}
+
+.category-title-wrapper {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
