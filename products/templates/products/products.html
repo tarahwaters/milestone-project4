@@ -33,9 +33,9 @@
             </div>
         </div>
     </section>
-    <!-- category button options -->
     <section>
         <div class="container-fluid">
+            <!-- category button options -->
             <div class="row">
                 <div class="col text-center mt-3 pb-2">
                     {% for all in all_categories %}
@@ -46,6 +46,29 @@
                     <a class="category-badge text-decoration-none" href="#">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">Bespoke</span>
                     </a>
+                </div>
+            </div>
+        
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- total products listed -->
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_categories or current_sorting != 'None_None' %}
+                            <span class="small"><a href="{% url 'products' %}?category=originals,prints"><strong>All Items</strong></a> | </span>
+                        {% endif %}
+                        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
                 </div>
             </div>
         </div>
