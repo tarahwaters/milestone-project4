@@ -305,6 +305,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Credits
 ### Code
+- [Emma Walsh](https://github.com/emmawalshdev) for shop layout inspiration and adapted code on homepage - [KayTea Art (Github repo)](https://github.com/emmawalshdev/kaytea_art/tree/main)
 ### Media
 ### Content
 ### Acknowledgements

@@ -1,10 +1,19 @@
-/* CREDIT - 
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #EA9F31;
+}
+
+/* CREDIT - shop section
     https://github.com/emmawalshdev/kaytea_art/blob/main/home/static/home/css/home.css
 */
 
 /* category section */
 .home-shop {
-    background-color: #0095ff1a;
+    background-color: #eadfce;
 }
 
 /* category cards */
@@ -56,5 +65,5 @@
 .category-title-wrapper {
     width: 100%;
     padding: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(229 84 60);
 }
