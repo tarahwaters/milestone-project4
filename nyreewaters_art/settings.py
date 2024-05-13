@@ -177,7 +177,7 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age-94608000',
     }
 
-    #Bucket Config
+    # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'nyreewaters-art'
     AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
