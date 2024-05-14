@@ -135,6 +135,10 @@ a.btt-link.d-flex.h-100 {
     text-decoration: none;
 }
 
+th {
+    text-align: center;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
