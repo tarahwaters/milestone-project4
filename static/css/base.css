@@ -126,7 +126,9 @@ a.category-badge {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-link {
     cursor: pointer;
     text-decoration: none;
 }
