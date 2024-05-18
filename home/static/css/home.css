@@ -18,38 +18,38 @@ a:hover {
 
 /* category cards */
 .home-category-wrapper {
-    height: 400px;
     padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .card-img-top {
     height: 24vw;
 }
 
-#category-img-1 {
-    background-image: url(#);
+#category-img-originals {
+    background-image: url(https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/myfavourite-orig-1080x1350px.webp);
 }
 
-#category-img-2 {
-    background-image: url(#);
+#category-img-prints {
+    background-image: url(https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/pool-print-1080x1350px.webp);
 }
 
-#category-img-3 {
-    background-image: url(#);
-}
-
-#category-img-4 {
+#category-img-bespoke {
     background-image: url(#);
 }
 
 .home-category-img {
-    height: 100%;
+    position: relative;
+    width: 100%;
+    padding-bottom: 125%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border-radius: 8px;
     -webkit-transition: 0.2s all ease-in-out 0.2s;
     transition: 0.2s all ease-in-out 0.2s;
-    background-position: top;
+    background-position: center;
 }
 
 .home-category-img:hover{ 
@@ -63,7 +63,23 @@ a:hover {
 }
 
 .category-title-wrapper {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     padding: 0.5rem;
     background-color: rgb(229 84 60);
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* 992px plus */
+@media screen and (min-width: 992px) {
+    .home-category-wrapper {
+        height: 600px;
+    }
+    /* .home-category-img {
+        height: 115%;
+    } */
 }
