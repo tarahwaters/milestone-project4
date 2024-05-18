@@ -1,15 +1,11 @@
 a {
-	color: black;
+    color: black;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #EA9F31;
+    text-decoration: none;
+    color: #EA9F31;
 }
-
-/* CREDIT - shop section
-    https://github.com/emmawalshdev/kaytea_art/blob/main/home/static/home/css/home.css
-*/
 
 /* category section */
 .home-shop {
@@ -28,6 +24,7 @@ a:hover {
     height: 24vw;
 }
 
+/* Category images */
 #category-img-originals {
     background-image: url(https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/myfavourite-orig-1080x1350px.webp);
 }
@@ -43,23 +40,19 @@ a:hover {
 .home-category-img {
     position: relative;
     width: 100%;
-    padding-bottom: 125%;
+    padding-bottom: 125%; /* Maintain aspect ratio */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 8px;
     -webkit-transition: 0.2s all ease-in-out 0.2s;
     transition: 0.2s all ease-in-out 0.2s;
     background-position: center;
 }
 
-.home-category-img:hover{ 
+.home-category-img:hover {
     box-shadow: 4px 8px 8px rgb(189, 180, 180) !important;
-   -webkit-transition:  box-shadow .3s ease-in;
- }
-
-.box-shadow {
-    -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 2px 4px rgb(0 0 0 / 23%);
-    box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 2px 4px rgb(0 0 0 / 23%);
+    -webkit-transition: box-shadow .3s ease-in;
+    transition: box-shadow .3s ease-in;
 }
 
 .category-title-wrapper {
@@ -71,12 +64,17 @@ a:hover {
     text-align: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 2px 4px rgb(0 0 0 / 23%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 16%), 0 2px 4px rgb(0 0 0 / 23%);
 }
 
 /* 992px plus */
 @media screen and (min-width: 992px) {
     .home-category-wrapper {
-        height: 600px;
+        max-width: 600px; /* Adjust based on your design preference */
     }
 }
