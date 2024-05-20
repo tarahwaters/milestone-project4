@@ -37,3 +37,19 @@ def adjust_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 
+def remove_from_bag(request, item_id):
+    """Remove the selected item from the shopping bag"""
+    quantity = int(request.POST.get('quantity'))
+    bag = request.session.get('bag', {})
+
+    try:
+        bag = request.session.get('bag', {})
+        bag.pop(item_id)
+        
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
+
+
