@@ -39,8 +39,6 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the selected item from the shopping bag"""
-    quantity = int(request.POST.get('quantity'))
-    bag = request.session.get('bag', {})
 
     try:
         bag = request.session.get('bag', {})
