@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost', '8000-tarahwaters-milestonepr-yu8ehnrtdc5.ws-eu111.gitpod.io', 'nyreewaters-art-ccb67c4ebd7f.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '8000-tarahwaters-milestonepr-yu8ehnrtdc5.ws-eu114.gitpod.io', 'nyreewaters-art-ccb67c4ebd7f.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
