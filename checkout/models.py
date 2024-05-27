@@ -1,4 +1,14 @@
+# uuid generates order number
+import uuid
+
 from django.db import models
+from django.db.models import Sum
+from django.conf import settings
+
+# django countries dropdown
+from django_countries.fields import CountryField
+
+from products.models import Product
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
