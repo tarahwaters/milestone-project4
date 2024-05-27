@@ -77,4 +77,4 @@ class OrderLineItem(models.Model):
         and update the order total
         """
         self.lineitem_total = self.product.price * self.quantity
-        super()save.(*args, **kwargs)
+        super().save(*args, **kwargs)
