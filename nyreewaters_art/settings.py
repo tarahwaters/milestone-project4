@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 
     # Other
     'storages',
+    'crispy_forms',
 ]
 
 TESTS = [
@@ -72,6 +73,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'nyreewaters_art.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -89,6 +92,10 @@ TEMPLATES = [
                 'bag.contexts.bag_contents',
                 'django.template.context_processors.media',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
