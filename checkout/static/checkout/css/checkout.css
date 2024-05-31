@@ -1,3 +1,14 @@
 .fieldset-label {
     font-weight: 600;
 }
+
+a.text-info {
+    color: #bfae5a !important;
+    font-weight: 700;
+    font-family: 'Inter';
+    letter-spacing: 0.05rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
