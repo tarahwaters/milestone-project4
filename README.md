@@ -235,6 +235,8 @@ The following logo was used from Nyree's original website:
 
 ![nyreewaters art colorscheme](/documentation/readme/nyreewaters-colorscheme.png "nyreewaters art colorscheme")
 
+color contrast check - [coloors color contrast checker](https://coolors.co/contrast-checker/332e14-e5ffc8)
+
 ### Typography
 
 With reference to Nyree's [main website](https://nyreewaters.com) and her font styling preferences, we searched for font pairings that matched.
@@ -270,7 +272,7 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 - [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - used for front-end components and framework design
 - [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
-- [Coolors](https://coolors.co/) - used to generate a color palette for the website design
+- [Coolors](https://coolors.co/) - used to generate a color palette for the website design and to check contrast of colors
 <!-- - [Canva](https://www.canva.com/) - used to design and edit the card images, gifs and pdf resources used in the game -->
 - [FontJoy](https://fontjoy.com/) - used to generate visually appealing font pairings for  the website
 - [JSON formatter and validator](https://jsonformatter.org/) - used for formatting and validating JSON files
