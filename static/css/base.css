@@ -13,11 +13,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar .nav-link p,
-.navbar-nav .nav-link {
-	color: pink !important;
+.navbar-nav .nav-link,
+.nav-icon-label {
+	color: #332E14 !important;
 	font-family: 'Inter', 'san-serif';
 	font-weight: 600;
 	letter-spacing: 0.05rem;
+}
+
+.navbar {
+    background-color: #E5FFC8;
 }
 
 /* from Bulma */
