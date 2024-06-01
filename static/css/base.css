@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5 {
     background-color: #E5FFC8;
 }
 
+.text-info {
+        color: #E5543C !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
