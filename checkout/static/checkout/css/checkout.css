@@ -1,5 +1,7 @@
 .fieldset-label {
     font-weight: 600;
+    position: relative;
+    right: .5rem;
 }
 
 a.text-info {
@@ -11,4 +13,10 @@ a.text-info {
 
 a:hover {
     text-decoration: none;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
 }
