@@ -26,9 +26,34 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-7"></div>
+            <!-- Order Summary -->
+            <div class="col-12 col-lg-7">
+                <div class="order-confirmation-wrapper p-2 border">
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Order Info:</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Order Details:</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Delivering To:</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Billing Info:</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
+            <!-- Return Button -->
 			<div class="col-12 col-lg-7 text-right">
 				<a href="{% url 'products' %}?sort=price&direction=asc" class="btn btn-black rounded-0 my-2">
 					<span class="icon mr-2">
