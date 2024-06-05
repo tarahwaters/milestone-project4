@@ -19,3 +19,4 @@ pyuca==1.2
 requests-oauthlib==2.0.0
 s3transfer==0.10.1
 sqlparse==0.5.0
+stripe==9.9.0
