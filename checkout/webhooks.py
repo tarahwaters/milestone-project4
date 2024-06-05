@@ -7,6 +7,8 @@ from checkout.webhook_handler import StripeWH_Handler
 
 import Stripe
 
+@require_POST
+@csrf_exempt
 def webhook(request):
     """ Listen for webhooks from Stripe """
     payload = request.body
