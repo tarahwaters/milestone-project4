@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost', '8000-tarahwaters-milestonepr-yu8ehnrtdc5.ws-eu114.gitpod.io', 'nyreewaters-art-ccb67c4ebd7f.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '8000-tarahwaters-milestonepr-pv9m1cpuyy5.ws.codeinstitute-ide.net', '127.0.0.1']
 
 
 # Application definition
@@ -69,7 +69,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
+
+# CSRF_TRUSTED_ORIGINS = ['http://8000-tarahwaters-milestonepr-pv9m1cpuyy5.ws.codeinstitute-ide.net']
 
 ROOT_URLCONF = 'nyreewaters_art.urls'
 
