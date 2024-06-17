@@ -56,7 +56,31 @@ form.addEventListener('submit', function(ev) {
     stripe.confirmCardPayment(client_secret, {
         payment_method: {
             card: card,
-        }
+            billing_details: {
+                name: `${$.trim(form.first_name.value)} ${$.trim(form.last_name.value)}`,
+                email: $.trim(form.email.value),
+                phone: $.trim(form.mobile_number.value),
+                address: {
+                    line1: $.trim(form.address_line1.value),
+                    line2: $.trim(form.address_line2.value),
+                    city: $.trim(form.town_or_city.value),
+                    state: $.trim(form.county.value),
+                    country: $.trim(form.country.value),
+                }
+            }
+        },
+        shipping: {
+            name: `${$.trim(form.first_name.value)} ${$.trim(form.last_name.value)}`,
+            phone: $.trim(form.mobile_number.value),
+            address: {
+                line1: $.trim(form.address_line1.value),
+                line2: $.trim(form.address_line2.value),
+                city: $.trim(form.town_or_city.value),
+                state: $.trim(form.county.value),
+                country: $.trim(form.country.value),
+                postal_code: $.trim(form.postcode.value),
+            }
+        },
     }).then(function(result) {
         if (result.error) {
             // Shows error to the customer (e.g. insufficient funds)
