@@ -46,7 +46,9 @@
                                 {% if item.product.image %}
                                     <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
-                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <a href="{% url 'product_detail' item.product.id %" title="Animated Icon by Freepik - Flaticon">
+                                        <img class="w-100" src="{{ MEDIA_URL }}no-photo.gif" alt="{{ product.name }}">
+                                    </a>
                                 {% endif %}
                             </a>
                         </div>

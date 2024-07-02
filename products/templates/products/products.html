@@ -88,8 +88,8 @@
                                         <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }}">
                                     </a>
                                     {% else %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <a href="{% url 'product_detail' product.id %}" title="Animated Icon by Freepik - Flaticon">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-photo.gif" alt="{{ product.name }}">
                                     </a>
                                 {% endif %}
                                 <!-- product details -->

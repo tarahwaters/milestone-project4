@@ -23,7 +23,9 @@
                             {% if item.product.image %}
                             <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            <a href="https://www.flaticon.com/free-animated-icons/no-camera" title="Animated Icon by Freepik - Flaticon">
+                                <img class="w-100" src="{{ MEDIA_URL }}no-photo.gif" alt="{{ item.product.name }}">
+                            </a>
                             {% endif %}
                         </div>
                         <div class="col-9">
