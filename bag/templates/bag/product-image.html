@@ -1,0 +1,7 @@
+{% if item.product.image %}
+<img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+{% else %}
+<a href="https://www.flaticon.com/free-animated-icons/no-camera" title="Animated Icon by Freepik - Flaticon">
+    <img class="img-fluid rounded" src="{{ MEDIA_URL }}no-photo.gif" alt="{{ item.product.name }}">
+</a>
+{% endif %}
