@@ -400,3 +400,10 @@ th {
         padding: .25rem .5rem !important;
     }
 }
+
+@media (max-width: 330px) {
+	.btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+		font-size: .7rem;
+    }
+}
