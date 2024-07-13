@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5 {
 	color: #332E14 !important;
 	font-family: 'Inter', 'san-serif';
 	font-weight: 600;
-	letter-spacing: 0.05rem;
 }
 
 .navbar {
@@ -383,7 +382,7 @@ th {
     }
     
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: 1rem;
     }
     
     .btn.btn-outline-black.rounded-0,
