@@ -33,5 +33,12 @@
         "answer": "We accept various payment methods including credit/debit cards, PayPal, and other major payment processors. You can choose your preferred payment method at checkout.",
         "category": "Payments",
         "created_at": "2024-07-14T12:00:00Z"
+    },
+    {
+        "id": 6,
+        "question": "HWAT IS YOUR RETURNS POLICY?",
+        "answer": "You can return any item within 30 days of purchase.",
+        "category": "Returns",
+        "created_at": "2024-07-14"
     }
 ]
