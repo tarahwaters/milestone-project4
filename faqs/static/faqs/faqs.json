@@ -1,37 +1,37 @@
 [
     {
         "id": 1,
-        "question": "What is the return policy for artworks?",
-        "answer": "We accept returns within 30 days of purchase. The artwork must be in its original condition and packaging. Please contact our support team for return instructions.",
-        "category": "Returns",
-        "created_at": "2024-01-15T08:30:00Z"
+        "question": "HOW WILL MY ORDER BE PACKAGED/POSTED?",
+        "answer": "All orders are packed using 100% recyclable and plastic free packaging. UK and International orders are shipped using Royal Mail Tracked 48 Service, and you will receive a dispatch email with tracking information when your order has been sent.",
+        "category": "Postage",
+        "created_at": "2024-07-14T08:30:00Z"
     },
     {
         "id": 2,
-        "question": "Do you offer international shipping?",
-        "answer": "Yes, we ship internationally. Shipping costs are calculated at checkout based on your location. Please ensure that you provide accurate shipping information.",
-        "category": "Shipping",
-        "created_at": "2024-01-20T09:00:00Z"
+        "question": "CAN I ORDER A GIFT TO SEND DIRECTLY TO A FRIEND?",
+        "answer": "Of course! Just leave your message in the 'notes' section at the checkout, and I will hand write it onto a notecard and pop it in with your order.",
+        "category": "Order",
+        "created_at": "2024-07-14T09:00:00Z"
     },
     {
         "id": 3,
-        "question": "How can I track my order?",
-        "answer": "Once your order has been shipped, you will receive a tracking number via email. You can use this number to track your shipment through our shipping partner's website.",
-        "category": "Shipping",
-        "created_at": "2024-01-22T10:00:00Z"
+        "question": "CAN I ORDER SOMETHING MORE BESPOKE FROM YOU?",
+        "answer": "Absolutely! If you’re looking for more bespoke and one-off artwork, please see the bespoke contact page.",
+        "category": "Order",
+        "created_at": "2024-07-14T10:00:00Z"
     },
     {
         "id": 4,
-        "question": "Can I customize a piece of artwork?",
-        "answer": "Yes, we offer customization options for many of our artworks. Please contact the artist directly through our platform to discuss your customization needs.",
+        "question": "I'M A STORE OWNER, DO YOU HAVE A WHOLESALE LINE SHEET?",
+        "answer": "Yes I do! Please email me at : nyreewaters.art@gmail.com and I will send it over!",
         "category": "Products",
-        "created_at": "2024-01-25T11:00:00Z"
+        "created_at": "2024-07-14T11:00:00Z"
     },
     {
         "id": 5,
-        "question": "What payment methods do you accept?",
+        "question": "WHAT PAYMENT METHODS DO YOU ACCEPT?",
         "answer": "We accept various payment methods including credit/debit cards, PayPal, and other major payment processors. You can choose your preferred payment method at checkout.",
         "category": "Payments",
-        "created_at": "2024-01-30T12:00:00Z"
+        "created_at": "2024-07-14T12:00:00Z"
     }
 ]
