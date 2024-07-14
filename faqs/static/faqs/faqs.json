@@ -23,7 +23,7 @@
     {
         "id": 4,
         "question": "I'M A STORE OWNER, DO YOU HAVE A WHOLESALE LINE SHEET?",
-        "answer": "Yes I do! Please email me at : nyreewaters.art@gmail.com and I will send it over!",
+        "answer": "Yes I do! Please email me at: nyreewaters.art@gmail.com and I will send it over!",
         "category": "Products",
         "created_at": "2024-07-14T11:00:00Z"
     },
@@ -36,9 +36,9 @@
     },
     {
         "id": 6,
-        "question": "HWAT IS YOUR RETURNS POLICY?",
+        "question": "WHAT IS YOUR RETURNS POLICY?",
         "answer": "You can return any item within 30 days of purchase.",
         "category": "Returns",
-        "created_at": "2024-07-14"
+        "created_at": "2024-07-14T13:00:00Z"
     }
 ]
