@@ -133,65 +133,24 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
-    document.querySelectorAll('.quantity-form').forEach(form => {
-        const decrementButton = form.querySelector('.decrement-qty');
-        const incrementButton = form.querySelector('.increment-qty');
-        const quantityInput = form.querySelector('.qty_input');
-        const updateLink = form.nextElementSibling.querySelector('.update-link');
-        const removeItemButton = form.nextElementSibling.nextElementSibling;
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
 
-        // Disable decrement button if quantity is 1
-        if (quantityInput.value <= 1) {
-            decrementButton.disabled = true;
-        }
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
-        // Listen for clicks on decrement button
-        decrementButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (quantityInput.value > 1) {
-                quantityInput.value--;
-                if (quantityInput.value <= 1) {
-                    decrementButton.disabled = true;
-                }
-            }
-        });
-
-        // Listen for clicks on increment button
-        incrementButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            quantityInput.value++;
-            if (quantityInput.value > 1) {
-                decrementButton.disabled = false;
-            }
-        });
-
-        // Update quantity on click
-        updateLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            form.submit();
-        });
-
-        // Remove item and reload on click
-        removeItemButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            const csrfToken = "{{ csrf_token }}";
-            const itemId = this.id.split('remove_')[1];
-            const url = `/bag/remove/${itemId}/`;
-            const data = {'csrfmiddlewaretoken': csrfToken};
-
-            fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: new URLSearchParams(data)
-            })
-            .then(response => {
-                if (response.ok) {
-                    location.reload();
-                }
-            });
-        });
-    });
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
 </script>
 {% endblock %}
