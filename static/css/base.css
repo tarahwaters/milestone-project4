@@ -155,6 +155,7 @@ a.category-badge {
 
 a.btt-link.d-flex.h-100 {
     text-decoration: none;
+    background-color: #E5543C;
 }
 
 a:hover {
