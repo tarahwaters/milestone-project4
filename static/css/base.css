@@ -150,6 +150,7 @@ a.category-badge {
 .remove-item {
     cursor: pointer;
     text-decoration: none;
+    font-weight: 700;
 }
 
 a.btt-link.d-flex.h-100 {
