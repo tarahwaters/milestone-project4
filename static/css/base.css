@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5 {
 
 .heading-text {
     text-transform: lowercase;
+    text-align: center;
 }
 
 .main-logo-link {
