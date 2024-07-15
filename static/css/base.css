@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
     width: 1.5rem;
 }
 
-.logo-font {
+.heading-text {
     text-transform: lowercase;
 }
 
@@ -364,7 +364,7 @@ th {
         padding-top: 2rem;
     }
 
-    .display-4.logo-font.text-black {
+    .display-4.heading-text.text-black {
         font-size: 1rem;
     }
 
