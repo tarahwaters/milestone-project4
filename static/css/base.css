@@ -83,14 +83,12 @@ h1, h2, h3, h4, h5 {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #fff;
+    color: #000;
+	border: 1px solid black;
 }
 
 .text-black {
