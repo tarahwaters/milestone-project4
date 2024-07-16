@@ -60,23 +60,20 @@ h1, h2, h3, h4, h5 {
     background: black;
     color: white;
     min-width: 260px;
+    font-weight: bold;
 }
 
 .btn-black {
     background: black;
     color: white;
+    font-weight: bold;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important;
     border: 1px solid black;
-}
-
-.btn-outline-black {
-    background: white;
-    color: black !important;
-    border: 1px solid black;
+    font-weight: bold;
 }
 
 .btn-outline-black:hover,
@@ -143,6 +140,7 @@ a.category-badge {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    font-weight: bold;
 }
 
 .btt-link,
@@ -165,6 +163,10 @@ a:hover {
 
 th {
     text-align: center;
+}
+
+label {
+	font-weight: bold;
 }
 
 /* -------------------------------- Order Confirmation / Checkout Success */
