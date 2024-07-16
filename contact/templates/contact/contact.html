@@ -5,7 +5,7 @@
 {% block extra_title %} - Contact{% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}" />
 {% endblock %}
 
 {% block page_header %}
@@ -38,11 +38,11 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-8">
-                <form method="POST" action="" class="form mb-2">
+                <form method="POST" action="" class="contact-form form mb-2">
                     {% csrf_token %}
                     {% crispy form %}
                     <div class="text-center">
-                        <button class="btn btn-md w-100 mt-3 mt-sm-4" type="submit">Submit</button>
+                        <button class="btn btn-black mb-3 mt-3 mt-sm-4" type="submit">submit</button>
                     </div>
                 </form>
             </div>
