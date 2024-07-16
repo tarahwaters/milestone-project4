@@ -415,13 +415,13 @@ label {
         font-size: 1rem;
     }
     
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-black.,
+    .btn.btn-black. {
         padding: .375rem .375rem;
     }
     
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-black..btn-lg,
+    .btn.btn-black..btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -432,8 +432,8 @@ label {
 }
 
 @media (max-width: 330px) {
-	.btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+	.btn.btn-outline-black..btn-lg,
+    .btn.btn-black..btn-lg {
 		font-size: .7rem;
     }
 }
