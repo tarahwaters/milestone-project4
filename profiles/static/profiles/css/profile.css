@@ -19,3 +19,14 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.profile-form {
+    background-color: #EADFCE;
+    padding: 1.5rem;
+    height: 35rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: bold;
+}
