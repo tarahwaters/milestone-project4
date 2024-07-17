@@ -310,6 +310,10 @@ label {
 	color: #35CCCF;
 }
 
+.footer a {
+	color: #343a40;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
