@@ -22,13 +22,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h1 class="heading-text">get in touch.</h1>
+                <h1 class="heading-text">get in touch</h1>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-7">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
                 <h2>have any questions?</h2>
                 <p>
                     or if you’re interested in connecting / collaborating / commissions, 
@@ -36,7 +36,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <form method="POST" action="" class="contact-form form mb-2">
                     {% csrf_token %}
@@ -45,9 +45,6 @@
                         <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
                     </div>
                 </form>
-            </div>
-            <div class="col-12 col-md-4 my-auto">
-                <!-- Optional content for the right column -->
             </div>
         </div>
     </div>
