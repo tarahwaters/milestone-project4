@@ -167,6 +167,12 @@ label {
 	font-weight: bold;
 }
 
+.form-color-bg {
+	background-color: #EADFCE;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+}
+
 /* -------------------------------- Order Confirmation / Checkout Success */
 
 .order-confirmation-wrapper {

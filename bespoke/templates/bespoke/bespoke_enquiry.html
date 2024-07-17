@@ -39,10 +39,12 @@
                     The process of making these collages is a collaborative one, led by you, 
                     so feel free to give me as much information / inspiration as you like by answering the questions below. 
                 </p>
-                <form method="POST" class="form-horizontal">
+                <form method="POST" class="form-horizontal form-color-bg">
                     {% csrf_token %}
                     {% crispy form %}
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="text-center">
+                        <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
+                    </div>
                 </form>
             </div>
         </div>
