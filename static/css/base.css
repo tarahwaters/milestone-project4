@@ -257,6 +257,7 @@ label {
 
 /*--------------------------------- Footer */
 
+
 .footer {
     background-color: #f8f9fa;
     padding: 20px 0;
@@ -278,7 +279,9 @@ label {
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
+	color: #343a40 !important;
 }
 
 .social-media-icons a {
@@ -289,12 +292,16 @@ label {
 }
 
 .social-media-icons a:hover {
-    color: #007bff;
+    color: #35CCCF;
 }
 
 .footer p {
     margin: 5px 0;
 	font-size: 0.8rem;
+}
+
+.footer p a:hover {
+	color: #35CCCF;
 }
 
 /* -------------------------------- Media Queries */
