@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extra_title %} - Bespoke Enquiry{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <!-- page title -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h1 class="heading-text">bespoke collage enquiry</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Hopes / Dreams / Wishes</h2>
+                <p>product description:
+                </p>
+                <p>‘Hopes / Dreams / Wishes’ - a bespoke, one-off collage made uniquely for you or a special gift for someone you love.<br>
+                    These pieces are a collection of mini collages, intuitively made to order using recycled materials + a lot of love. 
+                    Each mini collage is a visual, abstract representation of a hope / dream / wish for the future. 
+                    I use the details you give me as a guide + trust where it takes me!<br>
+                    The process of making these collages is a collaborative one, led by you, 
+                    so feel free to give me as much information / inspiration as you like by answering the questions below. 
+                    </p>
+                <form method="POST" class="form-horizontal">
+                    {% csrf_token %}
+                    {% crispy form %}
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
