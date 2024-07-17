@@ -255,6 +255,48 @@ label {
     overflow-y: auto;
 }
 
+/*--------------------------------- Footer */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-logo img {
+    margin-bottom: 0rem;
+}
+
+.footer-links {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: #343a40;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media-icons a {
+    color: #343a40;
+    text-decoration: none;
+    margin-right: 0.05rem;
+    font-size: 1.2rem;
+}
+
+.social-media-icons a:hover {
+    color: #007bff;
+}
+
+.footer p {
+    margin: 5px 0;
+	font-size: 0.8rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

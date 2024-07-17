@@ -142,6 +142,48 @@
 
         {% block content %}
         {% endblock %}
+        <!-- footer -->
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center footer-logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{{ MEDIA_URL }}nyreewaters-logo.webp" alt="nyreewaters brand logo" height="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col text-center">
+                        <ul class="footer-links list-inline">
+                            <li class="list-inline-item"><a href="#">about</a></li>
+                            <li class="list-inline-item"><a href="{% url 'faq_list' %}">FAQs</a></li>
+                            <li class="list-inline-item"><a href="{% url 'products' %}?category=originals">originals</a></li>
+                            <li class="list-inline-item"><a href="{% url 'products' %}?category=prints">prints</a></li>
+                            <li class="list-inline-item"><a href="#">bespoke</a></li>
+                            <li class="list-inline-item"><a href="{% url 'contact' %}">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col text-center">
+                        <ul class="social-media-icons list-inline">
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://nyreewaters.com" target="_blank"><i class="fas fa-globe"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col text-center">
+                        <p>© 2024 nyreewaters</p>
+                        <p>webdevelopment by tarah waters 
+                            <a href="https://github.com/tarahwaters" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/tarahwaters" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         {% block postloadjs %}
         <script type="text/javascript">
