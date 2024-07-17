@@ -149,8 +149,15 @@ a.category-badge {
     font-weight: 700;
 }
 
+/* scroll up to top button */
 a.btt-link.d-flex.h-100 {
     text-decoration: none;
+    background-color: #fff;
+}
+
+a.btt-link.d-flex.h-100:hover,
+a.btt-link.d-flex.h-100:active,
+a.btt-link.d-flex.h-100:focus {
     background-color: #E5543C;
 }
 
