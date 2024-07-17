@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - About{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section class="about-intro container text-center py-4 py-md-5">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="bio-image-div">
+                <img src="{{ MEDIA_URL }}nyree-about-image-1920x1080px-72dpi.webp" class="bio-image" alt="nyree waters bio image"/>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 bio-text">
+            <h1>nyree waters</h1>
+            <p class="lead pt-3">artist / designer</p>
+            <div class="col text-center py-2">
+                <ul class="social-media-icons list-inline">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/nyree_____waters/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="https://nyreewaters.com" target="_blank"><i class="fas fa-globe"></i></a></li>
+                </ul>
+            </div>
+            <p>Nyree is an abstract artist, specialising in collage.</p>
+            <p>
+                Nyree grew up on the coast of North Wales before heading up to Scotland to study a degree
+                in Illustration at Edinburgh College of Art. She currently lives in Manchester + works 
+                freelance as an artist / musician / creative facilitator.
+            </p>
+            <p>
+                <em>* incase you’re wondering,
+                it’s pronounced ‘n-eye-ree’</em>
+            </p>
+        </div>
+    </div>
+    <!-- additional content -->
+    <div class="row">
+        <div class="col-12">
+            <h2>more about nyree</h2>
+            <p>additional information about nyree's work, achievements, and exhibitions...</p>
+            <!-- add more details or images as needed -->
+        </div>
+    </div>
+</section>
+{% endblock %}
