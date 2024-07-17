@@ -4,7 +4,7 @@
 {% block extra_title %} - Home{% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+<link rel="stylesheet" href="{% static 'css/home-about.css' %}" />
 {% endblock %}
 
 {% block page_header %}
@@ -70,10 +70,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4 home-category-wrapper">
+                <div class="col-12 col-md-4 category-wrapper">
                     <a href="{% url 'products' %}?category=originals">
                         <div id="category-img-originals"
-                            class="home-category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
+                            class="category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
                             title="original_collages">
                             <div class="category-title-wrapper text-center">
                                 <h3>originals</h3>
@@ -81,10 +81,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 home-category-wrapper">
+                <div class="col-12 col-md-4 category-wrapper">
                     <a href="{% url 'products' %}?category=prints">
                         <div id="category-img-prints"
-                            class="home-category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
+                            class="category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
                             title="prints">
                             <div class="category-title-wrapper text-center">
                                 <h3>prints</h3>
@@ -92,10 +92,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 home-category-wrapper">
+                <div class="col-12 col-md-4 category-wrapper">
                     <a href="{% url 'bespoke_enquiry' %}">
                         <div id="category-img-bespoke"
-                            class="home-category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
+                            class="category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
                             title="bespoke">
                             <div class="category-title-wrapper text-center">
                                 <h3>bespoke</h3>

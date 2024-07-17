@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home-about.css' %}" />
+{% endblock %}
+
 {% block extra_title %} - About{% endblock %}
 
 {% block page_header %}
@@ -12,41 +16,80 @@
 {% endblock %}
 
 {% block content %}
-<section class="about-intro container text-center py-4 py-md-5">
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="bio-image-div">
-                <img src="{{ MEDIA_URL }}nyree-about-image-1920x1080px-72dpi.webp" class="bio-image" alt="nyree waters bio image"/>
+    <section class="about-intro container text-center py-4 py-md-5">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="bio-image-div">
+                    <img src="{{ MEDIA_URL }}nyree-about-image-1920x1080px-72dpi.webp" class="bio-image" alt="nyree waters bio image"/>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 bio-text">
+                <h1>nyree waters</h1>
+                <p class="lead pt-3">artist / designer</p>
+                <div class="col text-center py-2">
+                    <ul class="social-media-icons list-inline">
+                        <li class="list-inline-item"><a href="https://www.instagram.com/nyree_____waters/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://nyreewaters.com" target="_blank"><i class="fas fa-globe"></i></a></li>
+                    </ul>
+                </div>
+                <p>Nyree is an abstract artist, specialising in collage.</p>
+                <p>
+                    Nyree grew up on the coast of North Wales before heading up to Scotland to study a degree
+                    in Illustration at Edinburgh College of Art. She currently lives in Manchester + works 
+                    freelance as an artist / musician / creative facilitator.
+                </p>
+                <p>
+                    <em>* incase you’re wondering,
+                    it’s pronounced ‘n-eye-ree’</em>
+                </p>
             </div>
         </div>
-        <div class="col-12 col-lg-6 bio-text">
-            <h1>nyree waters</h1>
-            <p class="lead pt-3">artist / designer</p>
-            <div class="col text-center py-2">
-                <ul class="social-media-icons list-inline">
-                    <li class="list-inline-item"><a href="https://www.instagram.com/nyree_____waters/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://nyreewaters.com" target="_blank"><i class="fas fa-globe"></i></a></li>
-                </ul>
+    <section class="about-extra py-4 py-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>More About Nyree</h2>
+                </div>
             </div>
-            <p>Nyree is an abstract artist, specialising in collage.</p>
-            <p>
-                Nyree grew up on the coast of North Wales before heading up to Scotland to study a degree
-                in Illustration at Edinburgh College of Art. She currently lives in Manchester + works 
-                freelance as an artist / musician / creative facilitator.
-            </p>
-            <p>
-                <em>* incase you’re wondering,
-                it’s pronounced ‘n-eye-ree’</em>
-            </p>
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <p class="lead">
+                        <strong>Discover more about Nyree's work and creative endeavors.</strong>
+                    </p>
+                    <p>
+                        Explore Nyree's various creative fields and find out more about her contributions to each area.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 category-wrapper">
+                    <div id="category-img-music"
+                        class="category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
+                        title="music">
+                        <div class="category-title-wrapper text-center">
+                            <h3>Music</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 category-wrapper">
+                    <div id="category-img-art"
+                        class="category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
+                        title="art">
+                        <div class="category-title-wrapper text-center">
+                            <h3>Art</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 category-wrapper">
+                    <div id="category-img-facilitation"
+                        class="category-img d-flex align-items-end box-shadow sm-box-shadow-hover"
+                        title="facilitation">
+                        <div class="category-title-wrapper text-center">
+                            <h3>Facilitation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- additional content -->
-    <div class="row">
-        <div class="col-12">
-            <h2>more about nyree</h2>
-            <p>additional information about nyree's work, achievements, and exhibitions...</p>
-            <!-- add more details or images as needed -->
-        </div>
-    </div>
-</section>
+    </section>    
 {% endblock %}

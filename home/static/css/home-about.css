@@ -8,12 +8,13 @@ a:hover {
 }
 
 /* category section */
-.home-shop {
+.home-shop,
+.about-extra {
     background-color: #eadfce;
 }
 
 /* category cards */
-.home-category-wrapper {
+.category-wrapper {
     padding: 25px;
     width: 100%;
     max-width: 400px;
@@ -37,7 +38,7 @@ a:hover {
     background-image: url(#);
 }
 
-.home-category-img {
+.category-img {
     position: relative;
     width: 100%;
     padding-bottom: 125%; /* Maintain aspect ratio */
@@ -49,7 +50,7 @@ a:hover {
     background-position: center;
 }
 
-.home-category-img:hover {
+.category-img:hover {
     box-shadow: 4px 8px 8px rgb(189, 180, 180) !important;
     -webkit-transition: box-shadow .3s ease-in;
     transition: box-shadow .3s ease-in;
@@ -74,7 +75,7 @@ a:hover {
 
 /* 992px plus */
 @media screen and (min-width: 992px) {
-    .home-category-wrapper {
+    .category-wrapper {
         max-width: 600px; /* Adjust based on your design preference */
     }
 }
