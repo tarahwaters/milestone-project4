@@ -47,9 +47,14 @@ h1, h2, h3, h4, h5 {
     width: 1.5rem;
 }
 
-.heading-text {
+.heading-text,
+#delivery-banner {
     text-transform: lowercase;
     text-align: center;
+}
+
+.heading-text {
+    padding: 1.5rem 0;
 }
 
 .main-logo-link {
