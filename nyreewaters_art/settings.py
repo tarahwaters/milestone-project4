@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'profiles',
     'faqs',
     'contact',
+    'bespoke',
 
     # Other
     'storages',
