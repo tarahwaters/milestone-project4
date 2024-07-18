@@ -38,7 +38,7 @@ a:hover {
     height: 24vw;
 }
 
-/* Category images */
+/* Home Category images */
 #category-img-originals {
     background-image: url(https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/myfavourite-orig-1080x1350px.webp);
 }
@@ -49,6 +49,19 @@ a:hover {
 
 #category-img-bespoke {
     background-image: url(https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/full-bespoke-1080x1350px.webp);
+}
+
+/* About Category images */
+#category-img-music {
+    background-image: url("https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/music2-image-1350x1080px.webp");
+}
+
+#category-img-art {
+    background-image: url("https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/design-image-1350x1080px.webp");
+}
+
+#category-img-writing {
+    background-image: url("https://nyreewaters-art.s3.eu-west-2.amazonaws.com/media/writing-image-1350x1080px.webp");
 }
 
 .category-img {
