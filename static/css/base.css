@@ -429,18 +429,6 @@ label {
         height: calc(100vh - 8rem);
     }
 
-    .home-intro {
-        padding-top: 10rem !important;
-    }
-
-        .bio-image-div img {
-        max-width: 90%;
-    }
-
-    .bio-text {
-        padding-top: 2rem;
-    }
-
     .display-4.heading-text.text-black {
         font-size: 1rem;
     }

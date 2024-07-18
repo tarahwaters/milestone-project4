@@ -8,11 +8,11 @@ a:hover {
 }
 
 .bio-image-div img {
-    max-width: -webkit-fill-available;
+    max-width: 100%;
 }
 
 .about-image-div img {
-    height: fit-content;
+    max-width: 60%;
 }
 
 .bio-text {
@@ -90,5 +90,16 @@ a:hover {
 @media screen and (min-width: 992px) {
     .category-wrapper {
         max-width: 600px; /* Adjust based on your design preference */
+    }
+}
+
+/* mobile devices < 992px */
+@media screen and (max-width: 992px) {
+    .bio-image-div img {
+        max-width: 90%;
+        }
+    
+    .bio-text {
+        padding-top: 2rem;
     }
 }
