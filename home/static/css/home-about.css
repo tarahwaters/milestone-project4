@@ -7,6 +7,18 @@ a:hover {
     color: #FFFF;
 }
 
+.bio-image-div img {
+    max-width: -webkit-fill-available;
+}
+
+.about-image-div img {
+    height: fit-content;
+}
+
+.bio-text {
+    margin: auto;
+}
+
 /* category section */
 .home-shop,
 .about-extra {
