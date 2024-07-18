@@ -61,10 +61,6 @@ h1, h2, h3, h4, h5 {
     width: fit-content;
 }
 
-.home-shop {
-	border-top: 3px dashed #000;
-}
-
 .btn-black {
     background: black;
     color: white;
