@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - About{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home-about.css' %}" />
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- page title -->
+    <section class="container text-center py-2 py-md-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    Server Error 500
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <p>
+                    Sorry! Something went wrong on our end.
+                </p>
+                <a href="https://www.flaticon.com/free-animated-icons/error" title="Animated Icon by Freepik - Flaticon">Error animated icons created by Freepik - Flaticon</a>
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}warning.gif" alt="Animated warning of a computer screen with exclamation mark">
+                </a>
+                <a href="{% url 'home' %}" class="mt-3 mt-sm-4 btn btn-black">Back to home page</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
