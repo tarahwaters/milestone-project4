@@ -11,5 +11,4 @@ def trigger_404(request):
     raise Http404("This is a test 404 error")
 
 def trigger_500(request):
-    # This will trigger a 500 error by dividing by zero
     1 / 0
