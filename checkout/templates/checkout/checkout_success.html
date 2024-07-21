@@ -29,8 +29,8 @@
                     A confirmation email will be sent to <strong>{{ order.email }}</strong>.<br>
                 </p>
                 <p class="text-black">
-                    Please see the <a href="#">FAQs</a> page for more details about delivery and returns,
-                    or feel free to <a href="#">contact me</a> if you have any questions.
+                    Please see the <a href="{% url 'faq_list' %}">FAQs</a> page for more details about delivery and returns,
+                    or feel free to <a href="{% url 'contact' %}">contact me</a> if you have any questions.
                 </p>
             </div>
         </div>
