@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5 {
         color: #2600FF !important;
 }
 
+.min-height-container{
+    min-height: 30vh;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
