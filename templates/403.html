@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Forbidden 403{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home-about.css' %}" />
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- page title -->
+    <section class="container text-center py-2 py-md-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    Forbidden 403
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="container min-height-container">
+        <div class="row justify-content-center">
+            <div class="col-7 col-md-6 my-auto text-center">
+                <p>
+                    Sorry! Access to the requested resource is forbidden.
+                </p>
+                <a href="https://www.flaticon.com/free-animated-icons/error" title="Animated Icon by Freepik - Flaticon">
+                    <img class="img-fluid mb-2" src="{{ MEDIA_URL }}warning.gif" alt="Animated warning of a computer screen with exclamation mark">
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <a href="{% url 'home' %}" class="mt-sm-4 btn btn-black">back to home page</a>
+        </div>
+    </section>
+
+{% endblock %}
