@@ -13,51 +13,53 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <!-- page title -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h1 class="heading-text">bespoke collages</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <h2>Hopes / Dreams / Wishes</h2>
-                <hr>
-                <div class="row mt-4">
-                    <div class="col-12 col-md-4 mb-3">
-                        <img src="{{ MEDIA_URL }}full-bespoke-1080x1350px.webp" class="img-fluid" alt="Bespoke Wishes Collage example displaying 9 mini 'wishes' collages">
-                    </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <img src="{{ MEDIA_URL }}wishes-besp-eg1-1080x1350px.webp" class="img-fluid" alt="Bespoke Wishes Collage example showing a zoomed in 'Abundance' wish">
-                    </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <img src="{{ MEDIA_URL }}wishes-besp-eg2-1080x1350px.webp" class="img-fluid" alt="Bespoke Wishes Collage example showing a zoomed in 'Calm' wish">
-                    </div>
+    <main class="min-height-container">
+        <div class="overlay"></div>
+        <!-- page title -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h1 class="heading-text">bespoke collages</h1>
                 </div>
-                <p class="font-weight-bold">product description:
-                </p>
-                <p class="text-center"><strong>‘Hopes / Dreams / Wishes’</strong></p>
-                <p class="text-center">✷ a bespoke, one-off collage made uniquely for you or a special gift for someone you love ✷</p>
-                <br>
-                <p class="text-center mb-4">
-                    These pieces are a collection of mini collages, intuitively made to order using recycled materials + a lot of love. 
-                    Each mini collage is a visual, abstract representation of a hope / dream / wish for the future. 
-                    I use the details you give me as a guide + trust where it takes me!<br>
-                    The process of making these collages is a collaborative one, led by you, 
-                    so feel free to give me as much information / inspiration as you like by answering the questions below. 
-                </p>
-                <form method="POST" class="form-horizontal form-color-bg">
-                    {% csrf_token %}
-                    {% crispy form %}
-                    <div class="text-center">
-                        <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2>Hopes / Dreams / Wishes</h2>
+                    <hr>
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-4 mb-3">
+                            <img src="{{ MEDIA_URL }}full-bespoke-1080x1350px.webp" class="img-fluid" alt="Bespoke Wishes Collage example displaying 9 mini 'wishes' collages">
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <img src="{{ MEDIA_URL }}wishes-besp-eg1-1080x1350px.webp" class="img-fluid" alt="Bespoke Wishes Collage example showing a zoomed in 'Abundance' wish">
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <img src="{{ MEDIA_URL }}wishes-besp-eg2-1080x1350px.webp" class="img-fluid" alt="Bespoke Wishes Collage example showing a zoomed in 'Calm' wish">
+                        </div>
+                    </div>
+                    <p class="font-weight-bold">product description:
+                    </p>
+                    <p class="text-center"><strong>‘Hopes / Dreams / Wishes’</strong></p>
+                    <p class="text-center">✷ a bespoke, one-off collage made uniquely for you or a special gift for someone you love ✷</p>
+                    <br>
+                    <p class="text-center mb-4">
+                        These pieces are a collection of mini collages, intuitively made to order using recycled materials + a lot of love. 
+                        Each mini collage is a visual, abstract representation of a hope / dream / wish for the future. 
+                        I use the details you give me as a guide + trust where it takes me!<br>
+                        The process of making these collages is a collaborative one, led by you, 
+                        so feel free to give me as much information / inspiration as you like by answering the questions below. 
+                    </p>
+                    <form method="POST" class="form-horizontal form-color-bg">
+                        {% csrf_token %}
+                        {% crispy form %}
+                        <div class="text-center">
+                            <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 {% endblock %}

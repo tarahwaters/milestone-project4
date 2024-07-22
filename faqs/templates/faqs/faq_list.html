@@ -16,34 +16,36 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <!-- page title -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h1 class="heading-text">frequently asked questions</h1>
+    <main class="min-height-container">
+        <div class="overlay"></div>
+        <!-- page title -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h1 class="heading-text">frequently asked questions</h1>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="accordion" id="faqAccordion">
-            {% for faq in faqs %}
-            <div class="card">
-                <div class="card-header" id="heading{{ faq.id }}">
-                    <h2 class="mb-0">
-                        <button class="btn btt-link" type="button" data-toggle="collapse" data-target="#collapse{{ faq.id }}" aria-expanded="true" aria-controls="collapse{{ faq.id }}">
-                            {{ faq.question }}
-                        </button>
-                    </h2>
-                </div>
+        <div class="container-fluid">
+            <div class="accordion" id="faqAccordion">
+                {% for faq in faqs %}
+                <div class="card">
+                    <div class="card-header" id="heading{{ faq.id }}">
+                        <h2 class="mb-0">
+                            <button class="btn btt-link" type="button" data-toggle="collapse" data-target="#collapse{{ faq.id }}" aria-expanded="true" aria-controls="collapse{{ faq.id }}">
+                                {{ faq.question }}
+                            </button>
+                        </h2>
+                    </div>
 
-                <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="heading{{ faq.id }}" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        {{ faq.answer }}
+                    <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="heading{{ faq.id }}" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            {{ faq.answer }}
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
-    </div>
+    </main>
 {% endblock %}
