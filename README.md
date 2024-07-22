@@ -316,4 +316,9 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ### Content
 
-### Acknowledgements
+## References
+### Accessibility
+In response to DevTools Lighthouse Audits, the following references were used to help improve the quality and efficiency of the site:
+- [Deque University](https://dequeuniversity.com/rules/axe/4.9/link-name) - Discernible names for links (e.g. social media links / icons)
+
+## Acknowledgements
