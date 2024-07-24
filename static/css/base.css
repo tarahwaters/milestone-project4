@@ -263,6 +263,12 @@ label {
     overflow-y: auto;
 }
 
+/*--------------------------------- Product Management */
+
+.edit-delete-icons {
+    font-size: large;
+}
+
 /*--------------------------------- Footer */
 
 .footer {
