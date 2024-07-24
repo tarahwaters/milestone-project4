@@ -14,11 +14,9 @@ She is also a talented musician, writer and works in art facilitation, so the we
 
 ## Showcase
 
-![Am I Responsive?](/documentation/readme/# "Am I Responsive? Website Mockup")
+![Am I Responsive?](/documentation/readme/amiresponsive-nyreewaters-art.jpg "Am I Responsive? Website Mockup") mockup created using [Am I Responsive?](https://ui.dev/amiresponsive)
 
-The **Am I Responsive?** link can be found here - [Am I Responsive?](#)
-
-A **deployed link** to the live website can be found here - [nyreewaters art](#)
+A **deployed link** to the live website can be found here - [nyreewaters art](https://nyreewaters-art-ccb67c4ebd7f.herokuapp.com/)
 
 ------
 
@@ -310,7 +308,7 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 - [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML -->
 - [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS
 - [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files
-<!-- - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/) - used to create a mockup of the website -->
+- [AmIResponsive?](https://ui.dev/amiresponsive) - used to create a responsive mockup of the website
 - [RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
 <!-- - [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python code -->
 - [DrawSQL](https://drawsql.app/) - used to create the database schema diagram
