@@ -250,9 +250,9 @@ The following logo was used from Nyree's original website:
 
 [coolors.co](https://coolors.co/) was used to create a color palette for the design after consulting with Nyree.
 
-![nyreewaters art colorscheme](/documentation/readme/nyreewaters-colorscheme.png "nyreewaters art colorscheme")
+![nyreewaters art colorscheme](/documentation/readme/nyreewaters-final-colorscheme.png "nyreewaters art colorscheme")
 
-color contrast check - [coloors color contrast checker](https://coolors.co/contrast-checker/332e14-e5ffc8)
+[Coloors color contrast checker](https://coolors.co/contrast-checker/332e14-e5ffc8) was also used to check font colors contrasted well against coloured backgrounds for improved accessibility.
 
 ### Typography
 
