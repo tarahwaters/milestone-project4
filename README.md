@@ -57,12 +57,14 @@ ZIP: 42424
         - [Typography](#typography)
 
 2. [Information Architecture](#information-architecture)
-    - [Data Models](#data-models)
+    - [Database Structure](#database-structure)
 
 3. [Tools and Technologies Used](#tools-and-technologies-used)
     - [Languages](#languages)
-    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
-    - [Dependencies](#dependencies)
+    - [Frameworks](#frameworks)
+    - [Libraries](#libraries)
+    - [Platforms](#platforms)
+    - [Other tools](#other-tools)
 
 4. [Testing](#testing)
     
@@ -253,27 +255,53 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 ---
 
 ## Information Architecture
-### Data Models
+## Database Structure
+### Details
+- I have used a **Postgres** relational database via [Supabase](https://supabase.com/) throughout the entire project development.
+- The project is directly connected to the deployed database on Heroku during development  - this was necessary to work with the Code Institute Dockerfile that was used.
+
+### Diagram
+- The diagram (created on [DrawSQL](https://drawsql.app/)) shows a layout of the tables created by my models in the database.
+- The diagram below omits the tables created by default, except the user table, as well as the tables created by [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html).
+
+![Database Schema Diagram](/documentation/readme/drawSQL-schema.png "database schema diagram")
+
+
+**Please Note:** 
+- Default tables created by [django](https://www.djangoproject.com/) as well as [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html) have been ommited from this section. Please refer to their documentation (refrenced [here](#tools-and-technologies-used)) for more information on their data models.
+- The CountryField is from [django-countries](https://github.com/SmileyChris/django-countries).
 
 ---
 
 ## Tools and Technologies Used:
 
+### Languages:
 - **HTML5**
 - **CSS**
-- **Bootstrap v4.4**
 - **JavaScript**
 - **Python3**
-- **Django3.2**
 
+### Frameworks:
+- [Django v3.2](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - used for front-end components and framework design
+
+### Libraries:
+- [JQuery](https://jquery.com/) - animations and click functions
+- [Google Fonts](https://fonts.google.com/) - font styles
+- [FontAwesome](https://fontawesome.com/) - used for icons
+- [Flaticon](https://www.flaticon.com/) - used for error / no-photo icon images
+
+### Packages:
+
+### Platforms:
 - [GitHub and Github Pages](https://github.com/) - used to securely store the code and to host and deploy the live project
 - [GitPod](https://www.gitpod.io/) - used as a cloud-based IDE for development
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - used for testing and troublshooting code, along with Lighthouse auditing
+
+### Other tools:
 - [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
-- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - used for front-end components and framework design
 - [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
 - [Coolors](https://coolors.co/) - used to generate a color palette for the website design and to check contrast of colors
-<!-- - [Canva](https://www.canva.com/) - used to design and edit the card images, gifs and pdf resources used in the game -->
 - [FontJoy](https://fontjoy.com/) - used to generate visually appealing font pairings for  the website
 - [JSON formatter and validator](https://jsonformatter.org/) - used for formatting and validating JSON files
 - [CSV2JSON](https://csvjson.com/csv2json) - for converting CSV data from spreadsheet into JSON format
@@ -285,11 +313,7 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 <!-- - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/) - used to create a mockup of the website -->
 - [RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
 <!-- - [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python code -->
-
-
-### Languages
-### Frameworks, Libraries and Programs
-### Dependencies
+- [DrawSQL](https://drawsql.app/) - used to create the database schema diagram
 
 ---
 
