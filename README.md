@@ -18,17 +18,19 @@ She is also a talented musician, writer and works in art facilitation, so the we
 
 A **deployed link** to the live website can be found here - [nyreewaters art](https://nyreewaters-art-ccb67c4ebd7f.herokuapp.com/)
 
+If you'd like to test the checkout and payment functionality of the website, please use the [test card details](#test-card-details-from-stripe) below.
+
 ------
 
-**Test card details**
+### Test card details (from Stripe):
 
-Card number: 4242 4242 4242 4242
+- Card number: 4242 4242 4242 4242
 
-Expiry date: 04 / 24
+- Expiry date: 04 / 245 (or any future date)
 
-CVC: 424
+- CVC: 424 (example)
 
-ZIP: 42424
+- ZIP: 42424
 
 ------
 
@@ -202,7 +204,7 @@ For Admin Users only:
 
 ### Wireframes
 
-Below are the initial wireframes created for the project during the planning stage.
+Below are the initial wireframes created for the project during the planning stage. As the project developed, the layouts were adapted to accomodate for the content included / limitations in design scope.
 
 - [Homepage](/documentation/readme/wireframes-homepage.png) ✅
 - [About](/documentation/readme/wireframes-about.png) ✅
@@ -211,12 +213,18 @@ Below are the initial wireframes created for the project during the planning sta
 - [Checkout](/documentation/readme/wireframes-checkout.png) ✅
 - [Checkout Success](/documentation/readme/wireframes-checkout-success.png) ✅
 - [Individual Product](/documentation/readme/wireframes-product.png) ✅
-- [My Profile](#)
-- [Login](#)
-- [Register](#)
-- [Contact](#)
-- [Leave a Review](#)
-- [Search results](#)
+
+The following pages were not designed using wireframes due to time restraints, and instead followed a similar layout structure to the main pages (above) that were created first:
+- My Profile
+- Login
+- Register
+- Contact
+- Leave a Review **
+- Search results
+- Bespoke
+- FAQs
+
+****Note** - Review feature was not included at this stage of production (see [Scope](#scope) for more details)
 
 ---
 
