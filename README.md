@@ -1,7 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 # 🌟 nyreewaters art 🌟
-# - a full stack web e-commerce web application
+# - a full stack e-commerce web application
 
 ------
 
