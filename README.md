@@ -58,6 +58,15 @@ If you'd like to test the checkout and payment functionality of the website, ple
 
 2. [Information Architecture](#information-architecture)
     - [Database Structure](#database-structure)
+        - [Details](#details)
+        - [Diagram](#diagram)
+    - [Database Models](#database-models)
+        - [Product App](#product-app)
+        - [Checkout App](#checkout-app)
+        - [Profiles Apps](#profiles-app)
+        - [FAQs App](#faqs-app)
+        - [Contact App](#contact-app)
+        - [Bespoke App](#bespoke-app)
 
 3. [Tools and Technologies Used](#tools-and-technologies-used)
     - [Languages](#languages)
@@ -272,10 +281,18 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 
 ![Database Schema Diagram](/documentation/readme/drawSQL-schema.png "database schema diagram")
 
+## Database Models
 
 **Please Note:** 
 - Default tables created by [django](https://www.djangoproject.com/) as well as [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html) have been ommited from this section. Please refer to their documentation (refrenced [here](#tools-and-technologies-used)) for more information on their data models.
 - The CountryField is from [django-countries](https://github.com/SmileyChris/django-countries).
+
+### Product App
+### Checkout App
+### Profiles App
+### FAQs App
+### Contact App
+### Bespoke App
 
 ---
 
