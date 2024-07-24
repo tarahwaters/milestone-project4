@@ -335,6 +335,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ### Media
 - [Freepik - Favicon](https://www.flaticon.com/free-animated-icons/no-camera) - No camera animated icon created by Freepik, used in cases of 'no image' rendered for images across the site
+- [Freepik - Favicon](https://www.flaticon.com/free-animated-icon/warning_6569130) - Warning animated icon created by Freepik, used as an image on custom error pages
 - All product images are used with the permission of the original artist, [Nyree Waters](https://www.nyreewaters.com/)
 - Bio image of Nyree, also in use on her [main website](https://www.nyreewaters.com/), also used with her permission
 
