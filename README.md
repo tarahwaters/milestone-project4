@@ -331,7 +331,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Credits
 ### Code
-- [Emma Walsh](https://github.com/emmawalshdev) for shop layout inspiration and adapted code on homepage - [KayTea Art (Github repo)](https://github.com/emmawalshdev/kaytea_art/tree/main)
+- [Emma Walsh](https://github.com/emmawalshdev) for shop layout inspiration and adapted code on Home and About pages, also Bespoke form setup - [KayTea Art (Github repo)](https://github.com/emmawalshdev/kaytea_art/tree/main)
 
 ### Media
 - [Freepik - Favicon](https://www.flaticon.com/free-animated-icons/no-camera) - No camera animated icon created by Freepik, used in cases of 'no image' rendered for images across the site
