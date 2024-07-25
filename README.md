@@ -364,7 +364,10 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Credits
 ### Code
+- [Code Institute's Boutique Ado Walkthrough](https://github.com/Code-Institute-Solutions/boutique_ado_v1) - base code used follows the structure of the Boutique Ado project and was adapated for use
+- [CSS tricks](https://css-tricks.com/snippets/css/css-triangle/) - also referenced by Code Institute in the Boutique Ado project, the 'arrow-up' styling was used for the 'scroll to top' button
 - [Emma Walsh](https://github.com/emmawalshdev) for shop layout inspiration and adapted code on Home and About pages, also Bespoke form setup - [KayTea Art (Github repo)](https://github.com/emmawalshdev/kaytea_art/tree/main)
+- [Rory Sheridan](https://github.com/Ri-Dearg/neverlost-thrift/tree/master) - general project inspiration and reference, but also README documentation help (e.g. Database Structure)
 
 ### Media
 - [Freepik - Favicon](https://www.flaticon.com/free-animated-icons/no-camera) - No camera animated icon created by Freepik, used in cases of 'no image' rendered for images across the site
@@ -374,9 +377,21 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ### Content
 
+Some of the written content e.g. artist bio, was taken from [Nyree Waters' website](https://www.nyreewaters.com/) with her permission.
+
 ## References
+
+### Project Inspiration (Github Repos)
+
+- [Emma Walsh](https://github.com/emmawalshdev) - KayTea Artwork
+- [Delyth Jennings](https://github.com/D3lyth/lunar_glow/tree/main) - Lunar Glow
+- [Rory Sheridan](https://github.com/Ri-Dearg/neverlost-thrift/) - NeverLost Thrift
+- [Erikas Ramanauskas](https://github.com/Erikas-Ramanauskas/Milestone-Project-4) - G-mark
+- [Anthony Griffiths](https://github.com/Ant2210/keto-kreations/) - KetoKreations
+
 ### Accessibility
 In response to DevTools Lighthouse Audits, the following references were used to help improve the quality and efficiency of the site:
 - [Deque University](https://dequeuniversity.com/rules/axe/4.9/link-name) - Discernible names for links (e.g. social media links / icons)
 
 ## Acknowledgements
+- [Rory Sheridan](https://github.com/Ri-Dearg) - for his great mentorship and support throughout the project
