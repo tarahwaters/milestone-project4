@@ -154,18 +154,19 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | Home page with shop and artist details and links                    |     5      |            5            |    Y    |
 | Shop page listing products, and options to view by category / sort  |     5      |            5            |    Y    |
 | Access to Profile page for signed in users                          |     5      |            4            |    Y    |
+| Save / update personal details in user profile                      |     4      |            4            |    Y    |
 | Search bar (for products)                                           |     4      |            4            |    Y    |
-| Edit / delete functionality of products (admin user only)           |     5      |            5            |    Y    |
+| Edit / delete functionality of products (admin user only)           |     4      |            5            |    Y    |
 | Confirmation of delete action via a pop up modal                    |     4      |            2            |    N    |
 | Restricted access for admin user to manage products                 |     5      |            5            |    Y    |
 | Shopping bag functionality (add / edit bag before purchase)         |     5      |            5            |    Y    |
 | Secure checkout functionality                                       |     5      |            5            |    Y    |
 | Order confirmation page (with email)                                |     5      |            5            |    Y    |
 | About page (with details and links about artist)                    |     4      |            5            |    Y    |
-| Frequently asked questions page                                     |     4      |            5            |    Y    |
+| Frequently asked questions page                                     |     3      |            5            |    Y    |
 | Bespoke Enquiry page*                                               |     3      |            3            |    Y    |
-| Contact page*                                                       |     3      |            4            |    Y    |
-| Add a product review functionality and page                         |     3      |            2            |    X    |
+| Contact page*                                                       |     4      |            4            |    Y    |
+| Add a product review (functionality and page)                       |     3      |            2            |    X    |
 
 * Bespoke and Contact page forms were created but without POST functionality due to time restraints
 
