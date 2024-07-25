@@ -108,6 +108,7 @@ The target audience for the **nyreewaters art** shop are:
 - Make a secure purchase
 - Leave a review for a purchase
 - Find out more information based on frequently asked questions (ie. for delivery costs / refunds)
+- Contact the site owner with questions / a bespoke enquiry
 
 **How the shop fulfils these expectations:**
 - Design that is visually attractive and matches the artist's style
@@ -115,7 +116,8 @@ The target audience for the **nyreewaters art** shop are:
 - Standard design conventions of a shop with regard to menus, checkout, categories, etc
 - Searching for products can be filtered or sorted based on what the user is looking for
 - Confirmation / error messages to help guide the user through the checkout process
-- User can create a secure profile to access their order details and leave a review
+- User can create a secure profile to access their order details
+- Users can get in touch with Nyree via the contact page / by email directly / by submitting a bespoke enquiry form (these forms do not have POST functionality yet)
 
 ### Business Goals
 
@@ -129,11 +131,33 @@ The Business Goals of the **nyreewaters art** shop are:
 ### User Stories
 
 #### User
-As a user I would like:
+As a new user:
+
+1. I would like to explore some details about the artist, Nyree Waters, to see if her style and products may interest me.
+2. I would like to browse interesting, unique art products available to buy online.
+3. I would like to create an account with a profile, so that I can save my order details and have a more personalised experience whilst shopping.
+
+As a returning user:
+
+1. I would like to log into my account and view my profile, so I can access my saved personal details and previous orders.
+2. I would like to browse products easily based on the type of artwork I am looking for, and have the ability to search for specific products.
+3. I would like to sort products by various criteria to make the (e.g. price, type, name) so that I can find what I'm looking for more easily.
+4. I would like to add items to a shopping bag to keep track of the products I wish to purchase, with the ability to add / remove items where necessary.
+5. I would like to follow a familiar process for making a secure purchase via a checkout page, and have regular feedback that my information has been submitted and processed successfully.
+6. I would like to receive an email confirmation of my order once I have purchased something, and have access to these details via my account for future reference.
+7. I would like my order details to be saved to my profile, and have the option of add or updating my address for quick access in future.
+8. I would like to view some details about payment /shipping / delivery before making a purchase.
+
 
 #### Admin user or Site owner
-In addition to the general user expectations, as an admin user / site owner I would like:
+In addition to the general user expectations, as an admin user / site owner:
 
+1. I would like to manage the product listings that are displayed on the site
+2. I would like secure access to editing or adding new products - and to add appropriate details such as SKU, 
+product name and description, price and an image.
+3. I would like the option to remove products that are no longer in stock / I no longer wish to sell.
+4. I would like to manage the FAQ section so that I can easily update and add answers to common questions as required.
+5. I would like to manage user permissions and roles, and control the access to the admin panel, ensuring the site data remains secure.
 ---
 
 ## Scope
