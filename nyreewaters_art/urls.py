@@ -17,13 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from django.shortcuts import render
 
-def custom_404(request, exception):
-    return render(request, '404.html', status=404)
-
-def custom_500(request):
-    return render(request, '500.html', status=500)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -37,9 +31,8 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('bespoke/', include('bespoke.urls')),
     path('about/', include('about.urls')),
-    path('trigger-404/', lambda request: render(request, '404.html', status=404)),
-    path('trigger-500/', lambda request: render(request, '500.html', status=500)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'nyreewaters_art.urls.custom_404'
+handler403 = 'nyreewaters_art/urls.custom_403'
 handler500 = 'nyreewaters_art.urls.custom_500'
