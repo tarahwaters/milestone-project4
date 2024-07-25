@@ -262,10 +262,20 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 
 ![Typ.io font-pairing example image](/documentation/readme/font-pairing-example.jpg "font-pairing example from Typ.io")
 
+Font Pairing Inspiration:
 - **Courier New** (body)
 - **Helvetica** (headings)
 - **Monaco**
 - **Helvetica Neue**
+
+Since not all these fonts were available for free or were not accessible using [Google Fonts](https://fonts.google.com/), the following font styles were used as close alternatives:
+
+Font Styles used in project:
+
+- **Courier New** (body)
+- **Courier Prime** (backup body)
+- **Inter** (headings, nav links, or for style emphasis)
+- **San-serif** (backup font)
 
 ---
 
