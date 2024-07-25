@@ -147,23 +147,28 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | Opportunity                                                         | Importance | Viability / Feasibility | Outcome |
 | ------------------------------------------------------------------- | :--------: | :---------------------: | :------:|
 | Register a secure account by creating a signin username + password  |     5      |            5            |    Y    |
+| Email verification to register an account                           |     5      |            5            |    Y    |
 | Signin page for registered users                                    |     5      |            5            |    Y    |
 | Signout option with confirmation of action                          |     5      |            5            |    Y    |
-| Add a cafe post by submission of a form with confirmation of action |     5      |            5            |    Y    |
-| Confirmation of successful / unsuccessful actions via a flash msg   |     4      |            4            |    Y    |
-| Display of all posts to main home page                              |     5      |            5            |    Y    |
-| Display of all posts to admin profile (restricted access)           |     5      |            4            |    Y    |
-| Display of published user posts on profile page                     |     4      |            4            |    Y    |
-| Filter more relevant posts via search bar on home page              |     3      |            5            |    Y    |
-| Edit / delete functionality of  published user posts (non-admin)    |     5      |            5            |    Y    |
-| Edit / delete functionality of all posts (admin user only)          |     5      |            5            |    Y    |
-| Confirmation of delete action via a pop up modal                    |     5      |            4            |    Y    |
-| Restricted access for admin user to manage countries and images     |     5      |            5            |    Y    |
-| Add / edit functionality for countries and images                   |     5      |            5            |    Y    |
-| Custom Error404 page                                                |     3      |            3            |    N    |
-| Option to view an individual cafe on a separate page                |     3      |            3            |    N    |
-| Option to delete user account and associated posts [X]              |     4      |            3            |    X    |
-| Option to upload a country image along with the country name [X]    |     2      |            2            |    X    |
+| Confirmation of successful / unsuccessful actions via a toast msg   |     4      |            4            |    Y    |
+| Home page with shop and artist details and links                    |     5      |            5            |    Y    |
+| Shop page listing products, and options to view by category / sort  |     5      |            5            |    Y    |
+| Access to Profile page for signed in users                          |     5      |            4            |    Y    |
+| Search bar (for products)                                           |     4      |            4            |    Y    |
+| Edit / delete functionality of products (admin user only)           |     5      |            5            |    Y    |
+| Confirmation of delete action via a pop up modal                    |     4      |            2            |    N    |
+| Restricted access for admin user to manage products                 |     5      |            5            |    Y    |
+| Shopping bag functionality (add / edit bag before purchase)         |     5      |            5            |    Y    |
+| Secure checkout functionality                                       |     5      |            5            |    Y    |
+| Order confirmation page (with email)                                |     5      |            5            |    Y    |
+| About page (with details and links about artist)                    |     4      |            5            |    Y    |
+| Frequently asked questions page                                     |     4      |            5            |    Y    |
+| Bespoke Enquiry page*                                               |     3      |            3            |    Y    |
+| Contact page*                                                       |     3      |            4            |    Y    |
+| Add a product review functionality and page                         |     3      |            2            |    X    |
+
+* Bespoke and Contact page forms were created but without POST functionality due to time restraints
+
 
 ---
 
@@ -171,27 +176,44 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ### Existing Features
 
-Quick Links:
-
+General:
   - [Logo Link to Homepage](#logo-link-to-homepage)
   - [Desktop Navbar Dropdown](#desktop-navbar-dropdown)
   - [Mobile Navbar Menu](#mobile-navbar-menu)
-  - [Signin Form with input validation](#signin-form-with-input-validation)
-  - [Registration form with input validation](#registration-form-with-input-validation)
-  - [Registration Success](#registration-success---welcome-message-and-redirection-to-profile-page)
-  - [Signout Confirmation](#signout-confirmation)
-  - [Add Cafe button](#add-cafe-button)
-  - [Add Cafe form](#add-cafe-form)
-  - [Add Cafe form validation](#add-cafe-form-validation)
-  - [Cafe Cards](#cafe-cards-on-homepage-and-profile)
-  - [Edit / Delete cafe buttons](#edit--delete-cafe-buttons)
-  - [Edit Cafe (prefilled form)](#edit-cafe-prefilled-form)
-  - [Delete Cafe confirmation](#delete-cafe-confirmation)
-  - [Manage Locations (admin only functionality)](#manage-locations-page-admin-only-functionality)
-  - [Add Country feature](#add-country-feature)
-  - [Edit Country feature](#edit-country-feature)
-  - [Delete Country feature](#delete-country-feature)
   - [Search Bar feature](#search-bar-feature)
+  - [Footer Links](#footer-links)
+  - [Toast Messages](#toast-messages)
+  - [Custom Error Pages](#custom-error-pages)
+
+  My Account:
+  - [Login](#login)
+  - [Register Account](#register-account)
+  - [Registration verification](#registration-verification)
+  - [Registration Success](#registration-success)
+  - [Signout Confirmation](#signout-confirmation)
+  - [Profile page](#profile-page)
+
+  Shop:
+  - [All Products](#all-products)
+  - [Shop Category Buttons](#shop-category-buttons)
+  - [Shop Prints](#shop-prints)
+  - [Shop Originals](#shop-originals)
+  - [Product Sort Selector](#product-sort-selector)
+  - [Scroll To Top Button](#scroll-to-top-button)
+  - [Product Detail](#product-detail)
+  - [Product Quantity Tool](#product-quantity-tool)
+  - [Add To Shopping Bag](#add-to-shopping-bag)
+  - [View/Edit Shopping Bag](#adjust/edit-shopping-bag)
+  - [Secure Checkout](#secure-checkout)
+  - [Stripe Payment](#stripe-payment)
+  - [Order Confirmation](#order-confirmation)
+  - [Email Order Confirmation](#email-order-confirmation)
+
+  Other pages:
+  - [Bespoke Details and Form](#bespoke-details-and-form)
+  - [Contact Form](#contact-form)
+  - [FAQs](#faqs)
+
 
 
 ### Future Features
