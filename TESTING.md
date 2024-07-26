@@ -21,7 +21,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcontact%2F) | ![screenshot](documentation/readme/html-validation-contact.png) | Pass: No Errors |
 | Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/readme/html-validation-bag.png) | Pass: No Errors |
 | Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcheckout%2F) | ![screenshot](documentation/readme/html-validation-checkout.png) | Warning (2): section lacks headings |
-| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcheckout%2Fcheckout_success%2FAE806850B71840C693B8FF6921505B95) | ![screenshot](documentation/readme/html-validation-checkoutsuccess.png) |  |
+| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcheckout%2Fcheckout_success%2FAE806850B71840C693B8FF6921505B95) | ![screenshot](documentation/readme/html-validation-checkout-success.png) |  |
 | Profile | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fprofile%2F) | ![screenshot](documentation/readme/html-validation-profile.png) | Pass: No Errors |
 
 
