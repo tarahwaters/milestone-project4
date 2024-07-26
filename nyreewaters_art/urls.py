@@ -34,5 +34,5 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'nyreewaters_art.urls.custom_404'
-handler403 = 'nyreewaters_art/urls.custom_403'
+handler403 = 'nyreewaters_art.urls.custom_403'
 handler500 = 'nyreewaters_art.urls.custom_500'
