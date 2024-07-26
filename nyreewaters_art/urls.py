@@ -33,6 +33,6 @@ urlpatterns = [
     path('about/', include('about.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'nyreewaters_art.urls.custom_404'
-handler403 = 'nyreewaters_art.urls.custom_403'
-handler500 = 'nyreewaters_art.urls.custom_500'
+handler404 = 'nyreewaters_art.views.custom_404'
+handler403 = 'nyreewaters_art.views.custom_403'
+handler500 = 'nyreewaters_art.views.custom_500'
