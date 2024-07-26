@@ -53,7 +53,7 @@
                     </p>
                     <form method="POST" class="form-horizontal form-color-bg">
                         {% csrf_token %}
-                        {% form|crispy %}
+                        {% crispy form %}
                         <div class="text-center">
                             <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
                         </div>
