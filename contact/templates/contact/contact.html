@@ -40,7 +40,7 @@
             <div class="col-12 col-md-8">
                 <form method="POST" class="contact-form form mb-2">
                     {% csrf_token %}
-                    {% crispy|form %}
+                    {% form|crispy %}
                     <div class="text-center">
                         <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
                     </div>
