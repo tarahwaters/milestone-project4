@@ -44,8 +44,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable - external library |
-| countryfield.js | ![screenshot](documentation/js-validation-countryfield.png) | Pass: No Errors |
+| stripe_elements.js | ![screenshot](documentation/readme/js-validation-stripe.png) | Undefined Stripe variable - external library |
+| countryfield.js | ![screenshot](documentation/readme/js-validation-countryfield.png) | Pass: No Errors |
 
 ### Python
 
