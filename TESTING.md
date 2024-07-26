@@ -10,20 +10,19 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](#) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors|
-| About | [W3C](#) | ![screenshot](documentation/html-validation-about.png) | Pass: No Errors |
-| Products | [W3C](#) | ![screenshot](documentation/html-validation-products.png) | Pass: No Errors |
-| Product Details | [W3C](#) | ![screenshot](documentation/html-validation-productdetails.png) | Pass: No Errors |
-| Add Product | [W3C](#) | ![screenshot](documentation/html-validation-add-product.png) | Pass: No Errors |
-| Edit Product | [W3C](#) | ![screenshot](documentation/html-validation-edit-product.png) | Pass: No Errors |
-| FAQs | [W3C](#) | ![screenshot](documentation/html-validation-faqs.png) | Pass: No Errors |
-| Bespoke | [W3C](#) | ![screenshot](documentation/html-validation-newsletter.png) | Pass: No Errors |
-| Bespoke Success?? | [W3C](#) | ![screenshot](documentation/html-validation-bespoke.png) | Pass: No Errors |
-| Contact | [W3C](#) | ![screenshot](documentation/html-validation-whichscent.png) | Pass: No Errors |
-| Bag | [W3C](#) | ![screenshot](documentation/html-validation-bag.png) | Pass: No Errors |
-| Checkout | [W3C](#) | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| Checkout Success | [W3C](#) | ![screenshot](documentation/html-validation-checkoutsuccess.png) |  |
-| Profile | [W3C](#) | ![screenshot](documentation/html-validation-profile.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2F) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors|
+| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/html-validation-about.png) | Pass: No Errors |
+| Products | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fproducts%2F%3Fsort%3Dprice%26direction%3Dasc) | ![screenshot](documentation/html-validation-products.png) | Warning (2): section lacks headings |
+| Product Details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fproducts%2Fproduct_detail%2F15%2F) | ![screenshot](documentation/html-validation-product-details.png) | Warning (1): section lacks headings |
+| Add Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fproducts%2Fadd%2F) | ![screenshot](documentation/html-validation-add-product.png) | Pass: No Errors |
+| Edit Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fproducts%2Fedit%2F15%2F) | ![screenshot](documentation/html-validation-edit-product.png) | Pass: No Errors |
+| FAQs | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Ffaqs%2F) | ![screenshot](documentation/html-validation-faqs.png) | Pass: No Errors |
+| Bespoke | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fbespoke%2F) | ![screenshot](documentation/html-validation-bespoke.png) | Pass: No Errors |
+| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcontact%2F) | ![screenshot](documentation/html-validation-contact.png) | Pass: No Errors |
+| Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/html-validation-bag.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcheckout%2F) | ![screenshot](documentation/html-validation-checkout.png) | Warning (1): section lacks headings |
+| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fcheckout%2Fcheckout_success%2FAE806850B71840C693B8FF6921505B95) | ![screenshot](documentation/html-validation-checkoutsuccess.png) |  |
+| Profile | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2Fprofile%2F) | ![screenshot](documentation/html-validation-profile.png) | Pass: No Errors |
 
 
 ### CSS
