@@ -53,7 +53,12 @@
                     </p>
                     <form method="POST" class="form-horizontal form-color-bg">
                         {% csrf_token %}
-                        {% crispy form %}
+                        {{ form.name | as_crispy_field }}
+                        {{ form.email | as_crispy_field }}
+                        {{ form.gift_recipient | as_crispy_field }}
+                        {{ form.occasion | as_crispy_field }}
+                        {{ form.wishes | as_crispy_field }}
+                        {{ form.message | as_crispy_field }}
                         <div class="text-center">
                             <button class="btn btn-black mb-3 mt-sm-3" type="submit">submit</button>
                         </div>
