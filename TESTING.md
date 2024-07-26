@@ -31,12 +31,12 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| base.css | [Jigsaw](#) | ![screenshot](documentation/css-validation-base.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| profile.css | n/a | ![screenshot](documentation/css-validation-profile.png) | Pass: No Errors |
+| base.css | [Jigsaw](#) | ![screenshot](documentation/readme/css-validation-base.png) | Pass: No Errors |
+| checkout.css | n/a | ![screenshot](documentation/readme/css-validation-checkout.png) | Pass: No Errors |
+| profile.css | n/a | ![screenshot](documentation/readme/css-validation-profiles.png) | Pass: No Errors |
 | home-about.css | n/a | ![screenshot](documentation/css-validation-home-about.png) | Pass: No Errors |
-| faq.css | n/a | ![screenshot](documentation/css-validation-faqs.png) | Pass: No Errors |
-| contact.css | n/a | ![screenshot](documentation/css-validation-contact.png) | Pass: No Errors |
+| faq.css | n/a | ![screenshot](documentation/readme/css-validation-faqs.png) | Pass: No Errors |
+| contact.css | n/a | ![screenshot](documentation/readme/css-validation-contact.png) | Pass: No Errors |
 
 ### JavaScript
 
