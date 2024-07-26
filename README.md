@@ -385,14 +385,14 @@ Font Styles used in project:
 - [FontJoy](https://fontjoy.com/) - used to generate visually appealing font pairings for  the website
 - [JSON formatter and validator](https://jsonformatter.org/) - used for formatting and validating JSON files
 - [CSV2JSON](https://csvjson.com/csv2json) - for converting CSV data from spreadsheet into JSON format
-<!-- - [JSHint](https://jshint.com/) - used to validate JS code
+- [JSHint](https://jshint.com/) - used to validate JS code
 - [Esprima](https://esprima.org/demo/validate.html) - used to validate JS syntax
-- [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML -->
+- [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML
 - [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS
 - [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files
 - [AmIResponsive?](https://ui.dev/amiresponsive) - used to create a responsive mockup of the website
 - [RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
-<!-- - [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python code -->
+- [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python code
 - [DrawSQL](https://drawsql.app/) - used to create the database schema diagram
 
 ---
