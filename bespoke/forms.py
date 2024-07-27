@@ -1,6 +1,7 @@
 from django import forms
 from .models import Bespoke
 
+
 class BespokeForm(forms.ModelForm):
     class Meta:
         model = Bespoke
@@ -35,9 +36,11 @@ class BespokeForm(forms.ModelForm):
                 'placeholder': (
                     "Do you have particular 'wishes' in mind, words that you "
                     "would like to be used in the collage (e.g. gratitude / "
-                    "adventure / joy / love)? These can be things you want to "
-                    "attract for the future, feelings you hope for. If you are "
-                    "unsure, let me know + I can come up with ideas for you. "
+                    "adventure / joy / love)? "
+                    "These can be things you want to attract for the "
+                    "future, or feelings you hope for. "
+                    "If you are unsure, let me know + "
+                    "I can come up with ideas for you. "
                     "Also add any extra comments or details here."
                 )
             }),
