@@ -30,7 +30,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-tarahwaters-milestonepr-pv9m1cpuyy5.ws.codeinstitute-ide.net', 'nyreewaters-art-ccb67c4ebd7f.herokuapp.com']
+ALLOWED_HOSTS = [
+    'localhost', '127.0.0.1',
+    '8000-tarahwaters-milestonepr-pv9m1cpuyy5.ws.codeinstitute-ide.net',  # noqa
+    'nyreewaters-art-ccb67c4ebd7f.herokuapp.com']
 
 
 # Application definition
@@ -77,8 +80,6 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 
-# CSRF_TRUSTED_ORIGINS = ['http://8000-tarahwaters-milestonepr-pv9m1cpuyy5.ws.codeinstitute-ide.net']
-
 ROOT_URLCONF = 'nyreewaters_art.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -94,7 +95,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
@@ -152,16 +153,16 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
