@@ -1,6 +1,8 @@
 from django.db import models
 
-# code for bespoke model adapted from https://katie-harte-art.onrender.com/commissions/
+# code for bespoke model adapted from
+# https://katie-harte-art.onrender.com/commissions/
+
 GIFT_RECIPIENT_CHOICES = (
     ('', 'Is this a gift for yourself or someone else? *'),
     ('1', 'Myself'),
@@ -27,6 +29,7 @@ WISHES_CHOICES = (
     ('9', '9')
 )
 
+
 class Bespoke(models.Model):
     class Meta:
         verbose_name_plural = 'Bespoke Collages'
@@ -34,12 +37,15 @@ class Bespoke(models.Model):
     date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     name = models.CharField(max_length=255)
     email = models.EmailField(max_length=254, null=False, blank=False)
-    gift_recipient = models.CharField(max_length=30, choices=GIFT_RECIPIENT_CHOICES,
-                                      default='Is this a gift for yourself or someone else?*')
-    occasion = models.CharField(max_length=30, choices=OCCASION_CHOICES,
-                                default='What sort of occasion is the collage for?*')
-    wishes = models.CharField(max_length=40, choices=WISHES_CHOICES,
-                              default='How many wishes would you like (all 30 x 30cm)?*')
+    gift_recipient = models.CharField(
+        max_length=30, choices=GIFT_RECIPIENT_CHOICES,
+        default='Is this a gift for yourself or someone else?*')
+    occasion = models.CharField(
+        max_length=30, choices=OCCASION_CHOICES,
+        default='What sort of occasion is the collage for?*')
+    wishes = models.CharField(
+        max_length=40, choices=WISHES_CHOICES,
+        efault='How many wishes would you like (all 30 x 30cm)?*')
     message = models.TextField(null=True, blank=True)
 
     def __str__(self):
