@@ -53,46 +53,45 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Bag urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bag-urls.png) | Pass: No Errors |
-| Bag views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
-| Bag apps.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bag-apps.png) | Pass: No Errors |
-| Bag bagtools.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bag-bagtools.png) | Pass: No Errors |
-| Checkout admin.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-admin.png) | Pass: No Errors |
-| Checkout forms.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-forms.png) | Pass: No Errors |
-| Checkout models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-models.png) | Pass: No Errors |
-| Checkout signals.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-signals.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-urls.png) | Pass: No Errors |
-| Checkout views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-views.png) | Pass: No Errors |
-| Checkout webhook_handler.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-webhook_handler.png) | Pass: No Errors |
-| Checkout webhooks.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-checkout-webhooks.png) | Error: Line too long |
-| FAQs admin.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-admin.png) | Pass: No Errors |
-| FAQs models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-models.png) | Pass: No Errors |
-| FAQs urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-urls.png) | Pass: No Errors |
-| FAQs views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-views.png) | Pass: No Errors |
-| Home admin.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-home-admin.png) | Pass: No Errors |
-| Home models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-home-models.png) | Pass: No Errors |
-| Home urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-home-urls.png) | Pass: No Errors |
-| Home views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-home-views.png) | Pass: No Errors |
-| nyreewaters_art settings.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-nyreewaters-art-settings.png) | Pass: No Errors |
-| nyreewaters_art urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-nyreewaters-art-urls.png) | Pass: No Errors |
-| Bespoke admin.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bespoke-admin.png) | Pass: No Errors |
-| Bespoke forms.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bespoke-forms.png) | Pass: No Errors |
-| Bespoke models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bespoke-models.png) | Pass: No Errors |
-| Bespoke urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bespoke-urls.png) | Pass: No Errors |
-| Bespoke views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-bespoke-views.png) | Pass: No Errors |
-| Products admin.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-products-admin.png) | Pass: No Errors |
-| Products forms.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-products-forms.png) | Pass: No Errors |
-| Products models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-products-models.png) | Pass: No Errors |
-| Products urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-products-urls.png) | Pass: No Errors |
-| Products views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-products-views.png) | Pass: No Errors |
-| Products widgets.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-products-widgets.png) | Pass: No Errors |
-| Profiles forms.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-profiles-forms.png) | Pass: No Errors |
-| Profiles models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| Profiles urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-profiles-urls.png) | Pass: No Errors |
-| Profiles views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-profiles-views.png) | Pass: No Errors |
-| Contact admin.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-contact-admin.png) | Pass: No Errors |
-| Contact models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-contact-models.png) | Pass: No Errors |
-| Contact urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-contact-urls.png) | Pass: No Errors |
-| Contact views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-contact-views.png) | Pass: No Errors |
-| Root Level custom_storages.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-rootlevel-custom_storages.png) | Pass: No Errors |
-| Root Level manage.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-rootlevel-manage.png) | Pass: No Errors |
+| Bag urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bag-urls.png) | Pass: No Errors |
+| Bag views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bag-views.png) | Pass: No Errors |
+| Bag apps.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bag-apps.png) | Pass: No Errors |
+| Bag bagtools.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bag-bagtools.png) | Pass: No Errors |
+| Bag contexts.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bag-contexts.png) | Pass: No Errors |
+| Checkout admin.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-admin.png) | Pass: No Errors |
+| Checkout forms.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-forms.png) | Pass: No Errors |
+| Checkout models.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-models.png) | Pass: No Errors |
+| Checkout signals.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-signals.png) | Pass: No Errors |
+| Checkout urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-urls.png) | Pass: No Errors |
+| Checkout views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-views.png) | Pass: No Errors |
+| Checkout webhook_handler.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-webhook_handler.png) | Pass: No Errors |
+| Checkout webhooks.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-checkout-webhooks.png) | Error: Line too long |
+| FAQs admin.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-faqs-admin.png) | Pass: No Errors |
+| FAQs models.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-faqs-models.png) | Pass: No Errors |
+| FAQs urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-faqs-urls.png) | Pass: No Errors |
+| FAQs views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-faqs-views.png) | Pass: No Errors |
+| Home urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-home-urls.png) | Pass: No Errors |
+| Home views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-home-views.png) | Pass: No Errors |
+| nyreewaters_art settings.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-settings.png) | Pass: No Errors |
+| nyreewaters_art urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-urls.png) | Pass: No Errors |
+| nyreewaters_art views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-views.png) | Pass: No Errors |
+| Bespoke forms.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bespoke-forms.png) | Pass: No Errors |
+| Bespoke models.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bespoke-models.png) | Pass: No Errors |
+| Bespoke urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bespoke-urls.png) | Pass: No Errors |
+| Bespoke views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bespoke-views.png) | Pass: No Errors |
+| Products admin.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-products-admin.png) | Pass: No Errors |
+| Products forms.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-products-forms.png) | Pass: No Errors |
+| Products models.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-products-models.png) | Pass: No Errors |
+| Products urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-products-urls.png) | Pass: No Errors |
+| Products views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-products-views.png) | Pass: No Errors |
+| Products widgets.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-products-widgets.png) | Pass: No Errors |
+| Profiles forms.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-profiles-forms.png) | Pass: No Errors |
+| Profiles models.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-profiles-models.png) | Pass: No Errors |
+| Profiles urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-profiles-urls.png) | Pass: No Errors |
+| Profiles views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-profiles-views.png) | Pass: No Errors |
+| Contact froms.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-contact-forms.png) | Pass: No Errors |
+| Contact models.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-contact-models.png) | Pass: No Errors |
+| Contact urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-contact-urls.png) | Pass: No Errors |
+| Contact views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-contact-views.png) | Pass: No Errors |
+| Root Level custom_storages.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-root-custom_storages.png) | Pass: No Errors |
+| Root Level manage.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-root-manage.png) | Pass: No Errors |
