@@ -45,7 +45,7 @@ class Bespoke(models.Model):
         default='What sort of occasion is the collage for?*')
     wishes = models.CharField(
         max_length=40, choices=WISHES_CHOICES,
-        efault='How many wishes would you like (all 30 x 30cm)?*')
+        default='How many wishes would you like (all 30 x 30cm)?*')
     message = models.TextField(null=True, blank=True)
 
     def __str__(self):
