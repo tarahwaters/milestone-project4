@@ -9,10 +9,12 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your message was sent successfully - thank you!')
+            messages.success(
+                    request, 'Your message was sent successfully - thank you!')
             return redirect('contact')
         else:
-            messages.error(request, 'There was an error submitting the form. \
+            messages.error(
+                request, 'There was an error submitting the form. \
                 Please make sure the information is valid.')
     form = ContactForm()
     context = {

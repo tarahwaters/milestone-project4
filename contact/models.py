@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Contact(models.Model):
     date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     first_name = models.CharField(max_length=255)
