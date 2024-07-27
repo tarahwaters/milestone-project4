@@ -14,7 +14,7 @@ She is also a talented musician, writer and works in art facilitation, so the we
 
 ## Showcase
 
-![Am I Responsive?](/documentation/readme/amiresponsive-nyreewaters-art.jpg "Am I Responsive? Website Mockup") mockup created using [Am I Responsive?](https://ui.dev/amiresponsive)
+![Am I Responsive?](/documentation/amiresponsive-nyreewaters-art.jpg "Am I Responsive? Website Mockup") mockup created using [Am I Responsive?](https://ui.dev/amiresponsive)
 
 A **deployed link** to the live website can be found here - [nyreewaters art](https://nyreewaters-art-ccb67c4ebd7f.herokuapp.com/)
 
@@ -262,13 +262,13 @@ For Admin Users only:
 
 Below are the initial wireframes created for the project during the planning stage. As the project developed, the layouts were adapted to accomodate for the content included / limitations in design scope.
 
-- [Homepage](/documentation/readme/wireframes-homepage.png) ✅
-- [About](/documentation/readme/wireframes-about.png) ✅
-- [Shop Category](/documentation/readme/wireframes-category.png) ✅
-- [Shopping Bag](/documentation/readme/wireframes-shopping-bag.png) ✅
-- [Checkout](/documentation/readme/wireframes-checkout.png) ✅
-- [Checkout Success](/documentation/readme/wireframes-checkout-success.png) ✅
-- [Individual Product](/documentation/readme/wireframes-product.png) ✅
+- [Homepage](/documentation/wireframes-homepage.png) ✅
+- [About](/documentation/wireframes-about.png) ✅
+- [Shop Category](/documentation/wireframes-category.png) ✅
+- [Shopping Bag](/documentation/wireframes-shopping-bag.png) ✅
+- [Checkout](/documentation/wireframes-checkout.png) ✅
+- [Checkout Success](/documentation/wireframes-checkout-success.png) ✅
+- [Individual Product](/documentation/wireframes-product.png) ✅
 
 The following pages were not designed using wireframes due to time restraints, and instead followed a similar layout structure to the main pages (above) that were created first:
 - My Profile
@@ -290,14 +290,14 @@ The following pages were not designed using wireframes due to time restraints, a
 
 The following logo was used from Nyree's original website:
 
-![nyreewaters logo](/documentation/readme/nyreewaters-logo.jpg "nyreewaters name as logo")
+![nyreewaters logo](/documentation/nyreewaters-logo.jpg "nyreewaters name as logo")
 
 
 ### Color Scheme
 
 [coolors.co](https://coolors.co/) was used to create a color palette for the design after consulting with Nyree.
 
-![nyreewaters art colorscheme](/documentation/readme/nyreewaters-final-colorscheme.png "nyreewaters art colorscheme")
+![nyreewaters art colorscheme](/documentation/nyreewaters-final-colorscheme.png "nyreewaters art colorscheme")
 
 [Coloors color contrast checker](https://coolors.co/contrast-checker/332e14-e5ffc8) was also used to check font colors contrasted well against coloured backgrounds for improved accessibility.
 
@@ -307,7 +307,7 @@ With reference to Nyree's [main website](https://nyreewaters.com) and her font s
 
 [Typ.io](https://typ.io/s/4c28) provided us with the following font pairing inspiration which is used on [mikekus.com](https://mikekus.com):
 
-![Typ.io font-pairing example image](/documentation/readme/font-pairing-example.jpg "font-pairing example from Typ.io")
+![Typ.io font-pairing example image](/documentation/font-pairing-example.jpg "font-pairing example from Typ.io")
 
 Font Pairing Inspiration:
 - **Courier New** (body)
@@ -336,7 +336,7 @@ Font Styles used in project:
 - The diagram (created on [DrawSQL](https://drawsql.app/)) shows a layout of the tables created by my models in the database.
 - The diagram below omits the tables created by default, except the user table, as well as the tables created by [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html).
 
-![Database Schema Diagram](/documentation/readme/drawSQL-schema.png "database schema diagram")
+![Database Schema Diagram](/documentation/drawSQL-schema.png "database schema diagram")
 
 ## Database Models
 
