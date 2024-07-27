@@ -72,7 +72,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | FAQs views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-faqs-views.png) | Pass: No Errors |
 | Home urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-home-urls.png) | Pass: No Errors |
 | Home views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-home-views.png) | Pass: No Errors |
-| nyreewaters_art settings.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-settings.png) | Pass: No Errors |
+| nyreewaters_art settings.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-settings.png) | Pass: No Errors (#noqa added for long host URL and django names) |
 | nyreewaters_art urls.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-urls.png) | Pass: No Errors |
 | nyreewaters_art views.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-nyreewaters_art-views.png) | Pass: No Errors |
 | Bespoke forms.py | [PEP8 CI](#) | ![screenshot](documentation/readme/py-validation-bespoke-forms.png) | Pass: No Errors |
