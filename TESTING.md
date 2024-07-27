@@ -95,3 +95,54 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Contact views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-contact-views.png) | Pass: No Errors |
 | Root Level custom_storages.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-root-custom_storages.png) | Pass: No Errors |
 | Root Level manage.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-root-manage.png) | Pass: No Errors |
+
+
+## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+The browsers tested include:
+- [Chrome](https://www.google.com/chrome)
+- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
+- [Edge](https://www.microsoft.com/edge)
+- [Safari](https://support.apple.com/downloads/safari)
+- [Brave](https://brave.com/download)
+- [Opera](https://www.opera.com/download)
+
+| Browser | Home | Products | FAQs | Newsletter | Which Scent? | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-products.png) | ![screenshot](documentation/browser-chrome-faqs.png) | ![screenshot](documentation/browser-chrome-newsletter.png) | ![screenshot](documentation/browser-chrome-whichscent.png) |Works as expected |
+| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-products.png) | ![screenshot](documentation/browser-firefox-faqs.png) | ![screenshot](documentation/browser-firefox-newsletter.png) | ![screenshot](documentation/browser-firefox-whichscent.png) |Works as expected |
+| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-products.png) | ![screenshot](documentation/browser-edge-faqs.png) | ![screenshot](documentation/browser-edge-newsletter.png) | ![screenshot](documentation/browser-edge-whichscent.png) |Works as expected |
+| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-products.png) | ![screenshot](documentation/browser-safari-faqs.png) | ![screenshot](documentation/browser-safari-newsletter.png) | ![screenshot](documentation/browser-safari-whichscent.png) |Minor CSS differences |
+| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-products.png) | ![screenshot](documentation/browser-brave-faqs.png) | ![screenshot](documentation/browser-brave-newsletter.png) | ![screenshot](documentation/browser-brave-whichscent.png) |Works as expected |
+| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-products.png) | ![screenshot](documentation/browser-opera-faqs.png) | ![screenshot](documentation/browser-opera-newsletter.png) | ![screenshot](documentation/browser-opera-whichscent.png) |Minor differences |
+
+
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Home | Products | FAQs | Newsletter | Which Scent | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools - Samsung Galaxy S20 Ultra) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-products.png) | ![screenshot](documentation/responsive-mobile-faqs.png) | ![screenshot](documentation/responsive-mobile-about.png) |![screenshot](documentation/responsive-mobile-bespoke.png) | Works as expected |
+| Tablet (iPad Air) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-products.png) | ![screenshot](documentation/responsive-tablet-faqs.png) | ![screenshot](documentation/responsive-tablet-about.png) | ![screenshot](documentation/responsive-tablet-bespoke.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsive-desktop-home.png) | ![screenshot](documentation/responsive-desktop-products.png) | ![screenshot](documentation/responsive-desktop-faqs.png) | ![screenshot](documentation/responsive-desktop-about.png) |![screenshot](documentation/responsive-tablet-bespoke.png) |  Works as expected |
+| XL Monitor | ![screenshot](documentation/responsive-xl-home.png) | ![screenshot](documentation/responsive-xl-products.png) | ![screenshot](documentation/responsive-xl-faqs.png) | ![screenshot](documentation/responsive-xl-about.png) | ![screenshot](documentation/responsive-xl-bespoke.png) | Scaling starts to have minor issues |
+| 4K Monitor | ![screenshot](documentation/responsive-4k-home.png) | ![screenshot](documentation/responsive-4k-products.png) | ![screenshot](documentation/responsive-4k-faqs.png) | ![screenshot](documentation/responsive-4k-about.png) | ![screenshot](documentation/responsive-4k-bespoke.png) | Noticeable scaling issues |
+| iPhone XS | ![screenshot](documentation/responsive-iphone-home.png) | ![screenshot](documentation/responsive-iphone-products.png) | ![screenshot](documentation/responsive-iphone-faqs.png) | ![screenshot](documentation/responsive-iphone-about.png) | ![screenshot](documentation/responsive-iphone-bespoke.png) | Works as expected |
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Slow response time due to large images |
+| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Slow response time due to large images |
+| Products | ![screenshot](documentation/lighthouse-products-mobile.png) | ![screenshot](documentation/lighthouse-products-desktop.png) | Slow response time due to large images |
+| FAQs | ![screenshot](documentation/lighthouse-faqs-mobile.png) | ![screenshot](documentation/lighthouse-faqs-desktop.png) | Slow response time due to large images |
+| Bespoke | ![screenshot](documentation/lighthouse-bespoke-mobile.png) | ![screenshot](documentation/lighthouse-bespoke-desktop.png) | Slow response time due to large images |
+| Contact | ![screenshot](documentation/lighthouse-contact-mobile.png) | ![screenshot](documentation/lighthouse-contact-desktop.png) | Slow response time due to large images |
+| Bag | ![screenshot](documentation/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse-bag-desktop.png) | Slow response time due to large images |
+| Checkout | ![screenshot](documentation/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse-checkout-desktop.png) | Slow response time due to large images |
+| Checkout Success | ![screenshot](documentation/lighthouse-checkout-success-mobile.png) | ![screenshot](documentation/lighthouse-checkout-success-desktop.png) | Slow response time due to large images |
