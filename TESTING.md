@@ -108,7 +108,7 @@ The browsers tested include:
 - [Brave](https://brave.com/download)
 - [Opera](https://www.opera.com/download)
 
-| Browser | Home | Products | FAQs | Newsletter | Which Scent? | Notes |
+| Browser | Home | Products | FAQs | About | Bespoke | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-products.png) | ![screenshot](documentation/browser-chrome-faqs.png) | ![screenshot](documentation/browser-chrome-bespoke.png) | ![screenshot](documentation/browser-chrome-about.png) |Works as expected |
 | Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-products.png) | ![screenshot](documentation/browser-firefox-faqs.png) | ![screenshot](documentation/browser-firefox-bespoke.png) | ![screenshot](documentation/browser-firefox-about.png) |Works as expected |
@@ -122,7 +122,7 @@ The browsers tested include:
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | Products | FAQs | Newsletter | Which Scent | Notes |
+| Device | Home | Products | FAQs | About | Bespoke | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Mobile (DevTools - Samsung Galaxy S20 Ultra) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-products.png) | ![screenshot](documentation/responsive-mobile-faqs.png) | ![screenshot](documentation/responsive-mobile-about.png) |![screenshot](documentation/responsive-mobile-bespoke.png) | Works as expected |
 | Tablet (iPad Air) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-products.png) | ![screenshot](documentation/responsive-tablet-faqs.png) | ![screenshot](documentation/responsive-tablet-about.png) | ![screenshot](documentation/responsive-tablet-bespoke.png) | Works as expected |
