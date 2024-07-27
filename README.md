@@ -414,6 +414,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 - [CSS tricks](https://css-tricks.com/snippets/css/css-triangle/) - also referenced by Code Institute in the Boutique Ado project, the 'arrow-up' styling was used for the 'scroll to top' button
 - [Emma Walsh](https://github.com/emmawalshdev) for shop layout inspiration and adapted code on Home and About pages, also Bespoke form setup - [KayTea Art (Github repo)](https://github.com/emmawalshdev/kaytea_art/tree/main)
 - [Rory Sheridan](https://github.com/Ri-Dearg/neverlost-thrift/tree/master) - general project inspiration and reference, but also README documentation help (e.g. Database Structure)
+- [Delyth Jennings](https://github.com/D3lyth/lunar_glow/) - for TESTING section boilerplate
 
 ### Media
 - [Freepik - Favicon](https://www.flaticon.com/free-animated-icons/no-camera) - No camera animated icon created by Freepik, used in cases of 'no image' rendered for images across the site
