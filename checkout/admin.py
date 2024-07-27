@@ -16,18 +16,19 @@ class OrderAdmin(admin.ModelAdmin):
                        'stripe_pid')
 
     fields = ('order_number', 'user_profile', 'first_name', 'last_name',
-              'email', 'mobile_number','address_line1',
-              'address_line2', 'town_or_city', 'county', 
+              'email', 'mobile_number', 'address_line1',
+              'address_line2', 'town_or_city', 'county',
               'country', 'postcode', 'date',
-              'delivery_cost', 'order_total', 
+              'delivery_cost', 'order_total',
               'grand_total', 'original_bag',
               'stripe_pid')
 
     list_display = ('order_number', 'date', 'first_name',
                     'last_name', 'email', 'mobile_number',
-                    'order_total', 'delivery_cost', 
+                    'order_total', 'delivery_cost',
                     'grand_total',)
 
     ordering = ('-date',)
+
 
 admin.site.register(Order, OrderAdmin)
