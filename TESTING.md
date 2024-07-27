@@ -31,7 +31,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| base.css | [Jigsaw](#) | ![screenshot](documentation/readme/css-validation-base.png) | Pass: No Errors |
+| base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnyreewaters-art-ccb67c4ebd7f.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/readme/css-validation-base.png) | Pass: No Errors |
 | checkout.css | n/a | ![screenshot](documentation/readme/css-validation-checkout.png) | Pass: No Errors |
 | profile.css | n/a | ![screenshot](documentation/readme/css-validation-profiles.png) | Pass: No Errors |
 | home-about.css | n/a | ![screenshot](documentation/css-validation-home-about.png) | Pass: No Errors |
