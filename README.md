@@ -208,7 +208,6 @@ General:
   - [Search Bar feature](#search-bar-feature)
   - [Footer Links](#footer-links)
   - [Toast Messages](#toast-messages)
-  - [Custom Error Pages](#custom-error-pages)
 
   My Account:
   - [Login](#login)
@@ -238,6 +237,72 @@ General:
   - [Bespoke Details and Form](#bespoke-details-and-form)
   - [Contact Form](#contact-form)
   - [FAQs](#faqs)
+
+  Admin:
+  -[Product Management](#product-management)
+  -[Django Admin](#django-admin)
+
+  ## Logo Link to Homepage
+
+  ## Desktop Navbar Dropdown
+
+  ## Mobile Navbar Dropdown
+
+  ## Search Bar Feature
+
+  ## Footer Links
+
+  ## Toast Messages
+
+  ## Login
+
+  ## Register Account
+
+  ## Registration Verification
+
+  ## Registration Success
+
+  ## Signout Confirmation
+
+  ## Profile Page
+
+  ## All Products
+
+  ## Shop Category Buttons
+
+  ## Shop Prints
+
+  ## Shop Originals
+
+  ## Product Sort Selector
+
+  ## Scroll to Top Button
+
+  ## Product Detail
+
+  ## Product Quantity Tool
+
+  ## Add to Shopping Bag
+
+  ## View/Edit Shopping Bag
+
+  ## Secure Checkout
+
+  ## Stripe Payment
+
+  ## Order Confirmation
+
+  ## Email Order Confirmation
+
+  ## Bespoke Details and Form
+
+  ## Contact Form
+
+  ## FAQs
+
+  ## Product Management
+
+  ## Django Admin
 
 
 
