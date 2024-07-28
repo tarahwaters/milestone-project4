@@ -312,11 +312,35 @@ General:
 
   ## Register Account
 
+  For new users, they can register an account via the validated registration form:
+
+  ![new account registration form](/documentation/features/feature-register-form.png "new account registration form")
+
+  Emails that have already been registered / invalid inputs will result in an error message which tells the user what to do.
+
   ## Registration Verification
+
+  A new registration using a valid email address will receive an update explaining that an email verification link has been sent:
+
+  ![email verification page](/documentation/features/feature-verify-email-registration.png "email verification page")
+
+  An example of the sent verification email is below:
+
+  ![registration email example](/documentation/features/feature-register-email.png "registration email example")
 
   ## Registration Success
 
+  Clicking the verification link, the user is sent to a confirmation page and upon clicking 'confirm', they will receive a signup success message:
+
+  ![signup success message](/documentation/features/feature-signup-success.png "signup success message")
+
   ## Signout Confirmation
+
+  Clicking the 'logout' link from the account dropdown opens the 'signout confirmation' page:
+
+  ![signout confirmation page](/documentation/features/feature-sign-out-confirm.png "signout confirmation page")
+
+  A successful signout will result in a toast message in the corner. And the user can no longer access their Profile until they log back in.
 
   ## Profile Page
 
