@@ -109,14 +109,14 @@ The browsers tested include:
 - [Brave](https://brave.com/download)
 - [Opera](https://www.opera.com/download)
 
-| Browser | Home | Products | FAQs | About | Bespoke | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-products.png) | ![screenshot](documentation/browser-chrome-faqs.png) | ![screenshot](documentation/browser-chrome-bespoke.png) | ![screenshot](documentation/browser-chrome-about.png) |Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-products.png) | ![screenshot](documentation/browser-firefox-faqs.png) | ![screenshot](documentation/browser-firefox-bespoke.png) | ![screenshot](documentation/browser-firefox-about.png) |Works as expected |
-| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-products.png) | ![screenshot](documentation/browser-edge-faqs.png) | ![screenshot](documentation/browser-edge-bespoke.png) | ![screenshot](documentation/browser-edge-about.png) |Works as expected |
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-products.png) | ![screenshot](documentation/browser-safari-faqs.png) | ![screenshot](documentation/browser-safari-bespoke.png) | ![screenshot](documentation/browser-safari-about.png) |Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-products.png) | ![screenshot](documentation/browser-brave-faqs.png) | ![screenshot](documentation/browser-brave-bespoke.png) | ![screenshot](documentation/browser-brave-about.png) |Works as expected |
-| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-products.png) | ![screenshot](documentation/browser-opera-faqs.png) | ![screenshot](documentation/browser-opera-bespoke.png) | ![screenshot](documentation/browser-opera-about.png) |Minor differences |
+| Browser | Home | Products | FAQs | Bespoke | About | Contact | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-products.png) | ![screenshot](documentation/browser-chrome-faqs.png) | ![screenshot](documentation/browser-chrome-bespoke.png) | ![screenshot](documentation/browser-chrome-about.png) |![screenshot](documentation/browser-chrome-contact.png) | Works as expected |
+| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-products.png) | ![screenshot](documentation/browser-firefox-faqs.png) | ![screenshot](documentation/browser-firefox-bespoke.png) | ![screenshot](documentation/browser-firefox-about.png) |![screenshot](documentation/browser-chrome-contact.png) | Works as expected |
+| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-products.png) | ![screenshot](documentation/browser-edge-faqs.png) | ![screenshot](documentation/browser-edge-bespoke.png) | ![screenshot](documentation/browser-edge-about.png) |![screenshot](documentation/browser-chrome-contact.png) | Works as expected |
+| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-products.png) | ![screenshot](documentation/browser-safari-faqs.png) | ![screenshot](documentation/browser-safari-bespoke.png) | ![screenshot](documentation/browser-safari-about.png) |![screenshot](documentation/browser-chrome-contact.png) | Minor CSS differences |
+| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-products.png) | ![screenshot](documentation/browser-brave-faqs.png) | ![screenshot](documentation/browser-brave-bespoke.png) | ![screenshot]contact(documentation/browser-brave-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | Works as expected |
+| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-products.png) | ![screenshot](documentation/browser-opera-faqs.png) | ![screenshot](documentation/browser-opera-bespoke.png) | ![screenshot](documentation/browser-opera-about.png) |![screenshot](documentation/browser-chrome-contact.png) | Minor differences |
 
 
 ## Responsiveness
