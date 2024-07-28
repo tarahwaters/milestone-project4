@@ -239,8 +239,8 @@ General:
   - [FAQs](#faqs)
 
   Admin:
-  -[Product Management](#product-management)
-  -[Django Admin](#django-admin)
+  - [Product Management](#product-management)
+  - [Django Admin](#django-admin)
 
   ## Logo Link to Homepage
 
