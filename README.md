@@ -301,6 +301,13 @@ The following logo was used from Nyree's original website:
 
 [Coloors color contrast checker](https://coolors.co/contrast-checker/332e14-e5ffc8) was also used to check font colors contrasted well against coloured backgrounds for improved accessibility.
 
+#E5543C
+#35CCCF
+#000000
+#343A40
+#EADECE
+#F8F9FA
+
 ### Typography
 
 With reference to Nyree's [main website](https://nyreewaters.com) and her font styling preferences, we searched for font pairings that matched.
