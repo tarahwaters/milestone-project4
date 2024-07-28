@@ -244,15 +244,47 @@ General:
 
   ## Logo Link to Homepage
 
+  Clicking the Nyree Waters logo anywhere on the site takes the user back to the homepage.
+  
+  ![nyreewaters logo](/documentation/features/feature-logo-home.png "nyreewaters name as logo")
+
   ## Desktop Navbar Dropdown
 
+  Viewing the website on a desktop displays the navbar menu in a central position that is easy to access. The 'shop' link contains a dropdown to search for all shop items, or by category:
+
+  ![desktop nav dropdown menu](/documentation/features/feature-dropdown-menu-shop.png "image of desktop nav dropdown menu for shop contents")
+
   ## Mobile Navbar Dropdown
+  
+  Viewing the website from a mobile device allows the user easy access to the navbar via a dropdown menu:
+
+  ![mobile nav dropdown menu](/documentation/features/features-mob-nav-menu.png "image of mobile nav dropdown menu")
 
   ## Search Bar Feature
 
+  A search bar is located at the top of each page and allows the user to search the shop items using keywords.
+
+  ![search bar feature](/documentation/features/feature-search-shop.png "image of search bar feature")
+  
+  Results will show if the keyword is present in either the product title / description.
+
+  ![search bar feature - results](/documentation/features/feature-search-results.png "example of search bar feature results")
+
+  If there are no results, then feedback of 'no results' is displayed to the user.
+  
+  ![search bar feature - no results](/documentation/features/feature-search-no-results.png "example of search bar feature when no results are found")
+
   ## Footer Links
 
+  A footer containing Nyree's social links, as well as links to my github / linkedin pages (as the webdeveloper), is consistent and accessible at the bottom of each page. It contains the logo and similar font styling to the rest of the site. There are also quick nav links for the user to access other pages if/when convenient.
+
+   ![footer links](/documentation/features/feature-footer-links.png "image of footer and links to socials or other site pages")
+
   ## Toast Messages
+
+  Toast Messages were utilised using Bootstrap and provide the user with regular feedback in the top right corner of the page (for visual users - via a box that pops up by the shopping bag). These messages can show a successful process has been completed, an error message explaining the issue, alert or general update:
+
+  ![toast success for confirming an email](/documentation/features/feature-signup-success.png "a toast success messsage for confirming an email address")
 
   ## Login
 
