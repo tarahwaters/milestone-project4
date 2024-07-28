@@ -407,6 +407,7 @@ Font Styles used in project:
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - used for testing and troublshooting code, along with Lighthouse auditing
 - [Heroku](https://www.heroku.com/) -used for production deployment
 - [Amazon Web Services](https://aws.amazon.com/) - S3 Bucket used for static file hosting
+- [Supabase](https://supabase.com/) - PostgreSQL database for deployment with Heroku
 
 ### Other tools:
 - [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
