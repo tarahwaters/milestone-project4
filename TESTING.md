@@ -138,12 +138,14 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Slow response time due to large images |
+| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Slow response time due to large images, potential saving by improving the imaging sizing / ratio of bio image |
 | About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Slow response time due to large images |
 | Products | ![screenshot](documentation/lighthouse-products-mobile.png) | ![screenshot](documentation/lighthouse-products-desktop.png) | Slow response time due to large images |
 | FAQs | ![screenshot](documentation/lighthouse-faqs-mobile.png) | ![screenshot](documentation/lighthouse-faqs-desktop.png) | Slow response time due to large images |
 | Bespoke | ![screenshot](documentation/lighthouse-bespoke-mobile.png) | ![screenshot](documentation/lighthouse-bespoke-desktop.png) | Slow response time due to large images |
 | Contact | ![screenshot](documentation/lighthouse-contact-mobile.png) | ![screenshot](documentation/lighthouse-contact-desktop.png) | Slow response time due to large images |
-| Bag | ![screenshot](documentation/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse-bag-desktop.png) | Slow response time due to large images |
+| Bag | ![screenshot](documentation/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse-bag-desktop.png) | Slow response time due to large images, +/- buttons and some form elements do not have a discernible name / label for accessibility* |
 | Checkout | ![screenshot](documentation/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse-checkout-desktop.png) | Slow response time due to large images |
 | Checkout Success | ![screenshot](documentation/lighthouse-checkout-success-mobile.png) | ![screenshot](documentation/lighthouse-checkout-success-desktop.png) | Slow response time due to large images |
+
+**Note** * Where Accessibility was lower than expected, this was due to not having time to fix the discernible names / labels for some visual elements. On other pages this was done, and this would be a priority for future work.
