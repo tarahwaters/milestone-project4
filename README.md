@@ -292,14 +292,6 @@ General:
 
   ![login link](/documentation/features/feature-account-dropdown-no-signin.png "login link")
 
-  When signed in, this is what admin users see from the account dropdown:
-
-  ![account dropdown for admin only](/documentation/features/feature-account-dropdown-admin.png "account dropdown for admin only")
-
-  For non-admin users:
-
-  ![account dropdown for non-admin only](/documentation/features/feature-account-dropdown-admin.png "account dropdown for non-admin only")
-
   On the signin page, users need to fill in the form with their email address and password - this is validated and any errors will result in an message being displayed. 
   
   A successful signin results in a toast message in the right corner, and the following account options will now be available for non-admin users:
