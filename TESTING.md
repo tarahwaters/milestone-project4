@@ -70,6 +70,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | FAQs models.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-models.png) | Pass: No Errors |
 | FAQs urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-urls.png) | Pass: No Errors |
 | FAQs views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-views.png) | Pass: No Errors |
+| FAQs load_faqs.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-faqs-load_faqs.png) | Pass: No Errors |
 | Home urls.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-home-urls.png) | Pass: No Errors |
 | Home views.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-home-views.png) | Pass: No Errors |
 | nyreewaters_art settings.py | [PEP8 CI](#) | ![screenshot](documentation/py-validation-nyreewaters_art-settings.png) | Pass: No Errors (#noqa added for long host URL and django names) |
