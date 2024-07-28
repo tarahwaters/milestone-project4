@@ -288,6 +288,28 @@ General:
 
   ## Login
 
+  Users with an account already can 'login' via the link found in the 'my account' dropdown or the 'signin' link on the 'register' page. This is what all users see before they sign in:
+
+  ![login link](/documentation/features/feature-account-dropdown-no-signin.png "login link")
+
+  When signed in, this is what admin users see from the account dropdown:
+
+  ![account dropdown for admin only](/documentation/features/feature-account-dropdown-admin.png "account dropdown for admin only")
+
+  For non-admin users:
+
+  ![account dropdown for non-admin only](/documentation/features/feature-account-dropdown-admin.png "account dropdown for non-admin only")
+
+  On the signin page, users need to fill in the form with their email address and password - this is validated and any errors will result in an message being displayed. 
+  
+  A successful signin results in a toast message in the right corner, and the following account options will now be available for non-admin users:
+
+  ![account dropdown for signed in non-admin](/documentation/features/feature-account-dropdown-user.png "account dropdown for signed in non-admin")
+
+  And for admin users, a secure product management link will be available as well as access to the profile / logout:
+
+  ![account dropdown for signed in admin](/documentation/features/feature-account-dropdown-admin.png "account dropdown for signed in admin")
+
   ## Register Account
 
   ## Registration Verification
