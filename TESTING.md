@@ -151,3 +151,34 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Checkout Success | ![screenshot](documentation/lighthouse-checkout-success-mobile.png) | ![screenshot](documentation/lighthouse-checkout-success-desktop.png) | Slow response time due to large images |
 
 **Note** * Where Accessibility was lower than expected, this was due to not having time to fix the discernible names / labels for some visual elements. On other pages this was done, and this would be a priority for future work.
+
+## Manual Testing
+
+Manual testing was chosen over Automated testing in this instance due to time constraints and current lack of experience in writing tests.
+
+Automated testing uses code to run test cases, and is generally more effective in terms of speed and efficency with larger scale projects.
+
+Some automated tests were trialed for the Products views.py as a learning tool, but this was heavily due to the help of chatGPT so will be deleted before the project submission. I also got support from chatGPT when writing initial tests to trigger my custom error pages. It was helpful to be able to trigger an error case so that I could preview my rendered error template whilst building the HTML. For production however, the error testing code has been removed, and instead follows django's handling of custom error pages [as seen here](https://www.geeksforgeeks.org/python-django-handling-custom-error-page/).
+
+Manual testing involves a developer testing the functionality of the site by checking each feature behaves as expected.
+
+Results from these manual tests are below:
+
+
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| --- | --- | --- | --- | --- | --- |
+| Home | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| |  |   |  | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| Navigation - All Pages | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| | |  |  | Test concluded and passed | ![screenshot](documentation/feature03.png) |
+| Admin Panel | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| |  |  |  | Test concluded and passed | ![screenshot](documentation/feature05.png) |
+| Contact | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| |  | | | Test concluded and passed | ![screenshot](documentation/feature06.png) |
+| FAQs | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| |  | | | Test concluded and passed | ![screenshot](documentation/feature07.png) |
+| Shopping Bag | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| |  | | | Test concluded and passed | ![screenshot](documentation/feature08.png) |
+| Admin Panel | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| | | | | Test concluded and passed | ![screenshot](documentation/feature09.png) |
+| Bespoke |  |  | | Test concluded and passed | ![screenshot](documentation/feature10.png) |
