@@ -252,7 +252,7 @@ General:
 
   Viewing the website on a desktop displays the navbar menu in a central position that is easy to access. The 'shop' link contains a dropdown to search for all shop items, or by category:
 
-  ![desktop nav dropdown menu](/documentation/features/feature-dropdown-menu-shop.png "image of desktop nav dropdown menu for shop contents")
+  ![desktop nav dropdown menu](/documentation/features/feature-dropdown-menu-shop.png "desktop nav dropdown menu for shop contents")
 
   ## Mobile Navbar Dropdown
   
@@ -336,17 +336,72 @@ General:
 
   ## Profile Page
 
+  A signed in user can access a Profile page which has a dynamic form (on the left side for larger screens) to store delivery address details (which can be added / edited and saved) for easy access at the checkout page. A successful order will automatically populate the details for returning users if they clicked the option to save their details.
+
+  ![profile page](/documentation/features/feature-profile-page.png "profile page")
+
+  On the right side (or below, for mobile users), the user's Order History is listed. This contains the general order details such as: order number, date, items and total.
+  The order number is linked to a more detailed view of the original 'order confirmation' received when a purchase was made. This can be useful for users who want to check this information at a later date. Any future orders will be saved here if the user was logged into their account when they made a purchase.
+
+  ![profile order confirmation](/documentation/features/feature-profile-order-confirmation.png "profile order confirmation")
+
+  From the profile order confirmation page, the user can return to their profile by clicking the button 'back to profile'.
+
+  As you can see in the example, reference to the order email address in the top description, order summary and Alert message, are all linked to the same address associated with the order ID.
+
   ## All Products
+
+  Accessing the shop to view 'all items' can be done via the navbar dropdown menu for 'shop'. Or if the user has selected either the 'prints' or 'originals' links on the main page, there is a link to 'All items' from the top left either product category page.
+
+  ![desktop nav dropdown menu](/documentation/features/feature-dropdown-menu-shop.png "desktop nav dropdown menu for shop contents")
+
+  The main products page lists all items available for purchase of both major categories: Originals and Prints.
+
+  This view is for non-admin users / non-signed in users:
+
+  ![all products page](/documentation/responsive-xl-products.png "all products page")
+
+  Admin users are able to see the edit / delete icons next to each product (see below for more details in [product management](#product-management))
 
   ## Shop Category Buttons
 
+  The shop category buttons are arranged centrally on each product page for easy access and the hover styling highlights when they are selected.
+
+  ![product category buttons](/documentation/features/feature-product-sorting.png "product category buttons")
+
+  On the home page there are also buttons that link to the product categories, that showcase an example piece or Original or Printed artwork for sale to entice customers:
+
+  ![home page shop buttons](/documentation/features/feature-shop-online-links.png "home page shop buttons")
+
+  Clicking either 'products' or 'originals' will take the user to a page listing only the products listed under that category.
+
+  Clicking 'bespoke' will take the user to the [bespoke](#bespoke-details-and-form) collage page, where they can submit an enquriry.
+
   ## Shop Prints
+
+  Shopping on the Prints category page looks like this:
+
+  ![prints product page](/documentation/responsive-desktop-products.png "prints product page")
 
   ## Shop Originals
 
+  Shopping on the Originals category page looks like this:
+
+  ![originals product page](/documentation/features/feature-products-non-admin.png "originals product page")
+
+  On this main product view, each item contains basic info such as the product image, name, rating, category tag, price. Users can click the item to open up further details about the product, where it can also be added to the shopping bag ready for purchasing.
+
   ## Product Sort Selector
 
+  On each product page, users have the option of sorting items by name / price - either ascending or descending in order. There is also potential to include the product rating as a sorting option (to be expanded on in future with a customer 'review' feature).
+
+  As previously mentioned, there is a link to return to 'All items' from the catergory views, and the number of products per page is also listed here (updates accordingly).
+
+  ![product sorting buttons](/documentation/features/feature-product-sorting.png "product sorting buttons")
+
   ## Scroll to Top Button
+
+  With an increasing number of items added to the shop, the page is likely to become quite long when scrolling through products. There is a handy button included (arrow up button, bottom right of larger pages) that allows the user to scroll back to the top of the page. Once clicked the button turns an orange colour.
 
   ## Product Detail
 
