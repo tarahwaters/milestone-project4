@@ -540,12 +540,12 @@ The following logo was used from Nyree's original website:
 
 [Coloors color contrast checker](https://coolors.co/contrast-checker/332e14-e5ffc8) was also used to check font colors contrasted well against coloured backgrounds for improved accessibility.
 
-#E5543C
-#35CCCF
-#000000
-#343A40
-#EADECE
-#F8F9FA
+- #E5543C
+- #35CCCF
+- #000000
+- #343A40
+- #EADECE
+- #F8F9FA
 
 ### Typography
 
@@ -576,18 +576,18 @@ Font Styles used in project:
 ## Database Structure
 ### Details
 - I have used a **Postgres** relational database via [Supabase](https://supabase.com/) throughout the entire project development.
-- The project is directly connected to the deployed database on Heroku during development  - this was necessary to work with the Code Institute Dockerfile that was used.
+- The project is directly connected to the deployed database on Heroku during development.
 
 ### Diagram
 - The diagram (created on [DrawSQL](https://drawsql.app/)) shows a layout of the tables created by my models in the database.
-- The diagram below omits the tables created by default, except the user table, as well as the tables created by [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html).
+- The diagram below omits the tables created by default, except the user table, as well as the tables created by [django-allauth](https://docs.allauth.org/en/latest/).
 
 ![Database Schema Diagram](/documentation/drawSQL-schema.png "database schema diagram")
 
 ## Database Models
 
 **Please Note:** 
-- Default tables created by [django](https://www.djangoproject.com/) as well as [django-allauth](https://django-allauth.readthedocs.io/en/latest/index.html) have been ommited from this section. Please refer to their documentation (refrenced [here](#tools-and-technologies-used)) for more information on their data models.
+- Default tables created by [django](https://www.djangoproject.com/) as well as [django-allauth](hhttps://docs.allauth.org/en/latest/) have been ommited from this section. Please refer to their documentation (refrenced [here](#tools-and-technologies-used)) for more information on their data models.
 - The CountryField is from [django-countries](https://github.com/SmileyChris/django-countries).
 
 ### Product App
