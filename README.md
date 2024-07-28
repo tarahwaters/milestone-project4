@@ -379,11 +379,34 @@ Font Styles used in project:
 - [Flaticon](https://www.flaticon.com/) - used for error / no-photo icon images
 
 ### Packages:
+- **asgiref** - ASGI is the standard interface for asynchronous Python web servers, frameworks and applications to communicate with eachother
+- **boto3** - used to configure and manage AWS S3
+- **botocore** - session, credential and configuration data
+- **dj-database-url** - from django, used to parse a DATABASE_URL to configure a django app
+- **django** - Python-based free opensource web framework (follows a model-template-view structure)
+- **django-allauth** - integrated set of django applications for authentication, registering an account, managing accounts etc.
+- **django-countries** - from django, provides country choices for use in forms and model fields
+- **django-crispy-forms** - using the crispy filter and tag, this helps with consistency of form styling
+- **django-storages** - custom storage backends from a single library, for use with AWS
+- **gunicorn** - helps to deploy the server on Heroku
+- **jmespath** - specifies how to extract data from a JSON file
+- **oauthlib** - framework that uses OAuth1 or OAuth2 logic without assuming a specific HTTP request object / web framework.
+- **pillow** - Python imaging library that provides tools to manipulate images
+- **psycopg2** - popular PostgreSQL database adaptor for Python
+- **python-dotenv** - reads key-value pairs from an environment file and sets them as env variables
+- **python3-openid** - python packages to support use of OpenID decentralised identity system in the application
+- **pytz** - library that brings the Olson tz database into Python to support cross platform timezone calculations
+- **requests-oauthlib** - provides a easy Python interface for building OAuth1 and OAuth2 clients
+- **s3transfer** - Python library that manages Amazon S3 transfers
+- **sqlparse** - provides support for parsing, splitting and formatting SQL statements
+- **stripe** - Python library for the Stripe API
 
 ### Platforms:
 - [GitHub and Github Pages](https://github.com/) - used to securely store the code and to host and deploy the live project
 - [GitPod](https://www.gitpod.io/) - used as a cloud-based IDE for development
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - used for testing and troublshooting code, along with Lighthouse auditing
+- [Heroku](https://www.heroku.com/) -used for production deployment
+- [Amazon Web Services](https://aws.amazon.com/) - S3 Bucket used for static file hosting
 
 ### Other tools:
 - [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
