@@ -192,7 +192,7 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | Contact page*                                                       |     4      |            4            |    Y    |
 | Add a product review (functionality and page)                       |     3      |            2            |    X    |
 
-* Bespoke and Contact page forms were created but without POST functionality due to time restraints
+**Note** * Bespoke and Contact page forms were created and have some POST functionality but data is not currently saved to the database (more details in [existing features](#existing-features)).
 
 
 ---
