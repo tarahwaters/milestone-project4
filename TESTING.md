@@ -212,8 +212,8 @@ Details of further testing are below:
 | Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | | Update default delivery details via the form and click on the Update Information button | Success message confirms details have been updated, and they will be prefilled in the form for future | Pass | |
-| | If previous orders exist, click on a previous order link | User will be redirected to the saved Order Confirmation page | Pass | |
-| | Brute forcing the URL of an order history URL e.g. **'.../profile/order_history/9A52801D36774F548B6A83976676E621'** when a user is not signed in or the user order does not match the signed in user | A Forbidden 403 error should be triggered | Pass | Although the custom 403 error page isn't being shown during testing, the correct Forbidden error message is shown: 'You do not have permission to access this order.'|
+| | If previous orders exist, click on a previous order link | User will be redirected to the saved Order Confirmation page (that matches the order number) | Pass | |
+| | Brute forcing the URL of an order history URL e.g. tested using a known order (see [fixed bugs](#fixed-bugs)): **'.../profile/order_history/9A52801D36774F548B6A83976676E621'** when a user is not signed in or the user order does not match the signed in user | A Forbidden 403 error should be triggered | Pass | Although the custom 403 error page isn't being shown during testing, the correct Forbidden error message is shown: 'You do not have permission to access this order.'|
 | | As a non signed-in user, access the /profile/ URL | User will be redirected to the Sign In page since they are not autheniticated | Pass | |
 | Products | | | | |
 | | Click on product image | User will be redirected to the Product Details page | Pass | |
@@ -221,3 +221,14 @@ Details of further testing are below:
 | | Click on + / - button to add/remove product from bag | Quantity in bag will increase/decrease | Pass | |
 | | Click on add to bag button to add product to bag | Item will be added to bag | Pass | |
 | | Click on keep shopping button to add product to bag | Item will be added to bag | Pass | |
+| Product Management | | | | |
+| | When signed in as an admin user, click the Product Management link | User redirected to 'add product' page of product management | Pass | |
+| | Admin user tries to add a product without filling out all the * input fields  | Error messages remind the user to enter information in the valid formats | Pass | |
+| | Admin user tries to add a product with a price more than 6 digits | Error alert - failed to add product, and a direction in the form to enter a number less than 6 digits | Pass | |
+| | Admin user tries to add a product with valid form inputs and an image | User is redirected to the product detail of the newly added product, with a success message to confirm and image displayed (uploaded to AWS cloud database) | Pass | |
+| | Admin user tries to add a product with valid form inputs with NO image | User is redirected to the product detail of the newly added product, with a success message to confirm and a default 'no-photo' gif is displayed | Pass | |
+| | Admin user tries to add a product without a rating (not required for form validation) | User is redirected to the product detail of the newly added product, with a success message to confirm and the rating displays as 'no rating' | Pass | |
+| | Admin clicks the blue 'edit' button (a pencil icon) next to a product's detail | User is redirected to the 'edit product' page for that item, where the form is prefilled with the product details | Pass | |
+| | Admin changes the details of the product via the 'edit product' form and clicks 'update product' | Changes are saved to the product listing, and the user is redirected to the Product Detail page for that item. A success message confirms the updated product  | Pass | |
+| | Admin changes the details of the product via the 'edit product' form and clicks to 'remove image' | Changes are saved to the product listing, and the user is redirected to the Product Detail page for that item. The previous image has been removed, and is replaced with the default 'no-photo' gif. A success message confirms the updated product.  | Pass | |
+| | Admin clicks the red 'delete' button (a trash icon) next to a product's detail | User is redirected to the All Items page where the product has been deleted, and a success message confirms the product is deleted | Pass | A delete confirmation modal needs to be implemented for future to prevent deleting products by mistake |
