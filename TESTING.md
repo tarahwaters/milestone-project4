@@ -182,9 +182,7 @@ Results from these manual tests are below:
 | | Allows the user to fill out a form to submit a message to the shop owner. Current functionality expects a validated form results in a 'success' message returned to the user | Tested by completing the form, passing the validation by adding a first + last name / email / subject line / message | Feature works as expected, success message is shown | Test concluded and passed | ![screenshot](documentation/features/feature-contact-submit-success.png) |
 | FAQs | | | | | |
 | | Feature should display the answer to each question as a drop down accordion when the user clicks on it | Tested by clicking on each question | FAQ answers were displayed when the question was clicked | Test concluded and passed | ![screenshot](documentation/features/feature-faqs-accordion.png) |
-| |  | | | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| Shopping Bag | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| |  | | | Test concluded and passed | ![screenshot](documentation/feature08.png) |
-| Admin Panel | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | | | | Test concluded and passed | ![screenshot](documentation/feature09.png) |
-| Bespoke |  |  | | Test concluded and passed | ![screenshot](documentation/feature10.png) |
+| Shopping Bag | | | | | |
+| | Allows users to add items to the bag, adjust the quantity to update the bag (no less than 1, or no greater than 99 items), and remove items from the bag | Tested by adding items, changing the quantity via the -/+ buttons, updating the bag by clicking 'update' and removing items by clicking 'remove'| Feature worked as expected | Test concluded and passed | ![screenshot](documentation/features/feature-shopping-bag.png) |
+| Bespoke | | | | | |
+| | Feature is expected to show details of the bespoke product on offer, and allow users to fill in an enquiry form to express interest. A successful form submission should result in the user being redirected to a thank you page confirming their enquiry was sent | Tested by filling out the form, answering the questions by selecting an answer or typing an appropirate input for the form to be valid. Clicking submit, then checking the confirmation page loads | Feature worked as expected and the bespoke success confirmation page loaded once the form was submitted | Test concluded and passed | ![screenshot](documentation/features/feature-bespoke-form-success.png) |
