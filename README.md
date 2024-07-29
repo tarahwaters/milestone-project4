@@ -832,6 +832,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
                     python manage.py load_faqs filepath/to/the/json/faqs.json
     ```
     - It's not entirely necessary with a feature like FAQs for a small business like this, espeically if the site owner is likely to update features via a frontend interface, but it was interesting to try this out and has scope for larger scale projects in future
+- **Sending email order confirmation bug fix** - see [TESTING - bugs](TESTING.md) for more details - code used to fix the issue came from Code Institute Slack channel, from a student who used the Bug Reports Workflow app
 
 ### Media
 - [Freepik - Favicon](https://www.flaticon.com/free-animated-icons/no-camera) - No camera animated icon created by Freepik, used in cases of 'no image' rendered for images across the site
@@ -857,6 +858,20 @@ Some of the written content e.g. artist bio, was taken from [Nyree Waters' websi
 In response to DevTools Lighthouse Audits, the following references were used to help improve the quality and efficiency of the site:
 - [Deque University](https://dequeuniversity.com/rules/axe/4.9/link-name) - Discernible names for links (e.g. social media links / icons)
 
+### Error Pages and Testing
+- [StudyGyaan](https://studygyaan.com/django/how-to-implement-forbidden-response-403-in-django) - imrplementing a forbidden 403 response
+- [Django custom error pages](https://learndjango.com/tutorials/customizing-django-404-and-500-error-pages)
+- [Dev.to](https://dev.to/riyanagueco/creating-a-custom-error-page-on-django-3nnd)
+- [W3schools](https://www.w3schools.com/django/django_404.php)
+
+### Boostrap Styles
+- [Bootstrap Spacing](https://getbootstrap.com/docs/4.0/utilities/spacing/)
+- [Bootstrap Toasts](https://getbootstrap.com/docs/5.3/components/toasts/)
+
+### Font Alternatives
+- [Learn UI Design](https://www.learnui.design/blog/helvetica-similar-fonts.html#5-tex-gyre-heros)
+
 ## Acknowledgements
 - [Rory Sheridan](https://github.com/Ri-Dearg) - for his great mentorship and support throughout the project, as well as support with README documentation
 - [Delyth Jennings](https://github.com/D3lyth/lunar_glow/) - for TESTING section boilerplate
+- Code Institute Tutor Support - for their patience and help with troubleshooting bugs
