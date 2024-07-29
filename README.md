@@ -22,9 +22,11 @@ If you'd like to test the checkout and payment functionality of the website, ple
 
 ------
 
-### Note
+### Notes
 
 The original SECRET_KEY referenced in the project settings.py file has since been changed and remains hidden as an environment variable.
+
+I acknowledge there are commit messages that are too long for standard practice, and in future I will improve on this.
 
 ------
 
