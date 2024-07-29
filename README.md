@@ -551,9 +551,23 @@ General:
 
   ![deleted product success message](/documentation/features/feature-delete-product-test.png "deleted product success message")
 
-
   #### Django Admin
 
+  As mentioned, the admin user has the option of managing products,orders and many other aspects to the site via django's own admin interface. The plan would be to customise all aspects of admin via a frontend interface but this is still a very useful feature with smooth operations.
+
+  Django admin is secured by a super-user login:
+
+  ![django login](/documentation/features/feature-django-admin-login.png "django login")
+
+  From the django admin dashboard, the site owner / admin user can manage products, users, orders and FAQs.
+
+  ![django dashboard - orders view](/documentation/features/feature-django-admin-orders.png "django dashboard - orders view")
+
+  There is CRUD functionality included for the FAQs feature as seen here:
+
+  ![django dashboard - FAQs view](/documentation/features/feature-django-admin-faqs.png "django dashboard - FAQs view")
+
+  ![adding an FAQ via django admin](/documentation/features/feature-django-admin-faq-add.png "adding an FAQ via django admin")
 
 
 ### Future Features
