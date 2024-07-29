@@ -574,6 +574,27 @@ General:
 
 The following features would be considered in future work to the project that would improve the useability and interest of this app:
 
+- Add a review / product rating:
+    - There are already placeholder producting ratings added to the product details, but in future this could be a full feature that allows users with an account to add their own rating for a purchased product and / leave a review.
+    - Positive reviews can then be posted to the homepage to encourage more custom.
+
+- Complete Bespoke / Contact functionality:
+    - As previously mentioned, the bespoke and contact forms were built but the data is not yet stored and cannot be managed by the admin user. This would be completed in future works, so that Nyree can easily access enquiries from customers.
+
+- Note section added to the checkout form:
+    - Discussing with Nyree, she finds it useful to have a 'notes' section when a customer is completing an order in case they have any extra requirements that can be accommodated for. This would improve the shopper's experience.
+
+- Add more customisation to the bespoke or product options:
+    - Particularly with Prints, they can be available in different sizes which would allow customers to customise the artwork to their needs. This was considered at the beginning of the project, but since we would need to implement a stock management system to accommodating for sizing options, this was not included at this stage.
+
+- Stock management system:
+    - This would be very useful for the site owner to be able to adjust product options based on the amount of stock left. Products that are out of stock could still be listed to show they are popular, but cannot be purchased.
+
+- New Collections and Limited Editions
+    - Showcasing new products or limited editions would add interest for both new and returning customers, especially if they can get customised updates of what Nyree is currently working on or future products.
+
+- General improvements to site layout and accessbility
+
 ---
 
 ## Skeleton
