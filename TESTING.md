@@ -237,6 +237,28 @@ Details of further testing are below:
 | | User submits invalid delivery details / payment details in the checkout form | Error messages are shown which direct the user to correct the information | Pass | |
 | | User submits correct Stripe test payment card details along with validated personal information | A loading overlay is displayed while the order is processed. The Stripe webhook confirms the order in Stripe. The user is redirected to the checkout success page which displays the order confirmation and summary (also success toast message confirming an email is sent). | Pass | Email is sent to the registered email address from the checkout form :![screenshot](documentation/features/feature-order-confirmation-email.png)  |
 
+## User Story Testing
+
+| User Story | Screenshot |
+| --- | --- |
+| As a new user, I would like to explore some details about the artist, Nyree Waters, to see if her style and products may interest me | ![screenshot](/documentation/features/feature-bio-links-about.png) |
+| As a new user, I would like to browse interesting, unique art products available to buy online. | ![screenshot](documentation/features/feature-shop-online-links.png) |
+| As a new user, I would like to create an account with a profile, so that I can save my order details and have a more personalised experience whilst shopping. | ![screenshot](documentation/features/feature-profile-page.png) |
+| As an returning user, I would like to log into my account and view my profile, so I can access my saved personal details and previous orders. | ![screenshot](documentation/features/feature-profile-order-confirmation.png) |
+| As a returning user, I would like to browse products easily based on the type of artwork I am looking for, and have the ability to search for specific products. | ![screenshot](documentation/feature05.png) |
+| As a user, I would like to browse products easily based on the type of artwork I am looking for, and have the ability to search for specific products. | ![screenshot](documentation/features/feature-search-results.png) |
+| As a returning user, I would like to sort products by various criteria to make the (e.g. price, type, name) so that I can find what I'm looking for more easily. | ![screenshot](documentation/features/feature-product-sorting.png) |
+| As a returning user, I would like to add items to a shopping bag to keep track of the products I wish to purchase, with the ability to add / remove items where necessary. | ![screenshot](documentation/features/feature-shopping-bag.png) |
+| As a returning user, I would like to follow a familiar process for making a secure purchase via a checkout page, and have regular feedback that my information has been submitted and processed successfully.| ![screenshot](documentation/features/feature-secure-checkout.png) |
+| As a returning user, I would like to receive an email confirmation of my order once I have purchased something, and have access to these details via my account for future reference. | ![screenshot](documentation/features/feature-order-confirmation-email.png) |
+| As a returning user, I would like my order details to be saved to my profile, and have the option of add or updating my address for quick access in future. | ![screenshot](documentation/features/feature-profile-page.png) |
+| As a returning user, I would like to view some details about payment /shipping / delivery before making a purchase. | ![screenshot](documentation/features/feature-faqs-accordion.png) |
+| As an Admin user or Site owner, I would like to manage the product listings that are displayed on the site | ![screenshot](documentation/features/feature-edit-delete-product-list.png) |
+| As an Admin user or Site owner, I would like secure access to editing or adding new products - and to add appropriate details such as SKU, product name and description, price and an image. | ![screenshot](documentation/features/feature-product-management-add.png) |
+| As an Admin user or Site owner, I would like the option to remove products that are no longer in stock / I no longer wish to sell. | ![screenshot](documentation/features/feature-edit-delete-product-detail.png) |
+| As an Admin user or Site owner, I would like to manage the FAQ section so that I can easily update and add answers to common questions as required. | ![screenshot](documentation/features/feature-django-admin-faqs.png) |
+| As an Admin user or Site owner, I would like to manage user permissions and roles, and control the access to the admin panel, ensuring the site data remains secure. | ![screenshot](documentation/features/feature-django-admin-orders.png) |
+
 ## Bugs
 
 ### Issues with profile prefilling delivery data after an order 
