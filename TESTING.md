@@ -233,6 +233,9 @@ Details of further testing are below:
 | | Admin changes the details of the product via the 'edit product' form and clicks to 'remove image' | Changes are saved to the product listing, and the user is redirected to the Product Detail page for that item. The previous image has been removed, and is replaced with the default 'no-photo' gif. A success message confirms the updated product.  | Pass | |
 | | Admin clicks the red 'delete' button (a trash icon) next to a product's detail | User is redirected to the All Items page where the product has been deleted, and a success message confirms the product is deleted | Pass | A delete confirmation modal needs to be implemented for future to prevent deleting products by mistake |
 | | Non admin signed in / non-signed in users try to access the product management pages via the URLs e.g. **../products/add/ | An error message displays in the top corner of the site: "Sorry only store owners can do that" | Pass | |
+| Checkout | | | | |
+| | User submits invalid delivery details / payment details in the checkout form | Error messages are shown which direct the user to correct the information | Pass | |
+| | User submits correct Stripe test payment card details along with validated personal information | A loading overlay is displayed while the order is processed. The Stripe webhook confirms the order in Stripe. The user is redirected to the checkout success page which displays the order confirmation and summary (also success toast message confirming an email is sent). | Pass | Email is sent to the registered email address from the checkout form :![screenshot](documentation/features/feature-order-confirmation-email.png)  |
 
 ## Bugs
 
