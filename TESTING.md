@@ -186,3 +186,38 @@ Results from these manual tests are below:
 | | Allows users to add items to the bag, adjust the quantity to update the bag (no less than 1, or no greater than 99 items), and remove items from the bag | Tested by adding items, changing the quantity via the -/+ buttons, updating the bag by clicking 'update' and removing items by clicking 'remove'| Feature worked as expected | Test concluded and passed | ![screenshot](documentation/features/feature-shopping-bag.png) |
 | Bespoke | | | | | |
 | | Feature is expected to show details of the bespoke product on offer, and allow users to fill in an enquiry form to express interest. A successful form submission should result in the user being redirected to a thank you page confirming their enquiry was sent | Tested by filling out the form, answering the questions by selecting an answer or typing an appropirate input for the form to be valid. Clicking submit, then checking the confirmation page loads | Feature worked as expected and the bespoke success confirmation page loaded once the form was submitted | Test concluded and passed | ![screenshot](documentation/features/feature-bespoke-form-success.png) |
+
+Details of further testing are below:
+
+| Page | User Action | Expected Result | Pass/Fail | Comments |
+| --- | --- | --- | --- | --- |
+| Contact | | | | |
+| | Click on Contact link in navbar | Redirects to contact form | Pass | |
+| | Enter first/last name, subject and message| Fields will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| Register | | | | |
+| | Click on Register button | Redirects to Sign Up page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password (twice) | Field will only accept password format | Pass | |
+| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user, email template as expected ![screenshot](documentation/features/feature-register-email.png)  |
+| | Confirm email | Redirects user to blank Sign In page | Pass | |
+| Log In | | | | |
+| | Click on the Login link | Redirects to Login page | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Enter valid password | Field will only accept password format | Pass | |
+| | Click Login button | Redirects user to home page, with success message | Pass | |
+| Log Out | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page, with successful signout message | Pass | |
+| Profile | | | | |
+| | Click on Profile button | User will be redirected to the Profile page | Pass | |
+| | Update default delivery details via the form and click on the Update Information button | Success message confirms details have been updated, and they will be prefilled in the form for future | Pass | |
+| | If previous orders exist, click on a previous order link | User will be redirected to the saved Order Confirmation page | Pass | |
+| | Brute forcing the URL of an order history URL e.g. **'.../profile/order_history/9A52801D36774F548B6A83976676E621'** when a user is not signed in or the user order does not match the signed in user | A Forbidden 403 error should be triggered | Pass | Although the custom 403 error page isn't being shown during testing, the correct Forbidden error message is shown: 'You do not have permission to access this order.'|
+| | As a non signed-in user, access the /profile/ URL | User will be redirected to the Sign In page since they are not autheniticated | Pass | |
+| Products | | | | |
+| | Click on product image | User will be redirected to the Product Details page | Pass | |
+| Product Details | | | | |
+| | Click on + / - button to add/remove product from bag | Quantity in bag will increase/decrease | Pass | |
+| | Click on add to bag button to add product to bag | Item will be added to bag | Pass | |
+| | Click on keep shopping button to add product to bag | Item will be added to bag | Pass | |
