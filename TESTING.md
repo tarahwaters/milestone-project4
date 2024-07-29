@@ -178,10 +178,10 @@ Results from these manual tests are below:
 | Admin Panel | | | | | |
 | | Django admin interface should allow the logged in super-user to manage order details (and have access to user info, products etc) | Tested by changing order details and deleting items / orders from the Orders dashboard | Feature worked as expected, super-user has access to all expected details | Test concluded and passed | ![screenshot](documentation/features/feature-django-admin-orders.png) |
 | | Django admin interface should allow the logged in super-user to manage FAQs | Tested by changing adding / editing / deleting FAQs from the FAQs dashboard | Feature worked as expected | Test concluded and passed | ![screenshot](documentation/features/feature-django-admin-faqs.png) |
-| |  |  |  | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| Contact | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| |  | | | Test concluded and passed | ![screenshot](documentation/feature06.png) |
-| FAQs | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| Contact | | | | | |
+| | Allows the user to fill out a form to submit a message to the shop owner. Current functionality expects a validated form results in a 'success' message returned to the user | Tested by completing the form, passing the validation by adding a first + last name / email / subject line / message | Feature works as expected, success message is shown | Test concluded and passed | ![screenshot](documentation/features/feature-contact-submit-success.png) |
+| FAQs | | | | | |
+| | Feature should display the answer to each question as a drop down accordion when the user clicks on it | Tested by clicking on each question | FAQ answers were displayed when the question was clicked | Test concluded and passed | ![screenshot](documentation/features/feature-faqs-accordion.png) |
 | |  | | | Test concluded and passed | ![screenshot](documentation/feature07.png) |
 | Shopping Bag | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
 | |  | | | Test concluded and passed | ![screenshot](documentation/feature08.png) |
