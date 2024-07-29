@@ -813,8 +813,17 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 - [Code Institute's Boutique Ado Walkthrough](https://github.com/Code-Institute-Solutions/boutique_ado_v1) - base code used follows the structure of the Boutique Ado project and was adapated for use
 - [CSS tricks](https://css-tricks.com/snippets/css/css-triangle/) - also referenced by Code Institute in the Boutique Ado project, the 'arrow-up' styling was used for the 'scroll to top' button
 - [Emma Walsh](https://github.com/emmawalshdev) for shop layout inspiration and adapted code on Home and About pages, also Bespoke form setup - [KayTea Art (Github repo)](https://github.com/emmawalshdev/kaytea_art/tree/main)
-- [Rory Sheridan](https://github.com/Ri-Dearg/neverlost-thrift/tree/master) - general project inspiration and reference, but also README documentation help (e.g. Database Structure)
-- [Delyth Jennings](https://github.com/D3lyth/lunar_glow/) - for TESTING section boilerplate
+- [ChatGPT](https://chatgpt.com/) - used generally as a learning tool for support with understanding bugs and errors, but also helped trial some automated testing (later removed as explained in [TESTING](#testing)). Along with the references below, it also helped research the building of a custom management command to load the FAQ JSON data to the database.
+
+- **load_faq (custom management command help)** :
+    - As an alternative to the django fixture loaddata tool used to load the product data to the database, I researched into using a custom command via [django management commands](https://docs.djangoproject.com/en/5.0/howto/custom-management-commands/), [SimpleIsBetterThanComplex](https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html), and [Dev.to](https://dev.to/doridoro/create-a-custom-basecommand-for-a-django-app-38k0)
+    - When a custom command is set up, it can be modified to add to existing data quickly without overriding existing data. 
+    - The current format of the BaseCommand load_faqs would need ammending for adding new FAQ data, but this can be done by verifying that FAQ data already exists, and if it doesn't, then create, save and return a new instance of the FAQ - as explained on [Dev.to](https://dev.to/doridoro/create-a-custom-basecommand-for-a-django-app-38k0)
+    - Once the management command is updated to add new FAQs, and the JSON file is updated, simply running the following command would load the new data:
+    ```
+                    python manage.py load_faqs filepath/to/the/json/faqs.json
+    ```
+    - It's not entirely necessary with a feature like FAQs for a small business like this, espeically if the site owner is likely to update features via a frontend interface, but it was interesting to try this out and has scope for larger scale projects in future
 
 ### Media
 - [Freepik - Favicon](https://www.flaticon.com/free-animated-icons/no-camera) - No camera animated icon created by Freepik, used in cases of 'no image' rendered for images across the site
@@ -841,4 +850,5 @@ In response to DevTools Lighthouse Audits, the following references were used to
 - [Deque University](https://dequeuniversity.com/rules/axe/4.9/link-name) - Discernible names for links (e.g. social media links / icons)
 
 ## Acknowledgements
-- [Rory Sheridan](https://github.com/Ri-Dearg) - for his great mentorship and support throughout the project
+- [Rory Sheridan](https://github.com/Ri-Dearg) - for his great mentorship and support throughout the project, as well as support with README documentation
+- [Delyth Jennings](https://github.com/D3lyth/lunar_glow/) - for TESTING section boilerplate

@@ -1,3 +1,6 @@
+# code help for load_faqs custom command
+# please refer to README code credits for details
+
 import json
 from django.core.management.base import BaseCommand
 from faqs.models import FAQ
