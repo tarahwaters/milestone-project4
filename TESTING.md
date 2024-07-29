@@ -166,13 +166,18 @@ Manual testing involves a developer testing the functionality of the site by che
 Results from these manual tests are below:
 
 
-| Page | Expectation | Test | Result | Fix | Screenshot |
+| Page | Expectation | Test | Result | Note | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| |  |   |  | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| Navigation - All Pages | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | |  |  | Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| Admin Panel | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| Home |  |  |  |  |  |
+|  | Register / Login page opens when user clicks on the link in the 'my account' dropdown menu | Tested by clicking on 'my account' | Both the Register and Login pages opened when the links were clicked | Test concluded and passed | ![screenshot](documentation/features/feature-account-dropdown-user.png) |
+| | Search bar returns product results from keywords that are searched | Tested by searching various keywords and checking results | Products matching the search terms were displayed on the page as expected, no results showed a message explaining this | Test concluded and passed | ![screenshot](documentation/features/feature-search-results.png) |
+| Navigation - All Pages | | | | | |
+| | Navigation links in the footer should take the user to the appropriate page when they are clicked on | Tested by clicking on all nav links and checking the pages that open | All links opened the correct pages | Test concluded and passed | ![screenshot](documentation/features/feature-footer-links.png) |
+| | Navigation links in the navbar should take the user to the appropriate page when they are clicked on | Tested by clicking on all nav links and checking the pages that open | All links opened the correct pages | Test concluded and passed | ![screenshot](documentation/features/feature-dropdown-menu-shop.png) |
+| | Clicking on the shopping bag icon should take the user to the shopping bag page | Tested by clicking on the bag icon | Bag opens when clicked | Test concluded and passed | ![screenshot](documentation/features/feature-bag-icon-updates.png) |
+| Admin Panel | | | | | |
+| | Django admin interface should allow the logged in super-user to manage order details (and have access to user info, products etc) | Tested by changing order details and deleting items / orders from the Orders dashboard | Feature worked as expected, super-user has access to all expected details | Test concluded and passed | ![screenshot](documentation/features/feature-django-admin-orders.png) |
+| | Django admin interface should allow the logged in super-user to manage FAQs | Tested by changing adding / editing / deleting FAQs from the FAQs dashboard | Feature worked as expected | Test concluded and passed | ![screenshot](documentation/features/feature-django-admin-faqs.png) |
 | |  |  |  | Test concluded and passed | ![screenshot](documentation/feature05.png) |
 | Contact | | | | Test concluded and passed | ![screenshot](documentation/feature01.png) |
 | |  | | | Test concluded and passed | ![screenshot](documentation/feature06.png) |
