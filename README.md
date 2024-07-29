@@ -242,25 +242,25 @@ General:
   - [Product Management](#product-management)
   - [Django Admin](#django-admin)
 
-  ## Logo Link to Homepage
+  #### Logo Link to Homepage
 
   Clicking the Nyree Waters logo anywhere on the site takes the user back to the homepage.
   
   ![nyreewaters logo](/documentation/features/feature-logo-home.png "nyreewaters name as logo")
 
-  ## Desktop Navbar Dropdown
+  #### Desktop Navbar Dropdown
 
   Viewing the website on a desktop displays the navbar menu in a central position that is easy to access. The 'shop' link contains a dropdown to search for all shop items, or by category:
 
   ![desktop nav dropdown menu](/documentation/features/feature-dropdown-menu-shop.png "desktop nav dropdown menu for shop contents")
 
-  ## Mobile Navbar Dropdown
+  #### Mobile Navbar Dropdown
   
   Viewing the website from a mobile device allows the user easy access to the navbar via a dropdown menu:
 
   ![mobile nav dropdown menu](/documentation/features/features-mob-nav-menu.png "image of mobile nav dropdown menu")
 
-  ## Search Bar Feature
+  #### Search Bar Feature
 
   A search bar is located at the top of each page and allows the user to search the shop items using keywords.
 
@@ -274,19 +274,19 @@ General:
   
   ![search bar feature - no results](/documentation/features/feature-search-no-results.png "example of search bar feature when no results are found")
 
-  ## Footer Links
+  #### Footer Links
 
   A footer containing Nyree's social links, as well as links to my github / linkedin pages (as the webdeveloper), is consistent and accessible at the bottom of each page. It contains the logo and similar font styling to the rest of the site. There are also quick nav links for the user to access other pages if/when convenient.
 
    ![footer links](/documentation/features/feature-footer-links.png "image of footer and links to socials or other site pages")
 
-  ## Toast Messages
+  #### Toast Messages
 
   Toast Messages were utilised using Bootstrap and provide the user with regular feedback in the top right corner of the page (for visual users - via a box that pops up by the shopping bag). These messages can show a successful process has been completed, an error message explaining the issue, alert or general update:
 
   ![toast success for confirming an email](/documentation/features/feature-signup-success.png "a toast success messsage for confirming an email address")
 
-  ## Login
+  #### Login
 
   Users with an account already can 'login' via the link found in the 'my account' dropdown or the 'signin' link on the 'register' page. This is what all users see before they sign in:
 
@@ -302,7 +302,7 @@ General:
 
   ![account dropdown for signed in admin](/documentation/features/feature-account-dropdown-admin.png "account dropdown for signed in admin")
 
-  ## Register Account
+  #### Register Account
 
   For new users, they can register an account via the validated registration form:
 
@@ -310,7 +310,7 @@ General:
 
   Emails that have already been registered / invalid inputs will result in an error message which tells the user what to do.
 
-  ## Registration Verification
+  #### Registration Verification
 
   A new registration using a valid email address will receive an update explaining that an email verification link has been sent:
 
@@ -320,13 +320,13 @@ General:
 
   ![registration email example](/documentation/features/feature-register-email.png "registration email example")
 
-  ## Registration Success
+  #### Registration Success
 
   Clicking the verification link, the user is sent to a confirmation page and upon clicking 'confirm', they will receive a signup success message:
 
   ![signup success message](/documentation/features/feature-signup-success.png "signup success message")
 
-  ## Signout Confirmation
+  #### Signout Confirmation
 
   Clicking the 'logout' link from the account dropdown opens the 'signout confirmation' page:
 
@@ -334,7 +334,7 @@ General:
 
   A successful signout will result in a toast message in the corner. And the user can no longer access their Profile until they log back in.
 
-  ## Profile Page
+  #### Profile Page
 
   A signed in user can access a Profile page which has a dynamic form (on the left side for larger screens) to store delivery address details (which can be added / edited and saved) for easy access at the checkout page. A successful order will automatically populate the details for returning users if they clicked the option to save their details.
 
@@ -349,7 +349,7 @@ General:
 
   As you can see in the example, reference to the order email address in the top description, order summary and Alert message, are all linked to the same address associated with the order ID.
 
-  ## All Products
+  #### All Products
 
   Accessing the shop to view 'all items' can be done via the navbar dropdown menu for 'shop'. Or if the user has selected either the 'prints' or 'originals' links on the main page, there is a link to 'All items' from the top left either product category page.
 
@@ -363,7 +363,7 @@ General:
 
   Admin users are able to see the edit / delete icons next to each product (see below for more details in [product management](#product-management))
 
-  ## Shop Category Buttons
+  #### Shop Category Buttons
 
   The shop category buttons are arranged centrally on each product page for easy access and the hover styling highlights when they are selected.
 
@@ -377,13 +377,13 @@ General:
 
   Clicking 'bespoke' will take the user to the [bespoke](#bespoke-details-and-form) collage page, where they can submit an enquriry.
 
-  ## Shop Prints
+  #### Shop Prints
 
   Shopping on the Prints category page looks like this:
 
   ![prints product page](/documentation/responsive-desktop-products.png "prints product page")
 
-  ## Shop Originals
+  #### Shop Originals
 
   Shopping on the Originals category page looks like this:
 
@@ -391,7 +391,7 @@ General:
 
   On this main product view, each item contains basic info such as the product image, name, rating, category tag, price. Users can click the item to open up further details about the product, where it can also be added to the shopping bag ready for purchasing.
 
-  ## Product Sort Selector
+  #### Product Sort Selector
 
   On each product page, users have the option of sorting items by name / price - either ascending or descending in order. There is also potential to include the product rating as a sorting option (to be expanded on in future with a customer 'review' feature).
 
@@ -399,11 +399,11 @@ General:
 
   ![product sorting buttons](/documentation/features/feature-product-sorting.png "product sorting buttons")
 
-  ## Scroll to Top Button
+  #### Scroll to Top Button
 
   With an increasing number of items added to the shop, the page is likely to become quite long when scrolling through products. There is a handy button included (arrow up button, bottom right of larger pages) that allows the user to scroll back to the top of the page. Once clicked the button turns an orange colour.
 
-  ## Product Detail
+  #### Product Detail
 
   The product detail view shows an individual product with more details, and the option to choose the number of items required, add those items to the shopping bag, or return to the 'all items' page via the 'keep shopping' button.
 
@@ -411,11 +411,11 @@ General:
 
   ![product detail view](/documentation/features/feature-edit-delete-product-detail.png "product detail view")
 
-  ## Product Quantity Tool
+  #### Product Quantity Tool
 
   The product quantity tool allows the user to increase / decrease the number of items they wish to add to the shopping bag. The '-' button does not function below 1, and equally, the '+' button can only goes up to 99. The user can also enter the numerical value by keyboard.
 
-  ## Add to Shopping Bag
+  #### Add to Shopping Bag
 
   Once the 'add to bag' button has been clicked, the user is updated by a message up by the shopping bag icon. This message summarises the item/s added, updates the bag total and will flash a message about the free delivery threshold (currently set at orders over £40). Here, the user is told how much more they need to spend before qualifying for free delivery.
 
@@ -425,7 +425,7 @@ General:
 
   ![bag icon updated with price](/documentation/features/feature-bag-icon-updates.png "bag icon updated with price")
 
-  ## View/Edit Shopping Bag
+  #### View/Edit Shopping Bag
 
   To view or edit the shopping bag, users need to click the bag icon.
   This will open the shopping bag view. If no items are in the bag, a message confirming this will be displayed on the page, and the user is encouraged to click a button to 'continue shopping'.
@@ -438,7 +438,7 @@ General:
 
   There are also two main buttons to either 'keep shopping' (which returns to all items page) or proceed to the 'secure checkout'.
 
-  ## Secure Checkout
+  #### Secure Checkout
 
   The secure checkout page allows users to review their bag items once more before paying. There is the option to 'adjust bag' which returns to the bag page if the user is not ready to pay. Or if the user wants to commit to a purchase, they can enter their personal details, delivery details and payment info into the validated form.
 
@@ -446,7 +446,7 @@ General:
 
   There is an option for a signed in user to save their personal details to their Profle (for a quicker checkout next time), or if they are not signed in / have not registered, links will be offered for them to complete these actions first.
 
-  ## Stripe Payment
+  #### Stripe Payment
 
   The payment form is securely linked to the Stripe platform. For this project, as it is a test project for educational purposes only, only the Stripe [test card details](#test-card-details-from-stripe) will return a successful order.
 
@@ -456,27 +456,27 @@ General:
 
   A payment submission triggers an orange loading overlay animation to display while the process is updated (this allows time for the backend checks to be run and the Stripe webhook to be updated) - either returning the user back to the form, in cases or validation error, or redirecting to a checkout success page with their new order details.
 
-  ## Order Confirmation
+  #### Order Confirmation
 
   A successful order triggers that order to be saved into the database and a record is accessible for the Stripe account owner. The checkout success page then gives the user a confirmation of their order, with a success toast message confirming the order details have also been sent to the registered email address from the submitted form.
 
   ![checkout success page with order confirmation updates](/documentation/features/feature-checkout-success.png "checkout success page with order confirmation updates")
 
-  ## Email Order Confirmation
+  #### Email Order Confirmation
 
   A confirmation email containing the order details seen on the checkout success page will be sent to the email address submitted in the form. An example of what this email looks like is below (generated by a temporary email, verified for an account):
 
   ![order email confirmation example](/documentation/features/feature-order-confirmation-email.png "order email confirmation example containing order details")
 
-  ## Bespoke Details and Form
+  #### Bespoke Details and Form
 
-  ## Contact Form
+  #### Contact Form
 
-  ## FAQs
+  #### FAQs
 
-  ## Product Management
+  #### Product Management
 
-  ## Django Admin
+  #### Django Admin
 
 
 
