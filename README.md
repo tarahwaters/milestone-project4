@@ -503,6 +503,14 @@ General:
 
   #### FAQs
 
+  The frequently asked questions page offers answers to common questions about products, delivery, returns policy etc. This gives users more support and confidence during their shopping experience. The question tabs on the accordion (from Bootstrap) are interactive and when clicked will reveal the answer below.
+
+  ![FAQ page screenshot](/documentation/features/feature-faqs-accordion.png "FAQ page screenshot")
+
+  This particular question is highlighted because currently there is no 'notes' section at the checkout, but this would be a useful feature for [future](#future-features).
+
+  Since the FAQs structure has been added to [django admin](#django-admin), Nyree can update and edit the FAQ information via the admin interface.
+
   #### Product Management
 
   #### Django Admin
