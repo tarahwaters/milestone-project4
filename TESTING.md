@@ -213,7 +213,7 @@ Details of further testing are below:
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | | Update default delivery details via the form and click on the Update Information button | Success message confirms details have been updated, and they will be prefilled in the form for future | Pass | |
 | | If previous orders exist, click on a previous order link | User will be redirected to the saved Order Confirmation page (that matches the order number) | Pass | |
-| | Brute forcing the URL of an order history URL e.g. tested using a known order (see [fixed bugs](#fixed-bugs)): **'.../profile/order_history/9A52801D36774F548B6A83976676E621'** when a user is not signed in or the user order does not match the signed in user | A Forbidden 403 error should be triggered | Pass | Although the custom 403 error page isn't being shown during testing, the correct Forbidden error message is shown: 'You do not have permission to access this order.'|
+| | Brute forcing the URL of an order history URL e.g. tested using a known order (see [bugs](#unfixed-bugs)): **'.../profile/order_history/9A52801D36774F548B6A83976676E621'** when a user is not signed in or the user order does not match the signed in user | A Forbidden 403 error should be triggered | Pass | Although the custom 403 error page isn't being shown during testing, the correct Forbidden error message is shown: 'You do not have permission to access this order.'|
 | | As a non signed-in user, access the /profile/ URL | User will be redirected to the Sign In page since they are not autheniticated | Pass | |
 | Products | | | | |
 | | Click on product image | User will be redirected to the Product Details page | Pass | |
@@ -233,3 +233,56 @@ Details of further testing are below:
 | | Admin changes the details of the product via the 'edit product' form and clicks to 'remove image' | Changes are saved to the product listing, and the user is redirected to the Product Detail page for that item. The previous image has been removed, and is replaced with the default 'no-photo' gif. A success message confirms the updated product.  | Pass | |
 | | Admin clicks the red 'delete' button (a trash icon) next to a product's detail | User is redirected to the All Items page where the product has been deleted, and a success message confirms the product is deleted | Pass | A delete confirmation modal needs to be implemented for future to prevent deleting products by mistake |
 | | Non admin signed in / non-signed in users try to access the product management pages via the URLs e.g. **../products/add/ | An error message displays in the top corner of the site: "Sorry only store owners can do that" | Pass | |
+
+## Bugs
+
+### Issues with profile prefilling delivery data after an order 
+- There was an issue with the template literal preventing the 'save info' box from rendering on the checkout template. 
+- This meant that the updated delivery information in the checkout form could not be saved to the profile.
+- A bug was found where the authentication attribute used was ```{if user.authenticated %}``` rather than ```{% if user.is_authenticated %}```
+- After this fix, the save box was successfully rendered when the user was logged in (ie the user is authenticated)
+
+### Issue with SMTP TypeError (causing System 505) for sending real emails
+- This issue was found when setting up the registration / verification with real email settings
+- In debug mode, the error was coming up as: **TypeError at /accounts/signup/ - SMTP starttls() got an unexpected keyword argument 'keyfile'**
+- A fix was found by searching for help on the Code Institute Slack channel after another student has used the Bug Report workflow app.
+- To resolve the issue it was recommended to type the following into the CLI and push the changes: ```touch runtime.txt && echo "python-3.9.1.6" > runtime.txt```
+- This still gave me a TypeError in debug mode, so with Code Institute tutor support, we updated the python version and deployed again.
+- A different syntax error displayed this time, which was easy to fix and then emails were sending successfully for registering an account.
+
+### Issue with emails sending an order confirmation after successful checkout
+- Registration emails were sending at this point, but no order confirmation emails were being sent (although the success message was showing).
+- Emails were being sent to the terminal while in development mode, but the settings were in place to only send real emails when in 'production' mode.
+- Since there was a Stripe webhook in place to oversee the order process, this was investigated with help from CI tutors.
+- Although the webhook code was set up fine, when checking the STRIPE keys, it was found that the webhook endpoint was set up for development environment only. This was why the emails worked in dev mode, but not for deployment.
+- I had to creat a new webhook endpoint via Stripe and update the secret keys in my Heroku configuration variables to fix this.
+
+### Issue with authentication of profile order history
+- It was noticed during manual testing, that if a known order_history URL is used, anyone was able to access the particular order confirmation (which contains personal information)
+- I used a known order_history URL which had been submitted from the superuser account:
+    - .../profile/order_history/9A52801D36774F548B6A83976676E621
+    - temporary email used: kakafo9063@digdy.com
+- When I checked the order_history view within the Profile app, there was no @login_required decorator in place, so I fixed this.
+- This time, if a user was not signed in, they were redirected to the Sign In page. But if a user WAS signed in, they could still access the order_history even though it was not their order.
+- To fix this, I added a check to verify the UserProfile of the signed in user matched that of the order before returning the order details.
+- If the signed in user does not match the order user, then a Forbidden 403 response is triggered. I didn't get my custom 403 page to be triggered during testing, so this is potentially an unfixed bug, but the correct error message was displayed and the action prevented.
+- If a user was not signed in at the time of making the order (which is possible), then their details would not be saved to a profile for an order_history page to be accessible (which is the benefit of an account). So I think this short term fix is enough  for now but for a real ecommerce site, there would need to be much stronger security in place.
+
+## Unfixed Bugs
+
+### Custom error 403 page not rendering when a HttpResponseForbidden is triggered
+- As explained above, I could not get my custom 403.html to be rendered when testing the authentication error that triggers a Forbidden response. I kmow the 404.html page works and this is set up in the same way, but I did not have time to look into this further. Using automated test cases would help troubleshoot the issue.
+
+### Extra horizontal styling on Products pages noticed during Responsiveness testing
+- Please see [responsiveness](#responsiveness) testing for details
+
+### Page height too small for shorter pages with less content
+- Please see [responsiveness](#responsiveness) testing for details
+- Fixes were attempted using the min-height-container class but possibly more media queries are needed to work on different devices sizes. Does not affect usability too much.
+
+### Some errors in console displayed for the favicon
+- Occasionally this would happen and noticed in Google Chrome's DevTools, but the favicon still worked and was displayed so I think this is not something to worry about / may be an external issue.
+
+### Some form elements without discernible name / label for improved accessibility
+- Please see [responsiveness](#responsiveness) testing for details
+- Fixes were attempted across the site, but some elements were missed - particularly on the shopping bag page.
