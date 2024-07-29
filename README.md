@@ -604,9 +604,28 @@ Wireframes for the website were created using the UI wireframe tool, [Balsamiq](
 The layout and design were kept consistent across the pages / devices as much as possible.
 The overall design evolved as the project was developed, so some of the wireframe designs were not carried out / were adapted.
 
-The app consists of the following pages:
+The app consists of the following main pages:
+
+- Home
+- About
+- FAQs
+- Shop
+    - All Items
+    - Originals
+    - Prints
+    - Bespoke (enquiry page / success page)
+- Contact
+- Shopping Bag
+- Checkout / Checkout Success
+- My Account
+    - Signin / Register / Logout
+    - Profile
+    - Order confirmation page (via Profile)
 
 For Admin Users only:
+- Product Management (via my account)
+    - Add a product
+    - Edit a product
 
 ### Wireframes
 
