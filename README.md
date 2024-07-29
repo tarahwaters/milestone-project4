@@ -489,9 +489,17 @@ General:
 
   ![bespoke form submission success page](/documentation/features/feature-bespoke-form-success.png "bespoke form submission success page")
 
-  The enquiry is not currently saved into the database and therefore cannot be accessed by an admin. This funtionality would be worked on further as part of [future features](#future-features).
+  The enquiry is not currently saved into the database and therefore cannot be accessed or managed by an admin. This funtionality would be worked on further as part of [future features](#future-features).
 
   #### Contact Form
+
+  The contact form works in a similar way as the bespoke form, in the way users can input details to make an enquiry or get in touch with Nyree.
+
+  ![contact form page](/documentation/features/feature-contact-form.png "contact form page")
+
+  Current functionality does not redirect the user to a confirmation page, but a success message will show in the top corner if a message has been successfully 'sent'. Again, in future the plan is to have the information properly submitted and saved into the database so that Nyree can access and manage these enquiries.
+
+  ![contact form submission success message](/documentation/features/feature-contact-submit-success.png "contact form submission success message")
 
   #### FAQs
 
