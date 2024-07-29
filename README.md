@@ -513,6 +513,45 @@ General:
 
   #### Product Management
 
+  Admin users can also access product information via the django admin interface, but a frontend feature has been designed for improved flow and easier access.
+
+  By signing in as a 'super-user' (admin), Nyree can edit / add / delete products via the Product Management tools.
+
+  By clicking 'product management' in the account dropdown, this takes the admin user to the 'add product' page:
+
+  ![add product page screenshot](/documentation/features/feature-product-management-add.png "add product page screenshot")
+
+  The form is empty when adding a completely new product, but all field inputs match the current structure of product details on the site (e.g product category, SKU, product name, description etc).
+
+  There is also the option to upload a product image to be displayed on the site. Since the site is linked up with image hosting via AWS, this process is dynamic and simple to use. Currently, there is no preview of the selected image which would be useful to see in the form before adding (like the view when editing a product), but functionality works well.
+
+  Upon a successful product 'add' the admin is then taken to the product detail page of the newly uploaded product:
+
+  ![newly added product detail](/documentation/features/feature-add-product-test.png "newly added product detail")
+
+  If the admin is happy with the new product it is displayed in the same way as all other products, but if they wish to edit / delete, this is an option via the blue pencil (edit) and red trash can (delete) buttons next to the product rating.
+
+  Clicking the edit button takes the admin to the 'edit product' page - a form prefilled with the product information fields which can all be adjusted and updated if necessary.
+
+  Here is an example a print product's edit form:
+
+  ![edit product form for a print product](/documentation/features/feature-edit-product-form.png "edit product for a print product")
+
+  Clicking 'update product' will save the new data and the product can be viewed in the main product listings.
+
+  This is the general view of the products seen by the admin where all products have the edit / delete buttons accessible:
+
+  ![admin user view of all products](/documentation/features/feature-edit-delete-product-list.png "admin user view of all products")
+
+  If the admin wishes to delete a product, this can be done via the 'delete' product button (a red trash can). Currently, there is no confirmation before delete functionality implemented so the user must be careful not to delete products by mistake! 
+  
+  This is definitely a priority for future work, and can be fixed by implementing a pop up modal to confirm / cancel the delete action.
+
+  Once the admin has deleted a product, a success message will confirm this action, and the product will disappear from the site:
+
+  ![deleted product success message](/documentation/features/feature-delete-product-test.png "deleted product success message")
+
+
   #### Django Admin
 
 
