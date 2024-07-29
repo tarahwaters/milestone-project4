@@ -470,6 +470,27 @@ General:
 
   #### Bespoke Details and Form
 
+  Since Nyree often makes bespoke art for friends and family, we wanted to design a page that offers a particular bespoke product: "hopes / dreams / wishes".
+
+  These consist of beautiful bespoke made mini collages that can be framed. Each collage contains words of affirmation or wishes for the recipient.
+
+  ![bespoke collage page details](/documentation/features/feature-bespoke-collage-page.png "bespoke collage page details")
+
+  The bespoke feature of the website gives details of this product and there is a form that can be filled in to send a bespoke enquiry to Nyree. The form is tailored with questions that help Nyree to know the style of collages to make, the size, and bearing in mind if it's for a particular occasion. Or if certain words or wishes resonant with the customer, there is an option to specify this in the custom message.
+
+  ![bespoke enquiry form](/documentation/features/feature-bespoke-collage-form.png "bespoke enquiry form")
+
+  This feature is still in development so there is much to be improved in future (functionality as well as styling / information included).
+  Currently, the form is validated before submission so that important information is included in the enquiry:
+
+  ![validation example on bespoke enquiry form](/documentation/features/feature-bespoke-form-validation.png "validation example on bespoke enquiry form")
+
+  And if the form is successfully submitted, the user will be redirected to a confirmation page thanking them for their enquiry:
+
+  ![bespoke form submission success page](/documentation/features/feature-bespoke-form-success.png "bespoke form submission success page")
+
+  The enquiry is not currently saved into the database and therefore cannot be accessed by an admin. This funtionality would be worked on further as part of [future features](#future-features).
+
   #### Contact Form
 
   #### FAQs
