@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponseForbidden
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -37,6 +38,14 @@ def profile(request):
 @login_required
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
+
+    # since UserProfile is linked to the signed in user who creates an Order
+    user_profile = get_object_or_404(UserProfile, user=request.user)
+
+    # check the signed-in user owns the order,
+    # otherwise trigger a 403 error
+    if order.user_profile != user_profile:
+        return HttpResponseForbidden("You do not have permission to access this order.")
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}.'
