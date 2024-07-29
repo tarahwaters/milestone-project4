@@ -22,6 +22,12 @@ If you'd like to test the checkout and payment functionality of the website, ple
 
 ------
 
+### Note
+
+The original SECRET_KEY referenced in the project settings.py file has since been changed and remains hidden as an environment variable.
+
+------
+
 ### Test card details (from Stripe):
 
 - Card number: 4242 4242 4242 4242
