@@ -35,6 +35,7 @@ def profile(request):
 
     return render(request, template, context)
 
+
 @login_required
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
@@ -45,7 +46,8 @@ def order_history(request, order_number):
     # check the signed-in user owns the order,
     # otherwise trigger a 403 error
     if order.user_profile != user_profile:
-        return HttpResponseForbidden("You do not have permission to access this order.")
+        return HttpResponseForbidden(
+            "You do not have permission to access this order.")
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}.'
