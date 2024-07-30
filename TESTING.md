@@ -311,3 +311,9 @@ Details of further testing are below:
 ### Some form elements without discernible name / label for improved accessibility
 - Please see [responsiveness](#responsiveness) testing for details
 - Fixes were attempted across the site, but some elements were missed - particularly on the shopping bag page.
+
+### HTML validation warning regarding lack of header h2-h6
+- Known warning and acceptable, section doesn't require headers
+
+### Lack of prefilling email address for signed in users (e.g. on Contact and Bespoke forms)
+- This was overlooked and not enough time to address, but will implement for future work.
