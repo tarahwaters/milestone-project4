@@ -68,13 +68,6 @@ I acknowledge there are commit messages that are too long for standard practice,
     - [Database Structure](#database-structure)
         - [Details](#details)
         - [Diagram](#diagram)
-    - [Database Models](#database-models)
-        - [Product App](#product-app)
-        - [Checkout App](#checkout-app)
-        - [Profiles Apps](#profiles-app)
-        - [FAQs App](#faqs-app)
-        - [Contact App](#contact-app)
-        - [Bespoke App](#bespoke-app)
 
 3. [Tools and Technologies Used](#tools-and-technologies-used)
     - [Languages](#languages)
@@ -721,19 +714,6 @@ Font Styles used in project:
 - The diagram below omits the tables created by default, except the user table, as well as the tables created by [django-allauth](https://docs.allauth.org/en/latest/).
 
 ![Database Schema Diagram](/documentation/drawSQL-schema.png "database schema diagram")
-
-## Database Models
-
-**Please Note:** 
-- Default tables created by [django](https://www.djangoproject.com/) as well as [django-allauth](hhttps://docs.allauth.org/en/latest/) have been ommited from this section. Please refer to their documentation (refrenced [here](#tools-and-technologies-used)) for more information on their data models.
-- The CountryField is from [django-countries](https://github.com/SmileyChris/django-countries).
-
-### Product App
-### Checkout App
-### Profiles App
-### FAQs App
-### Contact App
-### Bespoke App
 
 ---
 
