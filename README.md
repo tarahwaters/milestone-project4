@@ -1109,6 +1109,7 @@ Some of the written content e.g. artist bio, was taken from [Nyree Waters' websi
 ## References
 
 ### Project Inspiration (Github Repos)
+Also referenced for support with documentation (e.g. writing Deployment instructions)
 
 - [Emma Walsh](https://github.com/emmawalshdev) - KayTea Artwork
 - [Delyth Jennings](https://github.com/D3lyth/lunar_glow/tree/main) - Lunar Glow
