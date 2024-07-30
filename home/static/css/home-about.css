@@ -102,7 +102,7 @@ a:hover {
 /* 992px plus */
 @media screen and (min-width: 992px) {
     .category-wrapper {
-        max-width: 600px; /* Adjust based on your design preference */
+        max-width: 600px;
     }
 }
 
