@@ -811,8 +811,290 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 ---
 
 ## Deployment
+
+The live deployed site can be found on [Heroku](https://nyreewaters-art-ccb67c4ebd7f.herokuapp.com/).
+
+### Local Preparation
+
+### Requirements:
+
+ - [Gitpod](https://www.gitpod.io/) / [VS Code](https://code.visualstudio.com/) / other IDE of choice
+ - [Python3](https://www.python.org/downloads/)
+ - [pip](https://github.com/pypa/pip) - package manager for Python
+ - [Git](https://git-scm.com/)
+ - A Postgres database up and running - this project used a free account on [Supabase](https://supabase.com/)
+ - A free account with [Stripe](https://stripe.com/) - for setting up the payment functionality of the site
+ - An account with a cloud hosting service like [Amazon Web Services (AWS)](https://aws.amazon.com/) - AWS offers a free account, though usage is capped and a form of payment is needed during setup
+ - A connection set up with an email server for sending real emails, or by using the following code in ``settings.py``, emails will be displayed in the terminal:
+```EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'```
+
+### Supabase Database:
+
+To obtain your own Postgres database using Supabase, follow the instructions on [Supabse](https://supabase.com/) to 'start a new project':
+- Add an organisation name
+- Add a project name
+- Create a database password
+- Select a region closest to you for better performance
+- Wait while the database settings configure
+- You will be given a database URL and API key that can be used in the project
+
+## Heroku Deployment
+
+1. To successfully deploy on Heroku, dependencies first need to be installed to be able to use Postgres on the deployed site:
+
+```
+pip3 install dj_database_url
+pip3 install psycopg2
+```
+
+2. Create a ``requirements.txt`` file and a ``Procfile``
+
+3. Requirements.txt contains all the applications and dependencies needed to run the app.
+4. The Procfile tells Heroku which files to run the app and how. Use this command to set up the Procfile:
+```
+web: gunicorn [your app name].wsgi:application
+
+```
+5. Delete any blank lines from the end of the Procfile created as this may cause errors. Commit and push these changes.
+6. Create a new app on [Heroku](https://www.heroku.com/).
+7. Connect the Heroku app to the Github project repository.
+8. You will need to provide Heroku with the configuration variables to build the app successfully.
+
+Keys and their values:
+```
+AWS_ACCESS_KEY_ID = from AWS setup
+AWS_SECRET_ACCESS_KEY = from AWS setup
+DISABLE_COLLECTSTATIC = 1*
+DATABASE_URL = from Supabase
+EMAIL_HOST_PASS = from email server setup
+EMAIL_HOST_USER = from email server setup
+SECRET_KEY = insert value here
+STRIPE_PUBLIC_KEY = from Stripe setup
+STRIPE_SECRET_KEY = from Stripe setup
+STRIPE_WH_SECRET = from Stripe setup
+USE_AWS = True
+DEVELOPMENT = True **
+
+!! SECRET keys must be kept secret and not shared or commited in code.
+
+*Temporary, will be removed once AWS is setup to manage media and static files
+
+** Delete this variable when ready for production
+
+```
+
+9. Then add the hostname of the Heroku app to ALLOWED_HOSTS in settings.py of the main django project app.
+
+## Amazon AWS
+
+[AWS](https://aws.amazon.com/) was used to store media and static files (since this is not possible via Heroku).
+
+Once an account is created, follow the steps from the **AWS Management Console** page.
+
+### Create S3 Bucket
+
+- Search for S3
+- Create the bucket by giving a name that matches the Heroku app name, and choose the closest region to you.
+- Uncheck **Block all public access** and accept that the bucket will be public to allow public access to the static files
+- **ACLs enabled** and **Bucket owner preferred** needs to be selected from **Object Ownership**
+- From the **Properties** tab - turn on static website hosting (gives a new endpoint to use that can access it from the internet).
+- For the index and error document, can use default values (they won't be used for this project case)
+- Save these settings
+- From the **Permissions** tab:
+    - Paste in the COORS configuration which sets up the required access between the Heroku app and the s3 bucket:
+    ```
+    [
+        {
+            "AllowedHeaders": [
+                "Authorization"
+            ],
+            "AllowedMethods": [
+                "GET"
+            ],
+            "AllowedOrigins": [
+                "*"
+            ],
+            "ExposeHeaders": []
+        }
+    ]
+    ```
+
+- From the **Bucket Policy** tab - select **policy generator** to create a security policy for the bucket (policy type = s3 bucket policy)
+- Allow all principals by using a *
+- Action = 'get object'
+- Copy the *ARN* (Amazon Resource Name) from the other tab
+- Then 'add a statement' and 'generate policy'
+- Copy the policy into the bucket policy editor (add a /* to the end of the resource key in Bucket policy editor)
+```  
+{
+ 	"Id": "Policy1234567890",
+ 	"Version": "2012-10-17",
+ 	"Statement": [
+ 		{
+ 			"Sid": "Stmt1234567890",
+ 			"Action": [
+ 				"s3:GetObject"
+ 			],
+ 			"Effect": "Allow",
+ 			"Resource": "arn:aws:s3:::your-bucket-name/*"
+ 			"Principal": "*",
+ 		}
+ 	]
+ }
+ ```
+
+- **Allow access to all resources in this bucket** before saving
+- The bucket policy and course configuration will now allow full access to all resources in the bucket
+
+### IAM
+
+Now create a user group to access the bucket through another service called **Identity and Access Management (IAM*)**.
+
+Search for IAM from the AWS Services Menu.
+- From **User Groups**, click **Create New Group**
+- Create a meaningful name to identify the group e.g. 'group-``project-name-here``'
+- No policy to attach yet so skip these parts and finally create the group.
+- Click 'create policy' from 'policies'
+- From the JSON tab, select import managed policy to import a prebuilt AWS policy with full access to S3.
+- Only want to allow full access to the new bucket and everything in that bucket.
+- So search for S3 and select ```AmazonS3FullAccess``` policy and then Import
+- You need the ARN from the S3 bucket copied from the 'Resources' key on the Policy:
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": "s3:*",
+			"Resource": [
+			    "arn:aws:s3:::nyreewaters-art",
+			    "arn:aws:s3:::nyreewaters-art/*"
+			    ]
+		}
+	]
+}
+```
+- Click **Review Policy**
+- Add a name e.g. policy-``project-name-here``
+- Provide a description: "Access to S3 bucket for ``project-name-here`` files""
+- **Create Policy**
+
+- From **User Groups**, click the group name
+- Click **Attach Policy**
+- Search for the policy created and attach policy
+- From User groups, **Add User**
+- For "Select AWS Access Type"", select **Programatic Access**
+- Select the group to add the new user to
+- Click through to reach the **review user** page
+- And finally **Create User**
+- Save a copy to your system by **Download .csv** and IMPORTANT! make note of the :
+    - ``AWS_ACCESS_KEY_ID`` = Access Key ID
+    -  ``AWS_SECRET_ACCESS_KEY`` = Secret access key
+
+### Final AWS Setp - connecting Django up to S3
+
+1. Install boto3 and django-storages:
+```pip3 install boto3
+pip3 install django-storages
+pip3 freeze > requirements.txt
+```
+
+2. Add the values from the ``.csv`` as mentioned above to your Heroku Config Vars settings:
+
+    ```
+    AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY
+    ```
+
+- If Heroku Config Vars has ``DISABLE_COLLECTSTATIC`` - remove this so that AWS handles the static files
+- In S3, create a new folder called 'media'
+- Prepare media files for the website and upload them to this folder
+- Under **Manage Public Permissions**, 'grant public read access to this object(s)'
+
+### Stripe API
+
+This project uses Stripe to handle the payments.
+
+Once an account is created:
+
+From your Stripe dashboard, click to expand the "Get your test API keys".
+
+```
+STRIPE_PUBLIC_KEY = Publishable Key (starts with pk)
+
+STRIPE_SECRET_KEY = Secret Key (starts with sk)
+```
+
+Stripe Webhooks can be used as extra protection for payments, in case of users closing the order payment page before it has been processed.
+
+From your Stripe dashboard, click Developers, and select Webhooks.
+
+Then Add Endpoint:
+The endpoint is the URL of the project, during development you will need a separate endpoint to the deployed site.
+
+The deployed site for this project uses this URL as the endpoint:
+https://nyreewaters-art-ccb67c4ebd7f.herokuapp.com/checkout/wh/
+
+- Click receive all events.
+- Click Add Endpoint to complete the process.
+
+This will give you a
+```
+STRIPE_WH_SECRET = Signing Secret (Wehbook) Key (starts with wh)
+```
+
+Make sure this is added to your Heroku config vars !
+
+### Gmail API
+
+Since this project has used an email server to send verification and order confirmation emails using Gmail - the server needed to be connected to the project:
+
+- Click on the **Account Settings** in Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account** settings.
+- Select **Security**.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Select **Turn On** for 2FA.
+- On the Security page, select the option called **App passwords**.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+- Add any custom name
+- Save the 16-character password (API key).
+
+```
+EMAIL_HOST_PASS = user's 16-character API key
+EMAIL_HOST_USER = user's own personal Gmail email address
+```
+
 ### Local Deployment
-### Heroku Deployment
+
+This project can be cloned or forked to make a local copy on your own system.
+
+By **forking** the GitHub Repository, a copy of the original repository is made on your GitHub account.
+This allows you to view and/or make changes without affecting the original repository.
+
+1. Login to GitHub.
+2. Locate the repository: e.g. https://github.com/tarahwaters/milestone-project4
+3. In the top right hand corner of the page locate and click the 'fork' button.
+4. Near the bottom of the page click the green button that says 'Create Fork'.
+
+You should now have a copy of the original repository in your GitHub account.
+
+**Making a local clone**:
+
+1. Login to GitHub.
+2. Locate the repository
+3. Near the top of the repository click the green 'Code' button.
+4. To clone the repository using HTTPS, under HTTPS copy the link provided.
+5. Open the terminal in your code editor (IDE).
+6. Change the current working directory to the location where you want the cloned directory to be made.
+7. Type ``git clone``, and then paste the URL you copied in Step 3.
+8. Press Enter. Your local clone should be created.
+9. To install all the required dependencies (see [packages section](#packages)) run the following:
+
+```
+pip3 install -r requirements.txt
+```
 
 ---
 
